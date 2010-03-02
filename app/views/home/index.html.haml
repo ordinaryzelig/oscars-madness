@@ -1,0 +1,10 @@
+%table#standings
+  %tr#header
+    %th
+      player
+    %th
+      points
+    %th
+      correct
+  - @players.each do |player|
+    = render :partial => 'players/standing', :locals => {:player => player}

@@ -2,3 +2,4 @@
 database.yml
 tmp/*
 db/*.sqlite3
+log/*
