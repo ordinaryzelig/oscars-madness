@@ -3,7 +3,13 @@
 
 class ApplicationController < ActionController::Base
   
-  helper :all
+  helper :all do
+    
+    def logged_in_as_admin?
+      true
+    end
+    
+  end
   
   filter_parameter_logging :password
   
@@ -25,10 +31,6 @@ class ApplicationController < ActionController::Base
   
   def logged_in_player
     @logged_in_player ||= Player.find(session[:user_id])
-  end
-  
-  def logged_in_as_admin?
-    true
   end
   
   def rescue_admin_exception(exception)

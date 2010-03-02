@@ -20,7 +20,7 @@ class PicksController < ApplicationController
   private
   
   def load_player
-    @player = Player.find(params[:player_id], :include => :picks)
+    @player = Player.find(params[:player_id], :include => :picks) if params[:player_id]
   end
   
   def load_categories

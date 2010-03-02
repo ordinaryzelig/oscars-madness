@@ -1,6 +1,7 @@
 #points
   = @player.points
-  points
+  total points
 
-- @categories.each do |category|
-  = render :partial => 'categories/category', :locals => {:category => category, :player => @player}
+#categories
+  - @categories.each do |category|
+    = render :partial => 'categories/category', :locals => {:category => category, :player => @player}

@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
     player.resources :picks
   end
   
+  map.resources :picks, :only => :index, :member => {:declare_winner => :put}
   map.resources :films
   map.resources :categories
   map.resources :nominees

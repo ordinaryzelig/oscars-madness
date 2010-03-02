@@ -3,6 +3,7 @@ require 'test_helper'
 class NomineesControllerTest < ActionController::TestCase
   
   def setup
+    super
     login_as_admin
   end
   

@@ -1,0 +1,8 @@
+- input_name ||= ''
+- player ||= nil
+%span.nominee
+  %span.name
+    = label_tag input_name + "_#{nominee.id}", link_to_if(player.nil? && logged_in_as_admin?, nominee.name, edit_nominee_path(nominee))
+  - unless nominee.category == 'best picture'
+    %span.film
+      = "(#{nominee.film.name})"
