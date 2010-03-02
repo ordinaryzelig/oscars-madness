@@ -1,0 +1,17 @@
+- editable ||= false
+.category
+  .name= category.name
+  .nominees
+    - category.nominees.each do |nominee|
+      .nominee
+        %span.selection
+          - pick = player.picks.for_category(category).first
+          - input_name = "picks[#{pick.id}][nominee_id]"
+          - if editable
+            = radio_button_tag input_name, nominee.id, pick.nominee_id == nominee.id
+          -else
+            = pick.nominee_id == nominee.id ? 'x' : '&nbsp;'*2
+        %span.name
+          = label_tag input_name + "_#{nominee.id}", nominee.name
+          %span.film
+            = "(#{nominee.film.name})"

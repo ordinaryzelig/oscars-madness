@@ -1,0 +1,4 @@
+- form_tag player_update_picks_path, :method => :put do
+  - @categories.each do |category|
+    = render :partial => 'categories/category', :locals => {:category => category, :player => @player, :editable => true}
+  = submit_tag

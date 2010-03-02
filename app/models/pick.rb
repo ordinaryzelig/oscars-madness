@@ -8,7 +8,7 @@ class Pick < ActiveRecord::Base
   named_scope :for_category, proc { |cat| {:conditions => {:category_id => cat.id}} }
   
   def points
-    @points ||= correct ? category.points : 0
+    correct ? category.points : 0
   end
   
 end

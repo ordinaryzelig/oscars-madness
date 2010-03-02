@@ -6,7 +6,6 @@ class Nominee < ActiveRecord::Base
   
   def declare_winner
     picks.each do |pick|
-      puts 'test'
       pick.update_attributes! :correct => true
     end
   end
