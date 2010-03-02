@@ -43,10 +43,11 @@ ActiveRecord::Schema.define(:version => 20100302010147) do
 
   create_table "players", :force => true do |t|
     t.string   "name",       :null => false
-    t.string   "email",      :null => false
-    t.string   "login",      :null => false
+    t.string   "password",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "players", ["name"], :name => "index_players_on_name", :unique => true
 
 end

@@ -8,4 +8,6 @@ ActionController::Routing::Routes.draw do |map|
     player.resources :picks
   end
   
+  map.resources :films
+  
 end

@@ -40,4 +40,8 @@ class ActiveSupport::TestCase
     Sham.reset
   end
   
+  def login_as_admin
+    @request.env['HTTP_AUTHORIZATION'] = 'Basic ' + Base64::encode64("user:password")
+  end
+  
 end

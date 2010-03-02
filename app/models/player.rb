@@ -1,8 +1,21 @@
+require "digest/sha1"
+
+class String
+  
+  def digest
+    Digest::SHA1.hexdigest self
+  end
+  
+end
+
 class Player < ActiveRecord::Base
   
   has_many :picks
   
-  before_create :generate_login
+  validates_presence_of :name
+  validates_presence_of :password
+  validates_uniqueness_of :name
+  
   after_create :generate_picks
   
   def points
@@ -15,14 +28,14 @@ class Player < ActiveRecord::Base
     end
   end
   
+  def password=(pword)
+    super pword.digest
+  end
+  
   private
   
   def generate_picks
     Category.all.each { |cat| picks.create!(:category => cat) }
-  end
-  
-  def generate_login
-    self.login = email
   end
   
 end
