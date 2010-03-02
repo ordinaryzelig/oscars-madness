@@ -1,0 +1,11 @@
+- form_for nominee do |f|
+  = f.label :name
+  = f.text_field :name
+  %br
+  = f.label :category_id, 'category'
+  = f.select :category_id, Category.container
+  %br
+  = f.label :film_id, 'film'
+  = f.select :film_id, Film.container
+  %br
+  = f.submit

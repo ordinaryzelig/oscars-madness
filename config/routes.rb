@@ -9,5 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.resources :films
+  map.resources :categories
+  map.resources :nominees
   
 end

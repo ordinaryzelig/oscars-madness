@@ -1,0 +1,16 @@
+%div  
+  = link_to('new', new_category_path)
+  %br
+  = link_to('new nominee', new_nominee_path)
+
+- @categories.each do |category|
+  .film
+    .name
+      = link_to(category.name, edit_category_path(category))
+      = "(#{pluralize(category.points, 'point')})"
+    .nominee
+      - category.nominees.each do |nominee|
+        .nominee
+          %a{:href => edit_nominee_path(nominee)}
+            %span.name= nominee.name
+            %span.film= "(#{nominee.film.name})"

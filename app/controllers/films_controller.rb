@@ -1,7 +1,5 @@
 class FilmsController < AdminController
   
-  rescue_from Exception, :with => 'rescue_admin_exception'
-  
   def index
     @films = Film.all(:include => :nominations)
   end

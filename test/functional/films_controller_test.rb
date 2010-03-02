@@ -13,7 +13,7 @@ class FilmsControllerTest < ActionController::TestCase
   end
   
   def test_new
-    get :index
+    get :new
     assert_response :success
   end
   

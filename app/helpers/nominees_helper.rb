@@ -1,0 +1,2 @@
+module NomineesHelper
+end
