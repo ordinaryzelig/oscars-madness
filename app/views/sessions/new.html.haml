@@ -1,0 +1,15 @@
+- if flash[:error]
+  .fieldWithErrors= flash[:error]
+  %br
+
+if you don't have an account, contact me and i'll make one for you.
+%br
+
+- form_for Player.new, :url => session_path, :method => :post do |f|
+  = f.label :name
+  = f.text_field :name
+  %br
+  = f.label :password
+  = f.password_field :password
+  %br
+  = f.submit 'login'

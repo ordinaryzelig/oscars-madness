@@ -1,5 +1,6 @@
 class PicksController < ApplicationController
   
+  before_filter :authenticate
   before_filter :load_player
   before_filter :authenticate_rights_to_action
   before_filter :load_categories

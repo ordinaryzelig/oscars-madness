@@ -11,17 +11,14 @@ class ApplicationController < ActionController::Base
   protected
   
   def authenticate
-    authenticate_or_request_with_http_basic do |name, password|
-      player = Player.find_by_name_and_password(name, password)
-      return false unless player
-      session[:player_id] = player.id
-    end
+    return true if logged_in?
+    redirect_to login_path
+    false
   end
   
   def authenticate_admin
-    authenticate_or_request_with_http_basic do |name, password|
-      true
-    end
+    return true if logged_in_as_admin?
+    
   end
   
   def logged_in_player
@@ -39,6 +36,10 @@ class ApplicationController < ActionController::Base
   def rescue_admin_exception(exception)
     @exception = exception
     render :template => 'shared/exception'
+  end
+  
+  def logged_in?
+    return true if (logged_in_as_admin? || logged_in_player) && !session[:logged_out]
   end
   
 end

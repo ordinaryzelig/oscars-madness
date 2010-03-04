@@ -1,0 +1,5 @@
+- form_for Player.new, :url => session_admin_path, :method => :post do |f|
+  = f.label :password
+  = f.password_field :password
+  %br
+  = f.submit 'login'
