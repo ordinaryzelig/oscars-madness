@@ -8,6 +8,21 @@ a {
 .fieldWithErrors {
   color: red; }
 
+body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#banner {
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 5mm;
+  margin-bottom: 5mm;
+  text-align: center; }
+
+#menu #logged_in_player {
+  text-align: right; }
+
 #points {
   margin-bottom: 1cm; }
 
@@ -19,3 +34,15 @@ a {
 
 #new_category {
   margin-bottom: 1cm; }
+
+#standings {
+  margin-bottom: 1cm; }
+  #standings table th {
+    padding: 2mm; }
+  #standings table .points {
+    text-align: right; }
+  #standings table .correct {
+    text-align: right; }
+  #standings caption {
+    font-size: 120%;
+    font-weight: bold; }

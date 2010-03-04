@@ -4,7 +4,20 @@
 %html{html_attrs}
   %head
     = stylesheet_link_tag 'screen', :cache => true
+    %title= 'oscars madness!!!'
 
   %body
+    #banner
+      oscars madness!!!
+    #menu
+      #logged_in_player
+        - if logged_in?
+          - if logged_in_player
+            hi
+            = logged_in_player.name
+          - elsif logged_in_as_admin?
+            admin logged in
+          #logout= link_to 'logout', logout_path
+
     #main
       = yield

@@ -1,4 +1,4 @@
-class PlayersController < ApplicationController
+class PlayersController < AdminController
   
   def new
     @player = Player.new

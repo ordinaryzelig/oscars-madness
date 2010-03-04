@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
   
+  before_filter :logout, :except => [:create, :create_admin]
+  
   def new
     
   end
@@ -10,6 +12,7 @@ class SessionsController < ApplicationController
     player = Player.find_by_name_and_password(name, password)
     if player
       session[:player_id] = player.id
+      session[:admin_logged_in] = false
       redirect_to player_edit_picks_path(player)
     else
       flash[:error] = "login failed"
@@ -18,9 +21,11 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    cookies.delete :"_oscars-madness_session"
-    reset_session
     redirect_to root_path
+  end
+  
+  def new_admin
+    
   end
   
   def create_admin
@@ -30,6 +35,13 @@ class SessionsController < ApplicationController
       return
     end
     redirect_to login_admin_path
+  end
+  
+  private
+  
+  def logout
+    cookies.delete :"_oscars-madness_session"
+    reset_session
   end
   
 end

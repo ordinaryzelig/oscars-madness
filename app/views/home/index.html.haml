@@ -1,13 +1,16 @@
-%table#standings
-  %tr#header
-    %th
-      player
-    %th
-      points
-    %th
-      correct
-  - @players.each do |player|
-    = render :partial => 'players/standing', :locals => {:player => player}
+#standings
+  %table
+    %caption
+      standings
+    %tr#header
+      %th
+        player
+      %th
+        correct
+      %th
+        points
+    - @players.each do |player|
+      = render :partial => 'players/standing', :locals => {:player => player}
 
 - @categories.each do |category|
   = render :partial => 'categories/category', :locals => {:category => category}
