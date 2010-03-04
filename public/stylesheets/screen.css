@@ -31,7 +31,7 @@ body {
     text-decoration: none;
     text-shadow: black 5px 5px 1px; }
     #banner a:hover {
-      color: lightgray; }
+      text-shadow: black 8px 8px 1px; }
 
 #main {
   padding: 5mm; }
@@ -73,10 +73,11 @@ body {
     margin-left: 5mm; }
     .category .nominees .pick {
       display: inline-block; }
-    .category .nominees .nominee .winning_nominee {
+    .category .nominees .winning_nominee {
+      padding: 1mm;
       color: white;
       background: green; }
-      .category .nominees .nominee .winning_nominee a {
+      .category .nominees .winning_nominee a {
         color: white; }
     .category .nominees .nominee .film {
       margin-left: 3mm;
