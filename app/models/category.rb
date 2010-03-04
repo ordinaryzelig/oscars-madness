@@ -5,6 +5,8 @@ class Category < ActiveRecord::Base
   validates_presence_of :name
   validates_presence_of :points
   
+  default_scope :order => :created_at
+  
   def self.container
     all.map { |category| [category.name, category.id] }
   end
