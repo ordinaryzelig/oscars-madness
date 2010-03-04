@@ -2,7 +2,7 @@
 - player ||= nil
 - nominee_classes = [nominee_class]
 - nominee_classes << 'winning_nominee' if nominee.is_winner
-%span.nominee{:class => nominee_classes.join(' ')}
+.nominee{:class => nominee_classes.join(' ')}
   - if show_declare_winners
     %span.winner= link_to check_box_tag(nominee.id), declare_winner_nominee_path(nominee), :method => :put
   - content_for dom_id(nominee) do

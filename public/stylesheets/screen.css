@@ -12,7 +12,8 @@ a {
   color: red; }
 
 html {
-  background: #ac1b17; }
+  background: #ac1b17;
+  font-family: Helvetica; }
 
 body {
   width: 800px;
@@ -65,7 +66,7 @@ body {
   border: 1px solid black;
   margin: 2mm; }
   .category .category_name {
-    font-size: 125%;
+    font-size: 130%;
     font-weight: bold;
     background: lightgray;
     padding: 2mm; }
@@ -85,9 +86,13 @@ body {
       background: green; }
     .category .nominees .wrong_nominee {
       background: red; }
-    .category .nominees .nominee .film {
-      margin-left: 3mm;
-      font-size: 110%; }
+    .category .nominees .nominee {
+      display: inline-block; }
+      .category .nominees .nominee .nominee_name {
+        font-style: italic; }
+      .category .nominees .nominee .film {
+        margin-left: 3mm;
+        font-size: 120%; }
 
 #new_category {
   margin-bottom: 1cm; }
