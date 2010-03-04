@@ -10,6 +10,8 @@ end
 
 class Player < ActiveRecord::Base
   
+  include Enumerable
+  
   has_many :picks
   attr_accessor :confirmation_password
   
@@ -29,6 +31,10 @@ class Player < ActiveRecord::Base
     atts.each do |pick_id, att|
       picks.detect { |pick| pick.id == pick_id.to_i }.update_attributes! :nominee_id => att[:nominee_id]
     end
+  end
+  
+  def <=>(another_player)
+    another_player.points <=> points
   end
   
   private

@@ -7,4 +7,5 @@ end
 
 Category.blueprint(:best_picture) do
   name { 'best picture' }
+  points { 5 }
 end

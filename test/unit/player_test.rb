@@ -10,7 +10,6 @@ class PlayerTest < ActiveSupport::TestCase
   
   def test_points
     Blueprints.announce_nominees
-    Category.all.first.update_attributes! :points => 5
     player = Player.make
     player.picks.each { |pick| pick.update_attributes! :correct => true }
     assert_equal 8, player.points
