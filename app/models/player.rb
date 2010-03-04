@@ -33,7 +33,15 @@ class Player < ActiveRecord::Base
   end
   
   def <=>(another_player)
-    another_player.points <=> points
+    if another_player.points == points
+      if another_player.picks.correct.size == picks.correct.size
+        name.downcase <=> another_player.name.downcase
+      else
+        another_player.picks.correct.size <=> picks.correct.size
+      end
+    else
+      another_player.points <=> points
+    end
   end
   
   def self.authenticate(name, password)

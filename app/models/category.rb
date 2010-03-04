@@ -11,4 +11,8 @@ class Category < ActiveRecord::Base
     all.map { |category| [category.name, category.id] }
   end
   
+  def has_winner?
+    nominees.detect(&:is_winner)
+  end
+  
 end

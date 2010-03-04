@@ -47,6 +47,8 @@ body {
   .category .winning_nominee {
     color: white;
     background: green; }
+    .category .winning_nominee a {
+      color: white; }
 
 #new_category {
   margin-bottom: 1cm; }

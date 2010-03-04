@@ -1,5 +1,6 @@
 - editable ||= false
 - player ||= nil
+- show_declare_winners ||= nil
 .category
   .name
     = category.name
@@ -11,5 +12,5 @@
       - input_name = "picks[#{pick.id}][nominee_id]" if pick
       - if player
         = render :partial => 'pick', :locals => {:pick => pick, :nominee => nominee, :editable => editable, :input_name => input_name}
-      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :player => player, :input_name => input_name}
+      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :player => player, :input_name => input_name, :show_declare_winners => show_declare_winners && !category.has_winner?}
       %br

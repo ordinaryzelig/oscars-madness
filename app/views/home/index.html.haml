@@ -13,4 +13,4 @@
       = render :partial => 'players/standing', :locals => {:player => player}
 
 - @categories.each do |category|
-  = render :partial => 'categories/category', :locals => {:category => category}
+  = render :partial => 'categories/category', :locals => {:category => category, :show_declare_winners => logged_in_as_admin?}
