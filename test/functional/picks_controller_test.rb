@@ -32,12 +32,14 @@ class PicksControllerTest < ActionController::TestCase
   
   def test_edit_redirects_when_picks_not_editable
     AdminConfig.make(:picks_editable => false)
+    login_as Player.make
     get :edit, :player_id => Player.make
     assert_redirected_to root_path
   end
   
   def test_update_redirects_when_picks_not_editable
     AdminConfig.make(:picks_editable => false)
+    login_as Player.make
     pick = Pick.make
     nominee_id_before = pick.nominee_id
     get :update, :player_id => Player.make, :picks => {pick.id => {:nominee_id => pick.nominee_id + 1}}
@@ -48,6 +50,7 @@ class PicksControllerTest < ActionController::TestCase
   # only player can see own picks or admin can see picks.
   def test_index_redirects_when_picks_not_editable_and_player_not_looking_at_own_picks_and_not_logged_in_as_admin
     AdminConfig.make(:picks_editable => false)
+    login_as Player.make
     get :index, :player_id => Player.make.id
     assert_redirected_to root_path
   end
