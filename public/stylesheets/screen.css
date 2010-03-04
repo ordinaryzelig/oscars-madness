@@ -1,3 +1,6 @@
+table {
+  border-collapse: collapse; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -94,7 +97,10 @@ body {
       font-size: 120%;
       font-weight: bold; }
     #standings table th {
-      padding: 2mm; }
+      padding: 2mm;
+      background: lightgray; }
+    #standings table td {
+      padding: 1mm; }
     #standings table .points {
       text-align: right; }
     #standings table .correct {

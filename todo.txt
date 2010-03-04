@@ -1,7 +1,1 @@
-declare winner.
 light gray for categories not yet declared winners.
-country for foreign language film
-category align top
-single column categories
-player tie-breaker
-player can edit self
