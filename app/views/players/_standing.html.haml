@@ -1,6 +1,7 @@
 %tr
   %td.name
-    = player.name
+    - show_link = !admin_config.picks_editable || logged_in_as_admin?
+    = link_to_if show_link, player.name, player_picks_path(player)
   %td.correct
     = player.picks.correct.size
   %td.points

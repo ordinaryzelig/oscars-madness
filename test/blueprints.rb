@@ -8,6 +8,7 @@ end
 module Blueprints
   
   def self.announce_nominees
+    AdminConfig.make(:admin_password => 'asdf'.digest, :picks_editable => true)
     categories = 3.times.map { Category.make }
     categories << Category.make(:best_picture)
     films = 3.times.map { Film.make }

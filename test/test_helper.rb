@@ -41,6 +41,18 @@ class ActiveSupport::TestCase
   end
   
   def login_as_admin
+    @request.session[:admin_logged_in] = true
+    fake_login
+  end
+  
+  def login_as(player)
+    @request.session[:player_id] = player.id
+    fake_login
+  end
+  
+  private
+  
+  def fake_login
     @request.env['HTTP_AUTHORIZATION'] = 'Basic ' + Base64::encode64("user:password")
   end
   

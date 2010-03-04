@@ -1,8 +1,7 @@
-%div  
+#new_category
   = link_to('new', new_category_path)
   %br
   = link_to('new nominee', new_nominee_path)
 
-#categories
-  - @categories.each do |category|
-    = render :partial => 'categories/category', :locals => {:category => category}
+- @categories.each do |category|
+  = render :partial => 'categories/category', :locals => {:category => category, :editable => true}

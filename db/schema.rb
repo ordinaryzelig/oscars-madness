@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100302010147) do
+ActiveRecord::Schema.define(:version => 20100303235311) do
+
+  create_table "admin_configs", :force => true do |t|
+    t.string   "admin_password"
+    t.boolean  "picks_editable"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "categories", :force => true do |t|
     t.string   "name",       :null => false
@@ -28,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20100302010147) do
     t.string   "name",        :null => false
     t.integer  "film_id",     :null => false
     t.integer  "category_id", :null => false
+    t.boolean  "is_winner"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

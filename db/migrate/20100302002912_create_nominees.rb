@@ -5,6 +5,7 @@ class CreateNominees < ActiveRecord::Migration
       t.string :name, {:null => false}
       t.belongs_to :film, {:null => false}
       t.belongs_to :category, {:null => false}
+      t.boolean :is_winner
       t.timestamps
     end
   end

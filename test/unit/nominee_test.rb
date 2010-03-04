@@ -14,6 +14,7 @@ class NomineeTest < ActiveSupport::TestCase
     wrong_pick = wrong.picks.for_category(category).first
     wrong_pick.update_attributes! :nominee => losing_nominee
     winning_nominee.declare_winner
+    assert winning_nominee.is_winner
     assert correct_pick.reload.correct
     assert !wrong_pick.reload.correct
   end

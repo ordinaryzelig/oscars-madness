@@ -19,4 +19,9 @@ class NomineesController < AdminController
     redirect_to categories_path
   end
   
+  def declare_winner
+    Nominee.find(params[:id]).declare_winner
+    redirect_to root_path
+  end
+  
 end

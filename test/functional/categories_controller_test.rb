@@ -7,6 +7,7 @@ class CategoriesControllerTest < ActionController::TestCase
   end
   
   def test_index
+    AdminConfig.make
     Category.make
     get :index
     assert_response :success

@@ -8,3 +8,6 @@
       correct
   - @players.each do |player|
     = render :partial => 'players/standing', :locals => {:player => player}
+
+- @categories.each do |category|
+  = render :partial => 'categories/category', :locals => {:category => category}

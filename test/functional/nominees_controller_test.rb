@@ -35,4 +35,11 @@ class NomineesControllerTest < ActionController::TestCase
     assert_equal new_name, Nominee.find(nominee).name
   end
   
+  def test_declare_winner
+    nominee = Nominee.make
+    put :declare_winner, :id => nominee
+    assert nominee.reload.is_winner
+    assert_redirected_to root_path
+  end
+  
 end

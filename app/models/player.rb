@@ -11,11 +11,14 @@ end
 class Player < ActiveRecord::Base
   
   has_many :picks
+  attr_accessor :confirmation_password
   
   validates_presence_of :name
   validates_presence_of :password
+  validates_confirmation_of :password
   validates_uniqueness_of :name
   
+  before_create :hash_password
   after_create :generate_picks
   
   def points
@@ -28,14 +31,14 @@ class Player < ActiveRecord::Base
     end
   end
   
-  def password=(pword)
-    super pword.digest
-  end
-  
   private
   
   def generate_picks
     Category.all.each { |cat| picks.create!(:category => cat) }
+  end
+  
+  def hash_password
+    self.password = self.password.digest
   end
   
 end

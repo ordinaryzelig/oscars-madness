@@ -30,4 +30,11 @@ class PlayerTest < ActiveSupport::TestCase
     end
   end
   
+  def test_hash_password
+    password = 'asdf'
+    player = Player.make_unsaved(:password => password, :password_confirmation => password)
+    player.save!
+    assert_equal password.digest, player.reload.password
+  end
+  
 end

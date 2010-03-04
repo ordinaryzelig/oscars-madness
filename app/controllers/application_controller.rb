@@ -3,13 +3,8 @@
 
 class ApplicationController < ActionController::Base
   
-  helper :all do
-    
-    def logged_in_as_admin?
-      true
-    end
-    
-  end
+  helper :all
+  helper_method :logged_in_player, :logged_in_as_admin?, :admin_config
   
   filter_parameter_logging :password
   
@@ -19,7 +14,7 @@ class ApplicationController < ActionController::Base
     authenticate_or_request_with_http_basic do |name, password|
       player = Player.find_by_name_and_password(name, password)
       return false unless player
-      session[:user_id] = player.id
+      session[:player_id] = player.id
     end
   end
   
@@ -30,7 +25,15 @@ class ApplicationController < ActionController::Base
   end
   
   def logged_in_player
-    @logged_in_player ||= Player.find(session[:user_id])
+    @logged_in_player ||= Player.find(session[:player_id]) if session[:player_id]
+  end
+  
+  def logged_in_as_admin?
+    session[:admin_logged_in]
+  end
+  
+  def admin_config
+    @admin_config ||= AdminConfig.first
   end
   
   def rescue_admin_exception(exception)
