@@ -8,8 +8,9 @@ class SessionsControllerTest < ActionController::TestCase
   end
   
   def test_create
-    player = Player.make
-    post :create, :player => {:name => player.name, :password => 'asdf'}
+    password = 'asdf'
+    player = Player.make(:password => password)
+    post :create, :player => {:name => player.name, :password => password}
     assert_redirected_to player_edit_picks_path(player)
     assert_equal player.id, @request.session[:player_id]
   end

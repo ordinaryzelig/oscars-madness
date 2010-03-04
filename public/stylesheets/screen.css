@@ -25,6 +25,8 @@ body {
   text-align: center;
   font-size: 125%;
   margin-bottom: 5mm; }
+  #logged_in_player .name {
+    font-size: 150%; }
 
 #points {
   margin-bottom: 1cm;

@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   helper :all
   helper_method :logged_in_player, :logged_in_as_admin?, :admin_config, :logged_in?
   
-  filter_parameter_logging :password
+  filter_parameter_logging :password, :confirmation_password
   
   protected
   

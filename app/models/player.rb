@@ -13,14 +13,13 @@ class Player < ActiveRecord::Base
   include Enumerable
   
   has_many :picks
-  attr_accessor :confirmation_password
   
   validates_presence_of :name
   validates_presence_of :password
   validates_confirmation_of :password
-  validates_uniqueness_of :name
+  validates_uniqueness_of :name, :case_sensitive => false
   
-  before_create :hash_password
+  before_save :hash_password, :if => :password_changed?
   after_create :generate_picks
   
   def points
@@ -35,6 +34,12 @@ class Player < ActiveRecord::Base
   
   def <=>(another_player)
     another_player.points <=> points
+  end
+  
+  def self.authenticate(name, password)
+    first :conditions => ["lower(name) = ? and password = ?", name.downcase, password.digest]
+  rescue
+    return nil
   end
   
   private

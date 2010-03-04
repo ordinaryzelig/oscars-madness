@@ -33,7 +33,7 @@ class PicksControllerTest < ActionController::TestCase
   def test_edit_redirects_when_picks_not_editable
     AdminConfig.make(:picks_editable => false)
     login_as Player.make
-    get :edit, :player_id => Player.make
+    get :edit, :player_id => Player.make.to_param
     assert_redirected_to root_path
   end
   
@@ -42,7 +42,7 @@ class PicksControllerTest < ActionController::TestCase
     login_as Player.make
     pick = Pick.make
     nominee_id_before = pick.nominee_id
-    get :update, :player_id => Player.make, :picks => {pick.id => {:nominee_id => pick.nominee_id + 1}}
+    get :update, :player_id => Player.make.to_param, :picks => {pick.id => {:nominee_id => pick.nominee_id + 1}}
     assert_redirected_to root_path
     assert_equal nominee_id_before, pick.reload.nominee_id
   end

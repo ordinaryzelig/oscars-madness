@@ -42,11 +42,13 @@ class ActiveSupport::TestCase
   
   def login_as_admin
     @request.session[:admin_logged_in] = true
+    @request.session.delete(:player_id)
     fake_login
   end
   
   def login_as(player)
     @request.session[:player_id] = player.id
+    @request.session.delete(:admin_logged_in)
     fake_login
   end
   

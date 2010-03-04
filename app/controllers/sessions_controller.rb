@@ -7,9 +7,7 @@ class SessionsController < ApplicationController
   end
   
   def create
-    name = params[:player][:name]
-    password = params[:player][:password].digest if params[:player][:password]
-    player = Player.find_by_name_and_password(name, password)
+    player = Player.authenticate(params[:player][:name], params[:player][:password])
     if player
       session[:player_id] = player.id
       session[:admin_logged_in] = false
