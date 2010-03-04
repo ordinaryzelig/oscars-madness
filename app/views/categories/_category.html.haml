@@ -4,13 +4,17 @@
 .category
   .category_name
     = category.name
-    - pick = player ? player.picks.for_category(category).first : nil
     %span.points
       = "(#{pluralize(category.points, 'point')})"
   .nominees
     - category.nominees.each do |nominee|
-      - input_name = "picks[#{pick.id}][nominee_id]" if pick
+      - if nominee.is_winner
+        - nominee_class = 'correct_nominee'
+      - pick = player ? player.picks.for_category(category).first : nil
+      - input_tag_name = "picks[#{pick.id}][nominee_id]" if pick
       - if player
-        = render :partial => 'pick', :locals => {:pick => pick, :nominee => nominee, :editable => editable, :input_name => input_name}
-      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :player => player, :input_name => input_name, :show_declare_winners => show_declare_winners && !category.has_winner?}
+        = render :partial => 'pick', :locals => {:pick => pick, :nominee => nominee, :editable => editable, :input_tag_name => input_tag_name}
+        - if nominee.is_winner
+          - nominee_class = pick.nominee == nominee ? 'correct_nominee' : 'wrong_nominee'
+      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :player => player, :input_tag_name => input_tag_name, :show_declare_winners => show_declare_winners && !category.has_winner?, :nominee_class => nominee_class}
       %br

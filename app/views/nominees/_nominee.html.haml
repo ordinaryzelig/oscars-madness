@@ -1,6 +1,8 @@
-- input_name ||= ''
+- input_tag_name ||= ''
 - player ||= nil
-%span.nominee{:class => nominee.is_winner ? 'winning_nominee' : nil}
+- nominee_classes = [nominee_class]
+- nominee_classes << 'winning_nominee' if nominee.is_winner
+%span.nominee{:class => nominee_classes.join(' ')}
   - if show_declare_winners
     %span.winner= link_to check_box_tag(nominee.id), declare_winner_nominee_path(nominee), :method => :put
   - content_for dom_id(nominee) do
@@ -8,4 +10,4 @@
       = "#{nominee.film.name}:"
     %span.nominee_name
       = link_to_if(logged_in_as_admin?, nominee.name, edit_nominee_path(nominee))
-  = label_tag input_name + "_#{nominee.id}", link_to_if(logged_in_as_admin?, yield(dom_id(nominee)), edit_nominee_path(nominee))
+  = label_tag input_tag_name + "_#{nominee.id}", link_to_if(logged_in_as_admin?, yield(dom_id(nominee)), edit_nominee_path(nominee))
