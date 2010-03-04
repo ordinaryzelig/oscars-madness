@@ -1,3 +1,8 @@
+%h2= 'make your picks'
+
+%p
+  click on the nominees and click the save button at the bottom.
+
 - form_tag player_update_picks_path, :method => :put do
   - @categories.each do |category|
     = render :partial => 'categories/category', :locals => {:category => category, :player => @player, :editable => true}

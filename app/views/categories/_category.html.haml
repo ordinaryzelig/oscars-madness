@@ -2,11 +2,11 @@
 - player ||= nil
 - show_declare_winners ||= nil
 .category
-  .name
+  .category_name
     = category.name
     - pick = player ? player.picks.for_category(category).first : nil
     %span.points
-      = "(#{category.points})"
+      = "(#{pluralize(category.points, 'point')})"
   .nominees
     - category.nominees.each do |nominee|
       - input_name = "picks[#{pick.id}][nominee_id]" if pick

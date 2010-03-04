@@ -12,16 +12,13 @@
     #logged_in_player
       - if logged_in?
         - if logged_in_player
-          hi
-          %span.name= logged_in_player.name
-          %br
+          %div
+            hi
+            %span.name= logged_in_player.name
           = link_to 'see your picks', player_picks_path(logged_in_player)
-          %br
           - if admin_config.picks_editable
             = link_to 'change your picks', player_edit_picks_path(logged_in_player)
-            %br
           = link_to 'edit your profile', edit_player_path(logged_in_player)
-          %br
           = "#{link_to 'logout', logout_path}"
         - elsif logged_in_as_admin?
           admin logged in

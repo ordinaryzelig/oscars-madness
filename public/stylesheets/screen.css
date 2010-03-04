@@ -1,32 +1,50 @@
 a {
   text-decoration: none; }
   a:hover {
-    text-shadow: gray 1pt 1pt 1pt; }
+    text-decoration: underline; }
   a:visited {
     color: blue; }
 
 .fieldWithErrors {
   color: red; }
 
+html {
+  background: #ac1b17; }
+
 body {
-  width: 1000px;
+  width: 800px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 1cm;
+  background: white; }
 
 #banner {
   font-size: 300%;
   font-weight: bold;
   padding: 5mm;
-  text-align: center; }
+  text-align: center;
+  background: darkred;
+  border: 2px solid black; }
   #banner a {
-    color: black; }
+    color: white;
+    text-decoration: none;
+    text-shadow: black 5px 1px 1px; }
+    #banner a:hover {
+      text-shadow: black 0 0 0; }
+
+#main {
+  padding: 5mm; }
 
 #logged_in_player {
   text-align: center;
   font-size: 125%;
-  margin-bottom: 5mm; }
+  margin-bottom: 5mm;
+  margin-top: 5mm; }
   #logged_in_player .name {
     font-size: 150%; }
+  #logged_in_player a {
+    padding-left: 5mm;
+    padding-right: 5mm; }
 
 #points {
   margin-bottom: 1cm;
@@ -39,16 +57,29 @@ body {
     font-size: 200%; }
 
 .category {
-  display: inline-block;
-  margin: 4mm; }
-  .category .pick {
-    margin-right: 2mm;
-    margin-left: 2mm; }
-  .category .winning_nominee {
-    color: white;
-    background: green; }
-    .category .winning_nominee a {
-      color: white; }
+  margin: 4mm;
+  border: 1px solid black;
+  margin: 2mm; }
+  .category .category_name {
+    font-size: 125%;
+    font-weight: bold;
+    background: lightgray;
+    padding: 2mm; }
+    .category .category_name .points {
+      font-size: 80%;
+      font-weight: normal; }
+  .category .nominees {
+    margin-left: 5mm; }
+    .category .nominees .pick {
+      display: inline-block; }
+    .category .nominees .nominee .winning_nominee {
+      color: white;
+      background: green; }
+      .category .nominees .nominee .winning_nominee a {
+        color: white; }
+    .category .nominees .nominee .film {
+      margin-left: 3mm;
+      font-size: 110%; }
 
 #new_category {
   margin-bottom: 1cm; }
@@ -66,3 +97,7 @@ body {
       text-align: right; }
     #standings table .correct {
       text-align: right; }
+
+#results_header {
+  font-size: 150%;
+  text-align: center; }

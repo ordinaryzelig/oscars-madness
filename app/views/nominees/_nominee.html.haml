@@ -3,7 +3,9 @@
 %span.nominee{:class => nominee.is_winner ? 'winning_nominee' : nil}
   - if show_declare_winners
     %span.winner= link_to check_box_tag(nominee.id), declare_winner_nominee_path(nominee), :method => :put
-  %span.film
-    = "#{nominee.film.name}:"
-  %span.name
-    = label_tag input_name + "_#{nominee.id}", link_to_if(logged_in_as_admin?, nominee.name, edit_nominee_path(nominee))
+  - content_for dom_id(nominee) do
+    %span.film
+      = "#{nominee.film.name}:"
+    %span.nominee_name
+      = link_to_if(logged_in_as_admin?, nominee.name, edit_nominee_path(nominee))
+  = label_tag input_name + "_#{nominee.id}", link_to_if(logged_in_as_admin?, yield(dom_id(nominee)), edit_nominee_path(nominee))
