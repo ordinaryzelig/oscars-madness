@@ -1,8 +1,9 @@
 class PicksController < ApplicationController
   
-  before_filter :authenticate
+  before_filter :authenticate, :except => [:index]
   before_filter :load_player
-  before_filter :authenticate_rights_to_action
+  before_filter :authenticate_rights_to_read, :only => [:index]
+  before_filter :authenticate_rights_to_write, :only => [:edit, :update]
   before_filter :load_categories
   
   def index
@@ -33,14 +34,23 @@ class PicksController < ApplicationController
     @categories = Category.all(:include => {:nominees => :film})
   end
   
-  def authenticate_rights_to_action
+  def authenticate_rights_to_read
+    return true if logged_in_as_admin? || logged_in_player_looking_at_own_picks? || !admin_config.picks_editable
+    redirect_to root_path
+    false
+  end
+  
+  def authenticate_rights_to_write
     return true if logged_in_as_admin?
-    logged_in_player_looking_at_own_picks = logged_in_player == @player
-    if !logged_in_player_looking_at_own_picks
+    if !logged_in_player_looking_at_own_picks?
       redirect_to root_path
       return false
     end
     true
+  end
+  
+  def logged_in_player_looking_at_own_picks?
+    logged_in_player == @player
   end
   
 end

@@ -1,7 +1,7 @@
-- unless admin_config.picks_editable
-  #points
-    = @player.points
-    total points
+#points
+  = @player.points
+  total points
 
-- @categories.each do |category|
-  = render :partial => 'categories/category', :locals => {:category => category, :player => @player}
+%div
+  - @categories.each do |category|
+    = render :partial => 'categories/category', :locals => {:category => category, :player => @player}

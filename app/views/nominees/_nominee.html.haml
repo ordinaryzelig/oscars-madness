@@ -1,8 +1,8 @@
 - input_name ||= ''
 - player ||= nil
-%span.nominee
+%span.nominee{:class => nominee.is_winner ? 'winning_nominee' : nil}
   %span.name
     = label_tag input_name + "_#{nominee.id}", link_to_if(logged_in_as_admin?, nominee.name, edit_nominee_path(nominee))
-  - unless nominee.category == 'best picture'
+  - unless nominee.category.name == 'best picture'
     %span.film
       = "(#{nominee.film.name})"

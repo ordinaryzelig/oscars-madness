@@ -9,35 +9,47 @@ a
   color: red
 
 body
-  width: 800px
+  width: 1000px
   margin-left: auto
   margin-right: auto
 
 #banner
   font-size: 300%
   font-weight: bold
-  margin-top: 5mm
-  margin-bottom: 5mm
+  padding: 5mm
   text-align: center
+  a
+    color: black
 
-#menu
-  #logged_in_player
-    text-align: right
+#logged_in_player
+  text-align: center
+  font-size: 125%
+  margin-bottom: 5mm
 
 #points
   margin-bottom: 1cm
+  text-align: center
+  font-size: 150%
 
 .category
-  margin-bottom: 5mm
+  display: inline-block
+  margin: 4mm
   .pick
     margin-right: 2mm
     margin-left: 2mm
+  .winning_nominee
+    color: white
+    background: green
 
 #new_category
   margin-bottom: 1cm
 
 #standings
   table
+    caption
+      font-size: 120%
+      font-weight: bold
+    margin: auto
     th
       padding: 2mm
     .points
@@ -45,6 +57,3 @@ body
     .correct
       text-align: right
   margin-bottom: 1cm
-  caption
-    font-size: 120%
-    font-weight: bold

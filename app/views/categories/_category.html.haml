@@ -5,8 +5,7 @@
     = category.name
     - pick = player ? player.picks.for_category(category).first : nil
     %span.points
-      - points = pick ? pick.points : category.points
-      = "(#{points})"
+      = "(#{category.points})"
   .nominees
     - category.nominees.each do |nominee|
       - input_name = "picks[#{pick.id}][nominee_id]" if pick

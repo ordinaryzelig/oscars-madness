@@ -8,16 +8,21 @@
 
   %body
     #banner
-      oscars madness!!!
-    #menu
-      #logged_in_player
-        - if logged_in?
-          - if logged_in_player
-            hi
-            = logged_in_player.name
-          - elsif logged_in_as_admin?
-            admin logged in
-          #logout= link_to 'logout', logout_path
-
+      = link_to 'oscars madness!!!', root_path
+    #logged_in_player
+      - if logged_in?
+        - if logged_in_player
+          = "hi #{logged_in_player.name}"
+          %br
+          = link_to 'see your picks', player_picks_path(logged_in_player)
+          %br
+          - if admin_config.picks_editable
+            = link_to 'change your picks', player_edit_picks_path(logged_in_player)
+            %br
+          = "#{link_to 'logout', logout_path}"
+        - elsif logged_in_as_admin?
+          admin logged in
+      - else
+        = link_to 'login', login_path
     #main
       = yield

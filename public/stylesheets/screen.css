@@ -9,40 +9,51 @@ a {
   color: red; }
 
 body {
-  width: 800px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto; }
 
 #banner {
   font-size: 300%;
   font-weight: bold;
-  margin-top: 5mm;
-  margin-bottom: 5mm;
+  padding: 5mm;
   text-align: center; }
+  #banner a {
+    color: black; }
 
-#menu #logged_in_player {
-  text-align: right; }
+#logged_in_player {
+  text-align: center;
+  font-size: 125%;
+  margin-bottom: 5mm; }
 
 #points {
-  margin-bottom: 1cm; }
+  margin-bottom: 1cm;
+  text-align: center;
+  font-size: 150%; }
 
 .category {
-  margin-bottom: 5mm; }
+  display: inline-block;
+  margin: 4mm; }
   .category .pick {
     margin-right: 2mm;
     margin-left: 2mm; }
+  .category .winning_nominee {
+    color: white;
+    background: green; }
 
 #new_category {
   margin-bottom: 1cm; }
 
 #standings {
   margin-bottom: 1cm; }
-  #standings table th {
-    padding: 2mm; }
-  #standings table .points {
-    text-align: right; }
-  #standings table .correct {
-    text-align: right; }
-  #standings caption {
-    font-size: 120%;
-    font-weight: bold; }
+  #standings table {
+    margin: auto; }
+    #standings table caption {
+      font-size: 120%;
+      font-weight: bold; }
+    #standings table th {
+      padding: 2mm; }
+    #standings table .points {
+      text-align: right; }
+    #standings table .correct {
+      text-align: right; }
