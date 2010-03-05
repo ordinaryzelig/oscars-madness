@@ -11,6 +11,9 @@ a {
 .fieldWithErrors {
   color: red; }
 
+.nominee_name {
+  font-style: italic; }
+
 html {
   background: #ac1b17;
   font-family: Helvetica; }
@@ -88,8 +91,6 @@ body {
       background: red; }
     .category .nominees .nominee {
       display: inline-block; }
-      .category .nominees .nominee .nominee_name {
-        font-style: italic; }
       .category .nominees .nominee .film {
         margin-left: 3mm;
         font-size: 120%; }
@@ -97,23 +98,30 @@ body {
 #new_category {
   margin-bottom: 1cm; }
 
+table {
+  margin: auto; }
+  table caption {
+    font-size: 120%;
+    font-weight: bold; }
+  table th {
+    padding: 2mm;
+    background: lightgray; }
+  table td {
+    padding: 1mm; }
+
 #standings {
   margin-bottom: 1cm; }
-  #standings table {
-    margin: auto; }
-    #standings table caption {
-      font-size: 120%;
-      font-weight: bold; }
-    #standings table th {
-      padding: 2mm;
-      background: lightgray; }
-    #standings table td {
-      padding: 1mm; }
-    #standings table .points {
-      text-align: right; }
-    #standings table .correct {
-      text-align: right; }
+  #standings .points {
+    text-align: right; }
+  #standings .correct {
+    text-align: right; }
 
-#results_header {
-  font-size: 150%;
+#results_summary {
+  margin-bottom: 1cm; }
+  #results_summary .category {
+    font-weight: bold; }
+
+#nominations_header {
+  font-size: 120%;
+  font-weight: bold;
   text-align: center; }

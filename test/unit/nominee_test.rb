@@ -3,7 +3,7 @@ require 'test_helper'
 class NomineeTest < ActiveSupport::TestCase
   
   def test_declare_winner
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     correct = Player.make
     wrong = Player.make
     category = Category.first

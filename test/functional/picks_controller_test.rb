@@ -3,7 +3,7 @@ require 'test_helper'
 class PicksControllerTest < ActionController::TestCase
   
   def test_index
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     login_as player
     get :index, :player_id => player.to_param
@@ -11,7 +11,7 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_edit
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     login_as player
     get :edit, :player_id => player.to_param
@@ -19,7 +19,7 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_update
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     login_as player
     pick = player.picks.first
@@ -56,7 +56,7 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_admin_can_get_to_edit
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     login_as_admin
     get :edit, :player_id => player.to_param
@@ -64,7 +64,7 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_admin_can_update
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     login_as_admin
     put :update, :player_id => player.to_param, :picks => {}
@@ -72,7 +72,7 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_admin_can_see_picks
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     login_as_admin
     get :index, :player_id => player.to_param

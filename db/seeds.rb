@@ -1,5 +1,5 @@
 require 'rubygems'
 require 'test/blueprints'
 
-Blueprints.announce_nominees
+Blueprints.announce_nominations
 3.times { Player.make }

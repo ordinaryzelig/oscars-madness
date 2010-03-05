@@ -13,6 +13,9 @@ a
 .fieldWithErrors
   color: red
 
+.nominee_name
+  font-style: italic
+
 html
   background= !oscar_red
   font-family: Helvetica
@@ -90,8 +93,6 @@ body
       background: red
     .nominee
       display: inline-block
-      .nominee_name
-        font-style: italic
       .film
         margin-left: 3mm
         font-size: 120%
@@ -99,23 +100,32 @@ body
 #new_category
   margin-bottom: 1cm
 
-#standings
-  table
-    caption
-      font-size: 120%
-      font-weight: bold
-    margin: auto
-    th
-      padding: 2mm
-      background: lightgray
-    td
-      padding: 1mm
-    .points
-      text-align: right
-    .correct
-      text-align: right
-  margin-bottom: 1cm
+table
+  caption
+    font-size: 120%
+    font-weight: bold
+  margin: auto
+  th
+    padding: 2mm
+    background: lightgray
+  td
+    padding: 1mm
 
-#results_header
-  font-size: 150%
+#standings
+  margin-bottom: 1cm
+  .points
+    text-align: right
+  .correct
+    text-align: right
+
+#results_summary
+  margin-bottom: 1cm
+  .category
+    font-weight: bold
+  .film
+  .nominee
+
+#nominations_header
+  font-size: 120%
+  font-weight: bold
   text-align: center

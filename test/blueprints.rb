@@ -7,7 +7,7 @@ end
 
 module Blueprints
   
-  def self.announce_nominees
+  def self.announce_nominations
     AdminConfig.make(:admin_password => 'fdsa'.digest, :picks_editable => true)
     categories = 3.times.map { Category.make }
     categories << Category.make(:best_picture)

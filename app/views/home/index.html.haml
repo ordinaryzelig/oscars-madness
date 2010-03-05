@@ -12,7 +12,9 @@
     - @players.each do |player|
       = render :partial => 'players/standing', :locals => {:player => player}
 
-#results_header= 'results'
+= render :partial => 'results_summary'
+
+#nominations_header= 'all nominations'
 
 - @categories.each do |category|
   = render :partial => 'categories/category', :locals => {:category => category, :show_declare_winners => logged_in_as_admin?}

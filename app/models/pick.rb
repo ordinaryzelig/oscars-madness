@@ -6,6 +6,7 @@ class Pick < ActiveRecord::Base
   
   named_scope :correct, :conditions => {:correct => true}
   named_scope :for_category, proc { |cat| {:conditions => {:category_id => cat.id}} }
+  named_scope :picked, :conditions => "nominee_id is not null"
   
   def points
     correct ? category.points : 0

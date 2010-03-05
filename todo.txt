@@ -1,0 +1,3 @@
+better navigation
+stats for oscars per film (2 for 4)
+quicknav for pick selection/viewing

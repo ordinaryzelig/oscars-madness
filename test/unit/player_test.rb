@@ -3,20 +3,20 @@ require 'test_helper'
 class PlayerTest < ActiveSupport::TestCase
   
   def test_after_create_creates_picks
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     assert_equal Category.all.size, player.picks.size
   end
   
   def test_points
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     player.picks.each { |pick| pick.update_attributes! :correct => true }
     assert_equal 8, player.points
   end
   
   def test_picks_attributes_equals
-    Blueprints.announce_nominees
+    Blueprints.announce_nominations
     player = Player.make
     picks_attributes = player.picks.inject({}) do |atts, pick|
       atts[pick.id] = {:nominee_id => pick.category.nominees.first.id}

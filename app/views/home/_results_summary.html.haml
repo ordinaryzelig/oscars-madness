@@ -1,0 +1,13 @@
+#results_summary
+  %table{:border => '1'}
+    %caption= 'winners'
+    %tr
+      %th= 'category'
+      %th= 'film'
+      %th= 'recipient'
+    - @categories.each do |category|
+      %tr
+        %td.category_name= link_to category.name, "##{dom_id(category)}"
+        - winner = category.winner
+        %td.film= winner.try(:film).try(:name)
+        %td.nominee_name= winner.try(:name)
