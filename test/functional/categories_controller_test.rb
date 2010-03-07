@@ -37,4 +37,12 @@ class CategoriesControllerTest < ActionController::TestCase
     assert_equal new_name, Category.find(category).name
   end
   
+  def test_show
+    Blueprints.announce_nominations
+    login_as Player.make
+    category = Category.first
+    get :show, :id => category.to_param
+    assert_response :success
+  end
+  
 end

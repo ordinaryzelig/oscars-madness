@@ -4,7 +4,7 @@
 .category
   %a{:name => dom_id(category)}
   .category_name
-    = category.name
+    = link_to_unless admin_config.picks_editable, category.name, category
     %span.points
       = "(#{pluralize(category.points, 'point')})"
   .nominees

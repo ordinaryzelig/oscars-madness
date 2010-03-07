@@ -1,5 +1,13 @@
 class CategoriesController < AdminController
   
+  skip_before_filter :authenticate_admin, :only => :show
+  before_filter :authenticate, :only => :show
+  
+  def show
+    @category = Category.find(params[:id], :include => [:nominees => {:picks => [:player, :nominee]}])
+    @picks = @category.picks
+  end
+  
   def index
     @categories = Category.all(:include => :nominees)
   end

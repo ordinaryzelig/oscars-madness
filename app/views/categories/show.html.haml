@@ -1,0 +1,13 @@
+= render @category
+
+- unless admin_config.picks_editable
+  %table{:id => 'players_picks', :border => 1}
+    %caption= 'players\' picks'
+    - @picks.each do |pick|
+      %tr
+        %td= pick.player.name
+        %td
+          - if nominee = pick.nominee
+            = nominee.film.name
+            = ':'
+            = nominee.name
