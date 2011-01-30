@@ -1,2 +1,0 @@
-better navigation
-quicknav for pick selection/viewing

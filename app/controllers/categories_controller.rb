@@ -1,7 +1,6 @@
 class CategoriesController < AdminController
 
   skip_before_filter :authenticate_admin, :only => :show
-  before_filter :authenticate, :only => :show
   before_filter :load_contest_year
 
   def show

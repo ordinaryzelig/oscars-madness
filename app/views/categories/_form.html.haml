@@ -5,4 +5,7 @@
   = f.label :points
   = f.text_field :points, :size => 2
   %br
+  = f.label :year
+  = f.text_field :year, :size => 4, :value => Date.today.year
+  %br
   = f.submit

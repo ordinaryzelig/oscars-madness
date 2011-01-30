@@ -31,7 +31,7 @@ class PicksController < ApplicationController
   end
 
   def load_categories
-    @categories = Category.for_year(contest_year).all(:include => {:nominees => :film})
+    @categories = Category.for_year(Contest.years.last).all(:include => {:nominees => :film})
   end
 
   def authenticate_rights_to_read
