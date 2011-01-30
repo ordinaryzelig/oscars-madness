@@ -7,8 +7,10 @@
     %title= 'oscars madness!!!'
 
   %body
+
     #banner
       = link_to 'oscars madness!!!', root_path
+
     #logged_in_player
       - if logged_in?
         - if logged_in_player
@@ -25,5 +27,17 @@
         = "#{link_to 'logout', logout_path}"
       - else
         = link_to 'login', login_path
+
+    #flash
+      - [:error, :notice, :warn].each do |type|
+        - content_tag :div, :id => "flash_#{type}" do
+          = flash[type]
+
     #main
       = yield
+
+    #footer
+      #contest_year_select
+        :plain
+          #{label_tag :contest_year, 'Years'}
+          #{select_tag :contest_year, options_for_select(Contest.years.map { |year| [year, root_path(:contest_year => year)] }, root_path(:contest_year => contest_year)), :onchange => 'window.location = this.value'}

@@ -11,6 +11,7 @@ GEM
     activeresource (2.3.5)
       activesupport (= 2.3.5)
     activesupport (2.3.5)
+    awesome_print (0.3.1)
     configuration (1.2.0)
     haml (3.0.25)
     heroku (1.17.10)
@@ -31,10 +32,11 @@ GEM
       activeresource (= 2.3.5)
       activesupport (= 2.3.5)
       rake (>= 0.8.3)
-    rails-footnotes (3.6.7)
     rake (0.8.7)
     rest-client (1.6.1)
       mime-types (>= 1.16)
+    routing-filter (0.2.2)
+      actionpack
     sqlite3 (1.3.3)
     sqlite3-ruby (1.3.3)
       sqlite3 (>= 1.3.3)
@@ -43,9 +45,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml
+  awesome_print (= 0.3.1)
+  haml (= 3.0.25)
   heroku (= 1.17.10)
-  machinist
+  machinist (= 1.0.6)
   rails (= 2.3.5)
-  rails-footnotes
-  sqlite3-ruby
+  routing-filter (= 0.2.2)
+  sqlite3-ruby (= 1.3.3)

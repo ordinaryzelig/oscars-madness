@@ -6,10 +6,10 @@ Dir.entries(blueprints_dir).reject { |entry| entry =~ /^\./ }.each do |entry|
 end
 
 module Blueprints
-  
-  def self.announce_nominations
+
+  def self.announce_nominations(year = Date.today.year)
     AdminConfig.make(:admin_password => 'fdsa'.digest, :picks_editable => true)
-    categories = 3.times.map { Category.make }
+    categories = 3.times.map { Category.make(:year => year) }
     categories << Category.make(:best_picture)
     films = 3.times.map { Film.make }
     categories.each do |cat|
@@ -18,5 +18,5 @@ module Blueprints
       end
     end
   end
-  
+
 end

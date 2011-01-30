@@ -1,6 +1,6 @@
-Sham.player_name { ['jared', 'stephanie', 'ryan', 'amy'].rand }
+Sham.player_name(:unique => false) { ['jared', 'stephanie', 'ryan', 'amy'].rand }
 
 Player.blueprint do
   name { Sham.player_name }
-  password { 'asdf'.digest }
+  password { 'asdf' }
 end
