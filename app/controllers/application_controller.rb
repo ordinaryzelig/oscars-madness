@@ -48,7 +48,7 @@ class ApplicationController < ActionController::Base
   end
 
   def contest_year
-    @contest_year ||= Date.today.year
+    @contest_year ||= Contest.years.last
   end
 
 end
