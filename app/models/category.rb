@@ -1,7 +1,7 @@
 class Category < ActiveRecord::Base
 
-  has_many :nominees
-  has_many :picks
+  has_many :nominees, :order => :created_at
+  has_many :picks, :order => :created_at
 
   validates_presence_of :name
   validates_presence_of :points

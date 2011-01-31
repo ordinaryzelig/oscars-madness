@@ -9,7 +9,7 @@ class CategoriesController < AdminController
   end
 
   def index
-    @categories = Category.for_year(contest_year).all(:include => :nominees)
+    @categories = Category.for_year(contest_year).all(:include => :nominees, :order => :created_at)
   end
 
   def new
