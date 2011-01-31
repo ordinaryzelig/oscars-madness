@@ -17,10 +17,12 @@ ActionController::Routing::Routes.draw do |map|
     player.edit_picks '/picks/edit', :controller => :picks, :action => :edit
     player.update_picks '/picks/update', :controller => :picks, :action => :update, :conditions => {:method => :put}
     player.resources :picks, :only => 'index'
+    player.resources :entries, :only => :create
   end
 
   map.resources :films
   map.resources :categories
   map.resources :nominees, :member => {:declare_winner => :put}
+  map.resources :entries, :only => :index
 
 end

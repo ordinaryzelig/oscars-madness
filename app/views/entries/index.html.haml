@@ -1,0 +1,14 @@
+%table{:border => 1}
+  %tr
+    %th
+    - @years.each do |year|
+      %th= year
+    - @players.each do |player|
+      %tr
+        %th= player.name
+        - @years.each do |year|
+          %td
+            - if player.participated_in?(year)
+              = pluralize(player.entries.for_year(year).first.points, 'point')
+            - elsif Contest.years.last == year
+              = link_to 'enter', player_entries_path(player, :year => year), :method => :post, :confirm => 'Are you sure?'

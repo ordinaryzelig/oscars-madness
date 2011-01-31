@@ -24,8 +24,12 @@
             = link_to 'change your picks', player_edit_picks_path(logged_in_player)
           = link_to 'edit your profile', edit_player_path(logged_in_player)
         - elsif logged_in_as_admin?
-          admin logged in
-          %br
+          :plain
+            #{link_to 'entries', entries_path} |
+            #{link_to 'new film', new_film_path} |
+            #{link_to 'new category', new_category_path} |
+            #{link_to 'new nom', new_nominee_path} |
+
         = "#{link_to 'logout', logout_path}"
       - else
         = link_to 'login', login_path

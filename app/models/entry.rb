@@ -34,7 +34,7 @@ class Entry < ActiveRecord::Base
   private
 
   def generate_picks
-    Category.all.each { |cat| picks.create!(:category => cat) }
+    Category.for_year(year).all.each { |cat| picks.create!(:category => cat) }
   end
 
 end

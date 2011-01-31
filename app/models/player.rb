@@ -25,6 +25,10 @@ class Player < ActiveRecord::Base
     return nil
   end
 
+  def participated_in?(year)
+    entries.for_year(year).present?
+  end
+
   private
 
   def hash_password
