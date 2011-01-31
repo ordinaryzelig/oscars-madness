@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class NomineeTest < ActiveSupport::TestCase
-  
+
   def test_declare_winner
     Blueprints.announce_nominations
     correct = Player.make
@@ -18,5 +18,13 @@ class NomineeTest < ActiveSupport::TestCase
     assert correct_pick.reload.correct
     assert !wrong_pick.reload.correct
   end
-  
+
+  test 'create with film name' do
+    film = Film.make
+    nominee = Nominee.make_unsaved(:film_id => nil)
+    nominee.film_name = film.name
+    nominee.save!
+    assert_equal film, nominee.film
+  end
+
 end
