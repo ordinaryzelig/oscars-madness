@@ -5,7 +5,7 @@
     %caption= 'players\' picks'
     - @picks.each do |pick|
       %tr
-        %td= pick.player.name
+        %td= pick.entry.player.name
         %td
           - if nominee = pick.nominee
             = nominee.film.name
