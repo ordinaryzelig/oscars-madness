@@ -4,8 +4,8 @@ class NomineeTest < ActiveSupport::TestCase
 
   def test_declare_winner
     Blueprints.announce_nominations
-    correct = Player.make
-    wrong = Player.make
+    correct = Entry.make
+    wrong = Entry.make
     category = Category.first
     winning_nominee = category.nominees.first
     losing_nominee = (category.nominees - [winning_nominee]).first

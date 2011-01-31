@@ -1,5 +1,5 @@
 - editable ||= false
-- player ||= nil
+- entry ||= nil
 - show_declare_winners ||= nil
 .category
   %a{:name => dom_id(category)}
@@ -11,11 +11,11 @@
     - category.nominees.each do |nominee|
       - if nominee.is_winner
         - nominee_class = 'correct_nominee'
-      - pick = player ? player.picks.for_category(category).first : nil
+      - pick = entry ? entry.picks.for_category(category).first : nil
       - input_tag_name = "picks[#{pick.id}][nominee_id]" if pick
-      - if player
+      - if entry
         = render :partial => 'pick', :locals => {:pick => pick, :nominee => nominee, :editable => editable, :input_tag_name => input_tag_name}
         - if nominee.is_winner
           - nominee_class = pick.nominee == nominee ? 'correct_nominee' : 'wrong_nominee'
-      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :player => player, :input_tag_name => input_tag_name, :show_declare_winners => show_declare_winners && !category.has_winner?, :nominee_class => nominee_class}
+      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :entry => entry, :input_tag_name => input_tag_name, :show_declare_winners => show_declare_winners && !category.has_winner?, :nominee_class => nominee_class}
       %br

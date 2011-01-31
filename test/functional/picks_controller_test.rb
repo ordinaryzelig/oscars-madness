@@ -4,7 +4,7 @@ class PicksControllerTest < ActionController::TestCase
 
   def test_index
     Blueprints.announce_nominations
-    player = Player.make
+    player = Entry.make.player
     login_as player
     get :index, :player_id => player.to_param
     assert_response :success
@@ -20,9 +20,10 @@ class PicksControllerTest < ActionController::TestCase
 
   def test_update
     Blueprints.announce_nominations
-    player = Player.make
+    entry = Entry.make
+    player = entry.player
     login_as player
-    pick = player.picks.first
+    pick = entry.picks.first
     nominee = pick.category.nominees.first
     atts = {pick.id => {:nominee_id => nominee.id}}
     put :update, :player_id => player.to_param, :picks => atts
@@ -65,7 +66,7 @@ class PicksControllerTest < ActionController::TestCase
 
   def test_admin_can_update
     Blueprints.announce_nominations
-    player = Player.make
+    player = Entry.make.player
     login_as_admin
     put :update, :player_id => player.to_param, :picks => {}
     assert_redirected_to player_picks_path(player)
@@ -73,7 +74,7 @@ class PicksControllerTest < ActionController::TestCase
 
   def test_admin_can_see_picks
     Blueprints.announce_nominations
-    player = Player.make
+    player = Entry.make.player
     login_as_admin
     get :index, :player_id => player.to_param
     assert_response :success

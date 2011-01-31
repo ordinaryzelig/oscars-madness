@@ -9,8 +9,8 @@
         correct
       %th
         points
-    - @players.each do |player|
-      = render :partial => 'players/standing', :locals => {:player => player}
+    - @entries.each do |entry|
+      = render :partial => 'players/standing', :locals => {:entry => entry}
 
 = render :partial => 'results_summary'
 

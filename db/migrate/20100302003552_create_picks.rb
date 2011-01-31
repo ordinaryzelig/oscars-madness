@@ -1,5 +1,5 @@
 class CreatePicks < ActiveRecord::Migration
-  
+
   def self.up
     create_table :picks do |t|
       t.belongs_to :category, {:null => false}
@@ -9,7 +9,7 @@ class CreatePicks < ActiveRecord::Migration
       t.timestamps
     end
   end
-  
+
   def self.down
     drop_table :picks
   end

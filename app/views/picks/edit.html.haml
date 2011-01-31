@@ -7,5 +7,5 @@
 
 - form_tag player_update_picks_path, :method => :put do
   - @categories.each do |category|
-    = render :partial => 'categories/category', :locals => {:category => category, :player => @player, :editable => true}
+    = render :partial => 'categories/category', :locals => {:category => category, :entry => @entry, :editable => true}
   #save_picks= submit_tag

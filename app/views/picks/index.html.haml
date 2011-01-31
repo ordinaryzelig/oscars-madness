@@ -1,7 +1,7 @@
 #points
-  = @player.points
+  = @entry.points
   total points
 
 %div
   - @categories.each do |category|
-    = render :partial => 'categories/category', :locals => {:category => category, :player => @player}
+    = render :partial => 'categories/category', :locals => {:category => category, :entry => @entry}
