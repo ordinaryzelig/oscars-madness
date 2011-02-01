@@ -29,6 +29,7 @@
             #{link_to 'new film', new_film_path} |
             #{link_to 'new category', new_category_path} |
             #{link_to 'new nom', new_nominee_path} |
+            #{link_to "picks editable?: #{admin_config.picks_editable ? 'yes' : 'no'}", toggle_picks_editable_path, :method => :put} |
 
         = "#{link_to 'logout', logout_path}"
       - else

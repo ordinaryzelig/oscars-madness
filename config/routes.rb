@@ -28,4 +28,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/auth/failure', :controller => 'sessions', :action => 'failure'
   map.connect '/auth/:provider/callback', :controller => 'sessions', :action => 'create'
 
+  map.toggle_picks_editable '/admin/toggle_picks_editable', :controller => 'admin', :action => 'toggle_picks_editable', :conditions => {:method => :put}
+
 end

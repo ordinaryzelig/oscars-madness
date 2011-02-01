@@ -5,6 +5,7 @@ class CategoriesControllerTest < ActionController::TestCase
   def setup
     super
     login_as_admin
+    AdminConfig.make
   end
 
   def test_index
