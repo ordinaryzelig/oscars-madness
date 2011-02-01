@@ -1,7 +1,9 @@
 source :gemcutter
 
-gem "rails", "2.3.5"
+gem "rails", "2.3.10"
+
 gem 'haml', '3.0.25'
+gem 'omniauth', '0.1.6'
 gem 'routing-filter', '0.2.2'
 
 group :development do
