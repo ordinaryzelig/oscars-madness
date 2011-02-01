@@ -25,4 +25,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :nominees, :member => {:declare_winner => :put}
   map.resources :entries, :only => :index
 
+  map.connect '/auth/failure', :controller => 'sessions', :action => 'failure'
+  map.connect '/auth/:provider/callback', :controller => 'sessions', :action => 'create'
+
 end

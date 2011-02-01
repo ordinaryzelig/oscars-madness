@@ -19,10 +19,10 @@
           %div
             hi
             %span.name= logged_in_player.name
-          = link_to 'see your picks', player_picks_path(logged_in_player)
-          - if admin_config.picks_editable
-            = link_to 'change your picks', player_edit_picks_path(logged_in_player)
-          = link_to 'edit your profile', edit_player_path(logged_in_player)
+          - if logged_in_player.participating_this_year?
+            = link_to 'see your picks', player_picks_path(logged_in_player)
+            - if admin_config.picks_editable
+              = link_to 'change your picks', player_edit_picks_path(logged_in_player)
         - elsif logged_in_as_admin?
           :plain
             #{link_to 'entries', entries_path} |
@@ -32,7 +32,8 @@
 
         = "#{link_to 'logout', logout_path}"
       - else
-        = link_to 'login', login_path
+        - unless request.env['PATH_INFO'] == login_path
+          = link_to 'login', login_path
 
     #flash
       - [:error, :notice, :warn].each do |type|
@@ -45,5 +46,5 @@
     #footer
       #contest_year_select
         :plain
-          #{label_tag :contest_year, 'Years'}
+          #{label_tag :contest_year, 'See other contests'}
           #{select_tag :contest_year, options_for_select(Contest.years.map { |year| [year, root_path(:contest_year => year)] }, root_path(:contest_year => contest_year)), :onchange => 'window.location = this.value'}

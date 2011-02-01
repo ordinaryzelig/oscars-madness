@@ -40,4 +40,12 @@ class SessionsControllerTest < ActionController::TestCase
     assert_redirected_to root_path
   end
 
+  test 'after login, create entry if none yet' do
+    Blueprints.announce_nominations
+    password = 'asdfasdf'
+    player = Player.make(:password => password)
+    post :create, :player => {:name => player.name, :password => password}
+    assert player.participating_this_year?
+  end
+
 end

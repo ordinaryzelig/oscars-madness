@@ -4,7 +4,7 @@
 class ApplicationController < ActionController::Base
 
   helper :all
-  helper_method :logged_in_player, :logged_in_as_admin?, :admin_config, :logged_in?, :contest_year
+  helper_method :logged_in_player, :logged_in_as_admin?, :admin_config, :logged_in?, :contest_year, :previous_contest_year?
 
   filter_parameter_logging :password, :confirmation_password
 
@@ -49,6 +49,10 @@ class ApplicationController < ActionController::Base
 
   def contest_year
     @contest_year ||= Contest.years.last
+  end
+
+  def previous_contest_year?
+    contest_year != Date.today.year
   end
 
 end

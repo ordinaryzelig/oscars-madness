@@ -30,4 +30,17 @@ class PlayerTest < ActiveSupport::TestCase
     assert another_player.update_attributes(:name => name.reverse)
   end
 
+  test 'find by omniauth' do
+    player = Player.make(:uid => 123, :provider => 'facebook')
+    assert_equal Player.find_or_create_by_omniauth('provider' => 'facebook', 'uid' => 123), player
+  end
+
+  test 'create by omniauth' do
+    omniauth = {'provider' => 'facebook', 'uid' => 123, 'user_info' => {'name' => 'asdf'}}
+    player = Player.find_or_create_by_omniauth(omniauth)
+    assert_equal omniauth['provider'], player.provider
+    assert_equal omniauth['uid'], player.uid
+    assert_equal omniauth['user_info']['name'], player.name
+  end
+
 end

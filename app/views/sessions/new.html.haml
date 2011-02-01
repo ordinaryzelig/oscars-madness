@@ -1,5 +1,10 @@
-if you don't have an account, contact me and i'll make one for you.
-%br
+%p
+  Login with facebook:<br />
+  = link_to image_tag('facebook.png'), '/auth/facebook'
+
+%p
+  Don't want to use facebook? No problem. Just contact me and I'll make an account for you.<br />
+  If you already have such an account, login below.
 
 - form_for Player.new, :url => session_path, :method => :post do |f|
   = f.label :name
