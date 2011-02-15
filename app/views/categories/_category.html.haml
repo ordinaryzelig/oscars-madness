@@ -1,8 +1,7 @@
 - editable ||= false
 - entry ||= nil
 - show_declare_winners ||= nil
-.category
-  %a{:name => dom_id(category)}
+= div_for category do
   .category_name
     = link_to_unless admin_config.picks_editable, category.name, category
     %span.points

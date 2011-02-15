@@ -1,40 +1,25 @@
-!!! XML
-!!!
+!!! 5
 
 %html{html_attrs}
   %head
     = stylesheet_link_tag 'screen', :cache => true
     = stylesheet_link_tag 'dark-hive/jquery-ui-1.8.9.custom.css'
-    = javascript_include_tag 'jquery-1.4.4.min', 'jquery-ui-1.8.9.custom.min', 'application'
+    = javascript_include_tag 'jquery-1.4.4.min', 'jquery-ui-1.8.9.custom.min', 'jquery.scrollTo-min', 'application'
     %title= 'oscars madness!!!'
 
   %body
 
     #banner
-      = link_to 'oscars madness!!!', root_path
+      = link_to 'Oscars Madness!!!', root_path
 
-    #logged_in_player
+    %nav
       - if logged_in?
-        - if logged_in_player
-          %div
-            hi
-            %span.name= logged_in_player.name
-          - if logged_in_player.participating_this_year?
-            = link_to 'see your picks', player_picks_path(logged_in_player)
-            - if admin_config.picks_editable
-              = link_to 'change your picks', player_edit_picks_path(logged_in_player)
-        - elsif logged_in_as_admin?
-          :plain
-            #{link_to 'entries', entries_path} |
-            #{link_to 'new film', new_film_path} |
-            #{link_to 'new category', new_category_path} |
-            #{link_to 'new nom', new_nominee_path} |
-            #{link_to "picks editable?: #{admin_config.picks_editable ? 'yes' : 'no'}", toggle_picks_editable_path, :method => :put} |
-
-        = "#{link_to 'logout', logout_path}"
-      - else
-        - unless request.env['PATH_INFO'] == login_path
-          = link_to 'login', login_path
+        - if logged_in_as_admin?
+          = render 'shared/admin_navigation'
+        - else logged_in_player
+          = render 'shared/player_navigation'
+      = render 'shared/login_logout_links'
+      = link_to 'About', about_path
 
     #flash
       - [:error, :notice, :warn].each do |type|
@@ -43,6 +28,15 @@
 
     #main
       = yield
+
+    - if show_category_nav?
+      #category_nav
+        #tab
+          .text Categories
+        %ul
+          %li= link_to 'Top', '#top'
+          - Category.for_year(contest_year).each do |category|
+            %li= link_to category.name, "##{dom_id(category)}"
 
     #footer
       #contest_year_select

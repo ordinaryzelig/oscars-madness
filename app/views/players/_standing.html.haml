@@ -1,4 +1,4 @@
-%tr
+%tr{:class => logged_in_player == entry.player ? 'self' : nil}
   %td.name
     - show_link = !admin_config.picks_editable || logged_in_as_admin?
     = link_to_if show_link, entry.player.name, player_picks_path(entry.player)

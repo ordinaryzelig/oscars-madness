@@ -1,10 +1,10 @@
 #results_summary
   %table{:border => '1'}
-    %caption= 'winners'
+    %caption= 'Award winners'
     %tr
-      %th= 'category'
-      %th= 'film'
-      %th= 'recipient'
+      %th= 'Category'
+      %th= 'Film'
+      %th= 'Recipient'
     - @categories.each do |category|
       %tr
         %td.category_name= link_to category.name, "##{dom_id(category)}"

@@ -5,4 +5,12 @@ module ApplicationHelper
     html += exception.backtrace.map { |bt| h(bt) }.join('<br />')
   end
 
+  def show_category_nav
+    @use_category_nav = true
+  end
+
+  def show_category_nav?
+    @use_category_nav
+  end
+
 end

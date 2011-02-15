@@ -2,6 +2,7 @@ table
   border-collapse: collapse
 
 !oscar_red = #ac1b17
+!link_highlight = #777777
 
 a
   text-decoration: none
@@ -9,6 +10,8 @@ a
     text-decoration: underline
   &:visited
     color: blue
+  img
+    border: none
 
 .fieldWithErrors
   color: red
@@ -21,7 +24,7 @@ html
   font-family: Helvetica
 
 body
-  width: 900px
+  width: 1000px
   margin-left: auto
   margin-right: auto
   margin-bottom: 1cm
@@ -51,16 +54,67 @@ body
   padding: 2mm
   text-align: right
 
-#logged_in_player
+nav
   text-align: center
   font-size: 14pt
   margin-bottom: 5mm
-  margin-top: 5mm
+  padding: 10px
+  background: black
+  color: white
+  display: block
   .name
     font-size: 18pt
   a
-    padding-left: 5mm
-    padding-right: 5mm
+    color: white
+    padding: 3px 10px 3px 10px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    &:visited
+      color: white
+    &:hover
+      text-decoration: none
+      background: !link_highlight
+  #hello
+    margin-bottom: 5px
+    color: yellow
+
+#category_nav
+  color: white
+  z-index: 1
+  width: 500px
+  background: black
+  position: fixed
+  top: 100px
+  right: -450px
+  -webkit-transition: right 1s ease
+  -moz-transition: right 1s ease
+  &:hover
+    right: -150px
+  ul
+    padding: 10px
+    //padding-right: 200px
+    display: inline-block
+  li
+    list-style-type: none
+    padding: 3px
+  a
+    color: white
+    padding: 3px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    &:hover
+      text-decoration: none
+      background: !link_highlight
+  #tab
+    display: inline-block
+    width: 50px
+    .text
+      -webkit-transform: rotate(-90deg)
+      -moz-transform: rotate(-90deg)
+      position: relative
+      top: -250px
+      font-size: 18pt
+      padding: 10px
 
 #points
   margin-bottom: 1cm
@@ -74,12 +128,15 @@ body
 
 .category
   margin: 4mm
-  border: 1px solid black
   margin: 2mm
+  margin-bottom: 20px
+  background: #DDD
+  padding: 5px
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
   .category_name
     font-size: 14pt
     font-weight: bold
-    background: lightgray
     padding: 2mm
     .points
       font-size: 9pt
@@ -106,6 +163,12 @@ body
         font-size: 12pt
         font-weight: bold
 
+form
+  .nominees
+    .nominee
+      &:hover
+        background: #CCC
+
 #new_category
   margin-bottom: 1cm
 
@@ -126,6 +189,8 @@ table
     text-align: right
   .correct
     text-align: right
+  .self
+    background: lightblue
 
 #results_summary
   margin-bottom: 1cm

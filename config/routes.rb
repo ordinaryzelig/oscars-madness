@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.filter :contest_year, :file => "#{RAILS_ROOT}/lib/routing_filter_for_contest_year"
 
   map.root :controller => 'home', :action => 'index'
+  map.about 'about', :controller => 'home', :action => 'about'
 
   # sessions.
   map.login 'login', :controller => :sessions, :action => :new

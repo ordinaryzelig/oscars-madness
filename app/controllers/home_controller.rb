@@ -7,4 +7,8 @@ class HomeController < ApplicationController
     @categories = Category.for_year(contest_year).all(:include => {:nominees => :film})
   end
 
+  def about
+
+  end
+
 end

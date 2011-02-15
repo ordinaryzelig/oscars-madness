@@ -7,6 +7,8 @@ a {
     text-decoration: underline; }
   a:visited {
     color: blue; }
+  a img {
+    border: none; }
 
 .fieldWithErrors {
   color: red; }
@@ -19,7 +21,7 @@ html {
   font-family: Helvetica; }
 
 body {
-  width: 900px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1cm;
@@ -49,16 +51,66 @@ body {
   padding: 2mm;
   text-align: right; }
 
-#logged_in_player {
+nav {
   text-align: center;
   font-size: 14pt;
   margin-bottom: 5mm;
-  margin-top: 5mm; }
-  #logged_in_player .name {
+  padding: 10px;
+  background: black;
+  color: white;
+  display: block; }
+  nav .name {
     font-size: 18pt; }
-  #logged_in_player a {
-    padding-left: 5mm;
-    padding-right: 5mm; }
+  nav a {
+    color: white;
+    padding: 3px 10px 3px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
+    nav a:visited {
+      color: white; }
+    nav a:hover {
+      text-decoration: none;
+      background: #777777; }
+  nav #hello {
+    margin-bottom: 5px;
+    color: yellow; }
+
+#category_nav {
+  color: white;
+  z-index: 1;
+  width: 500px;
+  background: black;
+  position: fixed;
+  top: 100px;
+  right: -450px;
+  -webkit-transition: right 1s ease;
+  -moz-transition: right 1s ease; }
+  #category_nav:hover {
+    right: -150px; }
+  #category_nav ul {
+    padding: 10px;
+    display: inline-block; }
+  #category_nav li {
+    list-style-type: none;
+    padding: 3px; }
+  #category_nav a {
+    color: white;
+    padding: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
+    #category_nav a:hover {
+      text-decoration: none;
+      background: #777777; }
+  #category_nav #tab {
+    display: inline-block;
+    width: 50px; }
+    #category_nav #tab .text {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      position: relative;
+      top: -250px;
+      font-size: 18pt;
+      padding: 10px; }
 
 #points {
   margin-bottom: 1cm;
@@ -72,12 +124,15 @@ body {
 
 .category {
   margin: 4mm;
-  border: 1px solid black;
-  margin: 2mm; }
+  margin: 2mm;
+  margin-bottom: 20px;
+  background: #dddddd;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
   .category .category_name {
     font-size: 14pt;
     font-weight: bold;
-    background: lightgray;
     padding: 2mm; }
     .category .category_name .points {
       font-size: 9pt;
@@ -104,6 +159,9 @@ body {
         font-size: 12pt;
         font-weight: bold; }
 
+form .nominees .nominee:hover {
+  background: #cccccc; }
+
 #new_category {
   margin-bottom: 1cm; }
 
@@ -124,6 +182,8 @@ table {
     text-align: right; }
   #standings .correct {
     text-align: right; }
+  #standings .self {
+    background: lightblue; }
 
 #results_summary {
   margin-bottom: 1cm; }
