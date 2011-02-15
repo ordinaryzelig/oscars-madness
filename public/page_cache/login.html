@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <link href="/stylesheets/all.css?1297737658" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/dark-hive/jquery-ui-1.8.9.custom.css?1296431472" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery-1.4.4.min.js?1291981104" type="text/javascript"></script>
+    <script src="/javascripts/jquery-ui-1.8.9.custom.min.js?1296431472" type="text/javascript"></script>
+    <script src="/javascripts/jquery.scrollTo-min.js?1243290430" type="text/javascript"></script>
+    <script src="/javascripts/application.js?1297729213" type="text/javascript"></script>
+    <title>oscars madness!!!</title>
+  </head>
+  <body>
+    <div id='banner'>
+      <a href="/">Oscars Madness!!!</a>
+    </div>
+    <nav>
+      <a href="/login">Login</a>
+      |
+      <a href="/about">About</a>
+    </nav>
+    <div id='flash'>
+<div id="flash_error">
+</div><div id="flash_notice">
+</div><div id="flash_warn">
+</div>    </div>
+    <div id='main'>
+      <p>
+        Login with facebook:<br />
+        <a href="/auth/facebook"><img alt="Facebook" src="/images/facebook.png?1296529435" /></a>
+      </p>
+      <p>
+        Don't want to use facebook? No problem. Just contact me and I'll make an account for you.<br />
+        If you already have such an account, login below.
+      </p>
+      <form action="/create_session" class="new_player" id="new_player" method="post">
+        <label for="player_name">Name</label>
+        <input id="player_name" name="player[name]" size="30" type="text" />
+        <br />
+        <label for="player_password">Password</label>
+        <input id="player_password" name="player[password]" size="30" type="password" />
+        <br />
+        <input id="player_submit" name="commit" type="submit" value="Login" />
+      </form>
+    </div>
+    <div id='footer'>
+      <div id='contest_year_select'>
+        <label for="contest_year">See other contests</label>
+        <select id="contest_year" name="contest_year" onchange="window.location = this.value"><option value="/2010">2010</option>
+        <option value="/2011" selected="selected">2011</option></select>
+      </div>
+    </div>
+  </body>
+</html>
