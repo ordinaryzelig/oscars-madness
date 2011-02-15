@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
   before_filter :logout, :except => [:create, :create_admin]
-  caches_page :new
 
   def new
   end

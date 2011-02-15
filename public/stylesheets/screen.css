@@ -139,6 +139,13 @@ nav {
       font-weight: normal; }
   .category .nominees {
     margin-left: 5mm; }
+    .category .nominees .nominee {
+      margin-left: 10px;
+      padding: 3px;
+      display: inline-block; }
+      .category .nominees .nominee .film {
+        font-size: 12pt;
+        font-weight: bold; }
     .category .nominees .nominee_name {
       font-size: 10pt; }
     .category .nominees .pick {
@@ -152,15 +159,12 @@ nav {
       background: green; }
     .category .nominees .wrong_nominee {
       background: red; }
-    .category .nominees .nominee {
-      display: inline-block; }
-      .category .nominees .nominee .film {
-        margin-left: 3mm;
-        font-size: 12pt;
-        font-weight: bold; }
 
-form .nominees .nominee:hover {
-  background: #cccccc; }
+form .nominees .nominee {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+  form .nominees .nominee:hover {
+    background: #cccccc; }
 
 #new_category {
   margin-bottom: 1cm; }
