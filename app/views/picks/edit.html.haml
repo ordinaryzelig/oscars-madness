@@ -6,8 +6,7 @@
   You can change your picks as much as you want until the show starts.
 
 - form_tag player_update_picks_path, :method => :put do
-  - @categories.each do |category|
-    = render :partial => 'categories/category', :locals => {:category => category, :entry => @entry, :editable => true}
+  = render @categories, :entry => @entry, :editable => true
   #save_picks= submit_tag
 
 - show_category_nav
