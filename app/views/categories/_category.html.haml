@@ -10,9 +10,9 @@
     - category.nominees.each do |nominee|
       - if nominee.is_winner
         - nominee_class = 'correct_nominee'
-      - pick = entry ? entry.picks.for_category(category).first : nil
-      - input_tag_name = "picks[#{pick.id}][nominee_id]" if pick
       - if entry
+        - pick = entry ? entry.picks.for_category(category).first : nil
+        - input_tag_name = "picks[#{pick.id}][nominee_id]" if pick
         = render :partial => 'pick', :locals => {:pick => pick, :nominee => nominee, :editable => editable, :input_tag_name => input_tag_name}
         - if nominee.is_winner
           - nominee_class = pick.nominee == nominee ? 'correct_nominee' : 'wrong_nominee'
