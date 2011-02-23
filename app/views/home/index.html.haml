@@ -1,20 +1,18 @@
 #standings
-  %table{:border => '1px solid black'}
+  %table.box_shadowed
     %caption
       Standings
-    %tr#header
-      %th
-        Player
-      %th
-        Correct
-      %th
-        Points
-    - @entries.each do |entry|
-      = render :partial => 'players/standing', :locals => {:entry => entry}
-
-= render :partial => 'results_summary'
-
-#nominations_header= 'All Nominations'
+    %thead
+      %tr#header.glossy_black
+        %th
+          Player
+        %th
+          Correct
+        %th
+          Points
+    %tbody
+      - @entries.each do |entry|
+        = render :partial => 'players/standing', :locals => {:entry => entry}
 
 = render @categories, :show_declare_winners => logged_in_as_admin?
 

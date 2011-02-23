@@ -1,6 +1,3 @@
-#hello
-  Hi
-  %span.name= logged_in_player.name
 - if logged_in_player.participating_this_year?
   :plain
     #{link_to 'See your picks', player_picks_path(logged_in_player)} |

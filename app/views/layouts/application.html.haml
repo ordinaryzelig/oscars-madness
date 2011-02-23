@@ -5,20 +5,26 @@
     = stylesheet_link_tag 'screen'
     = stylesheet_link_tag 'dark-hive/jquery-ui-1.8.9.custom.css'
     = javascript_include_tag 'jquery-1.4.4.min', 'jquery-ui-1.8.9.custom.min', 'jquery.scrollTo-min', 'application'
-    %title= 'oscars madness!!!'
+    %title= 'oscars madness'
 
-  %body
+  %body.rounded
 
     #banner
-      = link_to 'Oscars Madness!!!', root_path
+      #logo
+        = link_to 'Oscars Madness', root_path
+      #hello
+        - if logged_in_player
+          Hi,
+          %span.name= logged_in_player.name
+          %br
+        = render 'shared/login_logout_links'
 
-    %nav
-      - if logged_in?
+    %nav#top_menu.glossy_black
+      -if logged_in?
         - if logged_in_as_admin?
           = render 'shared/admin_navigation'
         - else logged_in_player
           = render 'shared/player_navigation'
-      = render 'shared/login_logout_links'
       = link_to 'About', about_path
 
     #flash
@@ -30,7 +36,7 @@
       = yield
 
     - if show_category_nav?
-      #category_nav
+      %nav#category_nav.rounded
         #tab
           .text Categories
         %ul

@@ -1,5 +1,38 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+*:focus {
+  outline: 10; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
 
 a {
   text-decoration: none; }
@@ -10,6 +43,35 @@ a {
   a img {
     border: none; }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 20pt; }
+
+h2 {
+  font-size: 18pt; }
+
+h3 {
+  font-size: 16pt; }
+
+.glossy_black {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black), color-stop(0.4, #333333));
+  background: -moz-linear-gradient(top, black, #333333, black);
+  color: white; }
+
+.rounded {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+.box_shadowed {
+  box-shadow: 0px 1px 4px black;
+  -moz-box-shadow: 0px 1px 4px black; }
+
 .fieldWithErrors {
   color: red; }
 
@@ -17,98 +79,121 @@ a {
   font-style: italic; }
 
 html {
-  background: #ac1b17;
+  background-image: url("../images/red-stage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: 100%;
   font-family: Helvetica; }
 
 body {
   width: 1000px;
+  margin: 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1cm;
-  background: white;
-  border: 2px solid black; }
+  background: inherit; }
 
 #banner {
-  font-size: 30pt;
-  font-weight: bold;
-  padding: 5mm;
-  text-align: center;
-  background: darkred;
-  border-bottom: 2px solid black; }
-  #banner a {
-    color: white;
-    text-decoration: none;
-    text-shadow: black 5px 5px 1px; }
-    #banner a:hover {
-      text-shadow: black 8px 8px 1px; }
+  padding: 20px;
+  -webkit-perspective: 400; }
+  #banner #logo {
+    -webkit-transform: rotateY(45deg);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    position: relative;
+    left: 120px;
+    display: inline-block;
+    font-size: 40pt;
+    font-weight: bold;
+    text-align: center; }
+    #banner #logo a {
+      color: #ffcc33;
+      text-decoration: none;
+      text-shadow: black 4px 4px 5px, white 1px -1px 1px;
+      -webkit-transition: text-shadow 0.5s ease;
+      -moz-transition: text-shadow 0.5s ease; }
+    #banner #logo a:hover {
+      text-shadow: black 3px 3px 5px, white 1px -1px 0px; }
+  #banner #logo:hover {
+    -webkit-transform: rotateY(30deg);
+    -webkit-perspective: 0; }
+  #banner #hello {
+    float: right;
+    text-align: right;
+    color: #ffcc33;
+    font-size: 14pt; }
+    #banner #hello .name {
+      font-size: 18pt; }
+    #banner #hello a {
+      color: #ffcc33;
+      padding: 5px; }
 
 #main {
-  padding: 5mm; }
+  padding: 20px;
+  background: white;
+  border: 2px solid black;
+  box-shadow: 0px 1px 10px white;
+  -moz-box-shadow: 0px 1px 10px white; }
 
 #footer {
   font-size: 10pt;
-  background: #dddddd;
   padding: 2mm;
-  text-align: right; }
+  text-align: right;
+  color: white; }
 
 nav {
-  text-align: center;
-  font-size: 14pt;
-  margin-bottom: 5mm;
-  padding: 10px;
   background: black;
-  color: white;
-  display: block; }
-  nav .name {
-    font-size: 18pt; }
+  color: white; }
   nav a {
     color: white;
     padding: 3px 10px 3px 10px;
     -webkit-border-radius: 5px;
-    -moz-border-radius: 5px; }
+    -moz-border-radius: 5px;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease; }
     nav a:visited {
       color: white; }
     nav a:hover {
       text-decoration: none;
       background: #777777; }
-  nav #hello {
-    margin-bottom: 5px;
-    color: yellow; }
 
-#category_nav {
-  color: white;
+nav#top_menu {
+  font-size: 14pt;
+  text-align: center;
+  padding: 10px;
+  display: block; }
+  nav#top_menu .name {
+    font-size: 18pt; }
+
+nav#category_nav {
   z-index: 1;
   width: 500px;
-  background: black;
   position: fixed;
-  top: 100px;
+  top: 150px;
   right: -450px;
   -webkit-transition: right 1s ease;
   -moz-transition: right 1s ease; }
-  #category_nav:hover {
+  nav#category_nav:hover {
     right: -150px; }
-  #category_nav ul {
+  nav#category_nav ul {
     padding: 10px;
     display: inline-block; }
-  #category_nav li {
+  nav#category_nav li {
     list-style-type: none;
     padding: 3px; }
-  #category_nav a {
-    color: white;
-    padding: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px; }
-    #category_nav a:hover {
+  nav#category_nav a {
+    padding: 3px; }
+    nav#category_nav a:hover {
       text-decoration: none;
       background: #777777; }
-  #category_nav #tab {
+  nav#category_nav #tab {
     display: inline-block;
     width: 50px; }
-    #category_nav #tab .text {
+    nav#category_nav #tab .text {
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
       position: relative;
-      top: -250px;
+      top: -200px;
       font-size: 18pt;
       padding: 10px; }
 
@@ -127,16 +212,22 @@ nav {
   margin: 2mm;
   margin-bottom: 20px;
   background: #dddddd;
-  padding: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; }
+  padding-bottom: 5px;
+  border: 1px solid black; }
   .category .category_name {
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
     font-size: 14pt;
     font-weight: bold;
-    padding: 2mm; }
+    padding: 2mm;
+    margin-bottom: 5px;
+    color: #ffcc33; }
+    .category .category_name a {
+      color: #ffcc33; }
     .category .category_name .points {
       font-size: 9pt;
-      font-weight: normal; }
+      font-weight: normal;
+      color: white; }
   .category .nominees {
     margin-left: 5mm; }
     .category .nominees .nominee {
@@ -152,7 +243,7 @@ nav {
       display: inline-block; }
     .category .nominees .winning_nominee {
       padding: 1mm;
-      color: white; }
+      color: #ffcc33; }
       .category .nominees .winning_nominee a {
         color: white; }
     .category .nominees .correct_nominee {
@@ -160,44 +251,41 @@ nav {
     .category .nominees .wrong_nominee {
       background: red; }
 
-form .nominees .nominee {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; }
-  form .nominees .nominee:hover {
-    background: #cccccc; }
+form .nominees .nominee:hover, form .nominees .pick:hover {
+  background: #cccccc; }
 
 #new_category {
   margin-bottom: 1cm; }
 
 table {
+  border-collapse: collapse;
   margin: auto; }
-  table caption {
-    font-size: 12pt;
-    font-weight: bold; }
+  table tbody th, table tbody td {
+    background: #eeeeee;
+    border: 1px solid lightgray; }
   table th {
-    padding: 2mm;
-    background: lightgray; }
+    padding: 2mm; }
   table td {
     padding: 1mm; }
+  table caption {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center; }
 
 #standings {
   margin-bottom: 1cm; }
-  #standings .points {
-    text-align: right; }
-  #standings .correct {
-    text-align: right; }
-  #standings .self {
-    background: lightblue; }
-
-#results_summary {
-  margin-bottom: 1cm; }
-  #results_summary .category {
+  #standings th.name {
+    background: #eeeeee;
     font-weight: bold; }
+  #standings td {
+    text-align: right; }
+  #standings tr.self th, #standings tr.self td {
+    background: #ffcc33; }
 
-#nominations_header {
-  font-size: 12pt;
-  font-weight: bold;
-  text-align: center; }
+#results_summary table {
+  margin-bottom: 1cm; }
+  #results_summary table .category {
+    font-weight: bold; }
 
 #players_picks {
   margin: 0;

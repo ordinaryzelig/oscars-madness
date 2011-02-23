@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
   end
 
   def logged_in?
-    return true if (logged_in_as_admin? || logged_in_player) && !session[:logged_out]
+    (logged_in_as_admin? || logged_in_player) && !session[:logged_out]
   end
 
   def load_contest_year
