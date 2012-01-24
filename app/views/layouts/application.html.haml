@@ -41,7 +41,7 @@
           .text Categories
         %ul
           %li= link_to 'Top', '#top'
-          - Category.for_year(contest_year).each do |category|
+          - Category.for_year(contest_year).by_name.each do |category|
             %li= link_to category.name, "##{dom_id(category)}"
 
     #footer

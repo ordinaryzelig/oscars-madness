@@ -8,6 +8,7 @@ class Category < ActiveRecord::Base
 
   default_scope :order => :created_at
   named_scope :for_year, proc { |year| {:conditions => ["year = ?", year]} }
+  named_scope :by_name, :order => :name
 
   extend ActiveSupport::Memoizable
 
