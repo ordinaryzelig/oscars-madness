@@ -1,7 +1,7 @@
 - form_for nominee do |f|
 
   = f.label :name
-  = f.text_field :name
+  = f.text_field :name, :class => 'focus_on_load'
   %br
 
   = f.label :category_name, 'category'
