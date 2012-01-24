@@ -3,7 +3,7 @@
   = f.text_field :name
   %br
   = f.label :category_id, 'category'
-  = f.collection_select :category_id, Category.for_year(contest_year), :id, :name
+  = f.collection_select :category_id, Category.for_year(contest_year).by_name, :id, :name
   %br
   = f.label :film_name, 'film'
   = text_field_tag 'nominee[film_name]'
