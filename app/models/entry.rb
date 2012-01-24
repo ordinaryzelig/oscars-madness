@@ -3,7 +3,7 @@ class Entry < ActiveRecord::Base
   include Enumerable
 
   belongs_to :player
-  has_many :picks
+  has_many :picks, :dependent => :destroy
 
   after_create :generate_picks
 

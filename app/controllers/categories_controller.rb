@@ -18,7 +18,7 @@ class CategoriesController < AdminController
 
   def create
     Category.create!(params[:category])
-    redirect_to categories_path
+    redirect_to new_category_path
   end
 
   def edit

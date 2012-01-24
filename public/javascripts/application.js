@@ -1,11 +1,11 @@
-//autocomplete for film name.
+// autocomplete for film name.
 $(function() {
   $('#nominee_film_name').autocomplete({
     source: '/films'
   })
 })
 
-//smooth scrolling.
+// smooth scrolling.
 $(function() {
   $('a').click(function(event) {
     var target = this.hash
@@ -15,4 +15,9 @@ $(function() {
       $.scrollTo(target, 1500, {over: -0.1})
     }
   })
+})
+
+// Focus on input when page loads.
+$(function() {
+  $('.focus_on_load').focus()
 })

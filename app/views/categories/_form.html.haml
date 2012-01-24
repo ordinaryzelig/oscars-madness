@@ -1,6 +1,6 @@
 - form_for category do |f|
   = f.label :name
-  = f.text_field :name
+  = f.text_field :name, :class => 'focus_on_load'
   %br
   = f.label :points
   = f.text_field :points, :size => 2

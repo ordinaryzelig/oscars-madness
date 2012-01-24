@@ -6,7 +6,7 @@ class NomineesController < AdminController
 
   def create
     Nominee.create!(params[:nominee])
-    redirect_to categories_path
+    redirect_to new_nominee_path
   end
 
   def edit

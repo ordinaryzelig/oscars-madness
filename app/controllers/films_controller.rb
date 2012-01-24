@@ -15,7 +15,7 @@ class FilmsController < AdminController
 
   def create
     film = Film.create!(params[:film])
-    redirect_to films_path
+    redirect_to new_film_path
   end
 
   def edit
