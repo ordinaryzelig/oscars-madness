@@ -1,11 +1,15 @@
 - form_for nominee do |f|
+
   = f.label :name
   = f.text_field :name
   %br
-  = f.label :category_id, 'category'
-  = f.collection_select :category_id, Category.for_year(contest_year).by_name, :id, :name
+
+  = f.label :category_name, 'category'
+  = text_field_tag 'nominee[category_name]'
   %br
+
   = f.label :film_name, 'film'
   = text_field_tag 'nominee[film_name]'
   %br
+
   = f.submit

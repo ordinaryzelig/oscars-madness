@@ -16,6 +16,10 @@ class Category < ActiveRecord::Base
     all.map { |category| [category.name, category.id] }
   end
 
+  def self.search(term)
+    all :conditions => ['lower(name) like ?', "%#{term.downcase}%"]
+  end
+
   def has_winner?
     !winner.nil?
   end

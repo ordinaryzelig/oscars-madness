@@ -5,6 +5,13 @@ $(function() {
   })
 })
 
+// autocomplete for category name.
+$(function() {
+  $('#nominee_category_name').autocomplete({
+    source: '/categories'
+  })
+})
+
 // smooth scrolling.
 $(function() {
   $('a').click(function(event) {

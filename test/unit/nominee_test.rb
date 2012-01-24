@@ -27,4 +27,12 @@ class NomineeTest < ActiveSupport::TestCase
     assert_equal film, nominee.film
   end
 
+  test 'create with category name' do
+    category = Category.make
+    nominee = Nominee.make_unsaved(:category_id => nil, :film_id => Film.make.id)
+    nominee.category_name = category.name
+    nominee.save!
+    assert_equal category, nominee.category
+  end
+
 end
