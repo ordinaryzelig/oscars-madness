@@ -1,7 +1,7 @@
 - editable ||= false
 - entry ||= nil
 - show_declare_winners ||= nil
-- div_for category, :class => 'rounded' do
+- div_for category, :class => 'rounded box_shadowed' do
   .category_name.glossy_black
     = link_to_unless admin_config.picks_editable, category.name, category
     %span.points

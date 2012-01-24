@@ -68,6 +68,10 @@ h3 {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px; }
 
+.box_shadowed {
+  box-shadow: 0px 1px 4px black;
+  -moz-box-shadow: 0px 1px 4px black; }
+
 .fieldWithErrors {
   color: red; }
 
@@ -75,11 +79,11 @@ h3 {
   font-style: italic; }
 
 html {
+  background-color: #0f0200;
   background-image: url("../images/red-stage.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: 100%;
   font-family: Helvetica; }
 
 body {
@@ -127,8 +131,7 @@ body {
 #main {
   padding: 20px;
   background: white;
-  border: 2px solid black;
-}
+  border: 2px solid black; }
 
 #footer {
   font-size: 10pt;
@@ -276,11 +279,6 @@ table {
     text-align: right; }
   #standings tr.self th, #standings tr.self td {
     background: #ffcc33; }
-
-#results_summary table {
-  margin-bottom: 1cm; }
-  #results_summary table .category {
-    font-weight: bold; }
 
 #players_picks {
   margin: 0;
