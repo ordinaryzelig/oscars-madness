@@ -3,7 +3,7 @@ require 'bundler/setup'
 require 'active_support' # have to manually require before some other stuff.
 Bundler.require :default, :development
 
-html = File.read('./nominations/2013.html')
+html = File.read("./nominations/#{Date.today.year}/source.html")
 doc = Nokogiri.HTML(html)
 
 def parse_category(listing)
@@ -59,4 +59,5 @@ categories = listings.map do |listing|
   parse_category(listing)
 end
 
-puts JSON.pretty_generate(categories)
+json = JSON.pretty_generate(categories)
+File.open("./nominations/#{Date.today.year}/nominations.json", 'w') { |f| f.write json }
