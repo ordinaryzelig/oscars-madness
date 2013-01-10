@@ -1,17 +1,13 @@
 source :gemcutter
 
-gem "rails", "2.3.10"
+gem "rails", "2.3.15"
 
 gem 'haml', '3.0.25'
 gem 'omniauth', '0.1.6'
-gem 'routing-filter', '0.2.2'
-
-group :development do
-  gem 'heroku', '1.17.10'
-end
+gem 'routing-filter', '0.3.1'
 
 group :development, :test do
-  gem "sqlite3-ruby", '1.3.3', :require => "sqlite3"
+  gem "sqlite3", '1.3.3'
   gem 'machinist', '1.0.6'
   gem 'awesome_print', '0.3.1'
 end
