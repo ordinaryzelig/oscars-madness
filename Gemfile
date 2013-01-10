@@ -10,4 +10,6 @@ group :development, :test do
   gem "sqlite3", '1.3.3'
   gem 'machinist', '1.0.6'
   gem 'awesome_print', '0.3.1'
+  gem 'nokogiri'
+  gem 'json'
 end
