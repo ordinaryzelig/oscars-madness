@@ -6,6 +6,8 @@
     = link_to_unless admin_config.picks_editable, category.name, category
     %span.points
       = "(#{pluralize(category.points, 'point')})"
+      - if logged_in_as_admin?
+        = link_to 'edit', edit_category_path(category)
   .nominees
     - category.nominees.each do |nominee|
       - if nominee.is_winner
