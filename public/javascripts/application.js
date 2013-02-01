@@ -1,19 +1,16 @@
-// autocomplete for film name.
 $(function() {
+
+  // autocomplete for film name.
   $('#nominee_film_name').autocomplete({
     source: '/films'
   })
-})
 
-// autocomplete for category name.
-$(function() {
+  // autocomplete for category name.
   $('#nominee_category_name').autocomplete({
     source: '/categories'
   })
-})
 
-// smooth scrolling.
-$(function() {
+  // smooth scrolling.
   $('a').click(function(event) {
     var target = this.hash
     if(target) {
@@ -22,9 +19,13 @@ $(function() {
       $.scrollTo(target, 1500, {over: -0.1})
     }
   })
-})
 
-// Focus on input when page loads.
-$(function() {
+  // Focus on input when page loads.
   $('.focus_on_load').focus()
+
+  // Toggle categories drawer.
+  $('#category_nav').click(function() {
+    $(this).toggleClass('expanded')
+  })
+
 })

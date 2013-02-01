@@ -5,6 +5,8 @@
 !link_highlight = #777777
 
 a
+  -webkit-transition: all 0.2s ease
+  -moz-transition: all 0.3s ease
   text-decoration: none
   &:hover
     text-decoration: underline
@@ -117,8 +119,6 @@ nav
     padding: 3px 10px 3px 10px
     -webkit-border-radius: 5px
     -moz-border-radius: 5px
-    -webkit-transition: background 0.3s ease
-    -moz-transition: background 0.3s ease
     &:visited
       color: white
     &:hover
@@ -133,7 +133,6 @@ nav#top_menu
   .name
     font-size: 18pt
 
-
 nav#category_nav
   z-index: 1
   width: 500px
@@ -142,7 +141,8 @@ nav#category_nav
   right: -450px
   -webkit-transition: right 1s ease
   -moz-transition: right 1s ease
-  &:hover
+  cursor: pointer
+  &.expanded
     right: -150px
   ul
     padding: 10px
