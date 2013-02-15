@@ -1,6 +1,6 @@
 source :gemcutter
 
-gem "rails", "2.3.16"
+gem "rails", '2.3.17'
 
 gem 'haml', '3.0.25'
 gem 'omniauth', '0.1.6'
