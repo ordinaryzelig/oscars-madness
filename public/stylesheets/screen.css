@@ -35,8 +35,8 @@ blockquote, q {
   quotes: "" ""; }
 
 a {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.3s ease;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.3s ease;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
