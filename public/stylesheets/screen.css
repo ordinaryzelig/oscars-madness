@@ -171,7 +171,8 @@ nav#category_nav {
   right: -450px;
   -webkit-transition: right 1s ease;
   -moz-transition: right 1s ease;
-  cursor: pointer; }
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.85); }
   nav#category_nav.expanded {
     right: -150px; }
   nav#category_nav ul {
