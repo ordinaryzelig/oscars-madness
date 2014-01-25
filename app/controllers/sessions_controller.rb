@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-  before_filter :logout, :except => [:create, :create_admin]
+  before_filter :logout, :except => [:create]
 
   def new
   end
@@ -17,7 +17,6 @@ class SessionsController < ApplicationController
         player.entries.create! :year => Date.today.year unless player.participating_this_year?
       end
       session[:player_id] = player.id
-      session[:admin_logged_in] = false
       redirect_to edit_player_picks_path(player)
     else
       flash.now[:error] = "login failed"
@@ -27,19 +26,6 @@ class SessionsController < ApplicationController
 
   def destroy
     redirect_to root_path
-  end
-
-  def new_admin
-
-  end
-
-  def create_admin
-    if admin_config.admin_password == params[:player][:password].digest
-      session[:admin_logged_in] = true
-      redirect_to root_path
-      return
-    end
-    redirect_to login_admin_path
   end
 
   def failure

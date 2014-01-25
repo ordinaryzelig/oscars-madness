@@ -14,6 +14,6 @@
       - @entries.each do |entry|
         = render :partial => 'players/standing', :locals => {:entry => entry}
 
-= render @categories, :show_declare_winners => logged_in_as_admin?
+= render @categories
 
 - show_category_nav

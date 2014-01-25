@@ -9,7 +9,7 @@ RailsAdmin.config do |config|
 
   config.current_user_method &:logged_in_player
 
-  config.included_models = %w[Category Film Nominee Pick Player]
+  config.included_models = %w[Category Film Nominee Pick Player, AdminConfig]
 
   config.actions do
     # root actions

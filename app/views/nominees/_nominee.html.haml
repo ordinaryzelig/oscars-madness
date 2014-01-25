@@ -11,5 +11,5 @@
     %span.film
       = "#{nominee.film.name}:"
     %span.nominee_name
-      = link_to_if(logged_in_as_admin?, nominee.name, edit_nominee_path(nominee))
-  = label_tag input_tag_name + "_#{nominee.id}", link_to_if(logged_in_as_admin?, yield(dom_id(nominee)), edit_nominee_path(nominee))
+      = nominee.name
+  = label_tag input_tag_name + "_#{nominee.id}", yield(dom_id(nominee))

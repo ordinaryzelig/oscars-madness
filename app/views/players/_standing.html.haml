@@ -1,6 +1,6 @@
 %tr{:class => logged_in_player == entry.player ? 'self' : nil}
   %th.name
-    - show_link = !admin_config.picks_editable || logged_in_as_admin?
+    - show_link = !admin_config.picks_editable
     = link_to_if show_link, entry.player.name, player_picks_path(entry.player)
   %td.correct
     = entry.picks.correct.size

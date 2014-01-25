@@ -2,7 +2,6 @@
 
 %html{html_attrs}
   %head
-    -#= stylesheet_link_tag 'dark-hive/jquery-ui-1.8.9.custom.css'
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     %title= 'oscars madness'
@@ -21,10 +20,7 @@
 
     %nav#top_menu.glossy_black
       -if logged_in?
-        - if logged_in_as_admin?
-          = render 'shared/admin_navigation'
-        - else logged_in_player
-          = render 'shared/player_navigation'
+        = render 'shared/player_navigation'
       = link_to 'About', about_path
 
     #flash

@@ -20,7 +20,7 @@ class Player < ActiveRecord::Base
   end
 
   def participating_this_year?
-    participated_in? Date.today.year
+    participated_in? Contest.years.last
   end
 
   def self.find_or_create_by_omniauth(omniauth)

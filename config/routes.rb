@@ -15,18 +15,15 @@ OscarsMadness::Application.routes.draw do
 
   resources :players do
     resources :entries, only: [:create]
-    resources :picks, only: [:index], shallow: true do
+    resources :picks, only: [:index] do
       collection do
         get 'edit'
-        put 'update'
+        put 'update', as: :update
       end
     end
   end
 
-  resources :films
-  resources :categories
-  resources :nominees, :member => {:declare_winner => :put}
-  resources :entries, :only => :index
+  resources :categories, only: [:show]
 
   # Omniauth
   get '/auth/failure'            => 'sessions#failure'

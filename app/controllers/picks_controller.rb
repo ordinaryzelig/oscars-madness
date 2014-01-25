@@ -8,21 +8,15 @@ class PicksController < ApplicationController
   before_filter :load_categories
 
   def index
-
   end
 
   def edit
-    redirect_to root_path unless admin_config.picks_editable || logged_in_as_admin?
   end
 
   def update
-    unless admin_config.picks_editable || logged_in_as_admin?
-      redirect_to root_path
-      return
-    end
     @entry.picks_attributes = params[:picks]
     @entry.save!
-    redirect_to player_picks_url(@player)
+    redirect_to player_picks_path(@player)
   end
 
   private
@@ -40,14 +34,13 @@ class PicksController < ApplicationController
   end
 
   def authenticate_rights_to_read
-    return true if logged_in_as_admin? || logged_in_player_looking_at_own_picks? || !admin_config.picks_editable
+    return true if logged_in_player_looking_at_own_picks? || others_can_read?
     redirect_to root_path
     false
   end
 
   def authenticate_rights_to_write
-    return true if logged_in_as_admin?
-    if !logged_in_player_looking_at_own_picks?
+    unless logged_in_player_looking_at_own_picks? && admin_config.picks_editable
       redirect_to root_path
       return false
     end
@@ -56,6 +49,10 @@ class PicksController < ApplicationController
 
   def logged_in_player_looking_at_own_picks?
     logged_in_player == @player
+  end
+
+  def others_can_read?
+    !admin_config.picks_editable
   end
 
 end
