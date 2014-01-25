@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
       end
       session[:player_id] = player.id
       session[:admin_logged_in] = false
-      redirect_to player_edit_picks_path(player)
+      redirect_to edit_player_picks_path(player)
     else
       flash.now[:error] = "login failed"
       render :new
@@ -50,7 +50,7 @@ class SessionsController < ApplicationController
   private
 
   def logout
-    cookies.delete :"_oscars-madness_session"
+    cookies.delete OscarsMadness::Application.config.session_options.fetch(:key).to_sym
     reset_session
   end
 

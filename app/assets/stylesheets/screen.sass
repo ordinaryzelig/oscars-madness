@@ -1,0 +1,264 @@
+@import reset
+
+$gold: #FFCC33
+$oscar_red: #ac1b17
+$link_highlight: #777777
+
+a
+  -webkit-transition: background 0.2s ease
+  -moz-transition: background 0.3s ease
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  &:visited
+    color: blue
+  img
+    border: none
+
+h1, h2, h3, h4, h5, h6, p
+  margin-top: 1em
+  margin-bottom: 1em
+
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+
+h1
+  font-size: 20pt
+
+h2
+  font-size: 18pt
+
+h3
+  font-size: 16pt
+
+.glossy_black
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000), color-stop(0.4, #333))
+  background: -moz-linear-gradient(top, #000, #333, #000)
+  color: white
+
+.rounded
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+
+.box_shadowed
+  box-shadow: 0px 1px 4px black
+  -moz-box-shadow: 0px 1px 4px black
+
+.fieldWithErrors
+  color: red
+
+.nominee_name
+  font-style: italic
+
+html
+  background-color: #0F0200
+  background-image: url('../assets/red-stage.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: center bottom
+  font-family: Helvetica
+
+body
+  width: 1000px
+  margin: 60px
+  margin-left: auto
+  margin-right: auto
+  background: inherit
+
+#banner
+  padding: 20px
+  -webkit-perspective: 400
+  #logo
+    -webkit-transform: rotateY(45deg)
+    -webkit-transition: all 1s ease
+    -moz-transition: all 1s ease
+    position: relative
+    left: 120px
+    display: inline-block
+    font-size: 40pt
+    font-weight: bold
+    text-align: center
+    a
+      color: $gold
+      text-decoration: none
+      text-shadow: black 4px 4px 5px, white 1px -1px 1px
+      -webkit-transition: text-shadow 0.5s ease
+      -moz-transition: text-shadow 0.5s ease
+    a:hover
+      text-shadow: black 3px 3px 5px, white 1px -1px 0px
+  #logo:hover
+    -webkit-transform: rotateY(30deg)
+    -webkit-perspective: 0
+  #hello
+    float: right
+    text-align: right
+    color: $gold
+    font-size: 14pt
+    .name
+      font-size: 18pt
+    a
+      color: $gold
+      padding: 5px
+
+#main
+  padding: 20px
+  background: white
+  border: 2px solid black
+
+#footer
+  font-size: 10pt
+  padding: 2mm
+  text-align: right
+  color: white
+
+nav
+  background: black
+  color: white
+  a
+    color: white
+    padding: 3px 10px 3px 10px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    &:visited
+      color: white
+    &:hover
+      text-decoration: none
+      background: $link_highlight
+
+nav#top_menu
+  font-size: 14pt
+  text-align: center
+  padding: 10px
+  display: block
+  .name
+    font-size: 18pt
+
+nav#category_nav
+  z-index: 1
+  width: 500px
+  position: fixed
+  top: 150px
+  right: -450px
+  -webkit-transition: right 1s ease
+  -moz-transition: right 1s ease
+  cursor: pointer
+  background: rgba(0, 0, 0, 0.85)
+  &.expanded
+    right: -150px
+  ul
+    padding: 10px
+    display: inline-block
+  li
+    list-style-type: none
+    padding: 3px
+  a
+    padding: 3px
+    &:hover
+      text-decoration: none
+      background: $link_highlight
+  #tab
+    display: inline-block
+    width: 50px
+    .text
+      -webkit-transform: rotate(-90deg)
+      -moz-transform: rotate(-90deg)
+      position: relative
+      top: -200px
+      font-size: 18pt
+      padding: 10px
+
+#points
+  margin-bottom: 1cm
+  text-align: center
+  font-size: 18pt
+
+#save_picks
+  text-align: center
+  input
+    font-size: 24pt
+
+.category
+  margin: 4mm
+  margin: 2mm
+  margin-bottom: 20px
+  background: #DDD
+  padding-bottom: 5px
+  border: 1px solid black
+  .category_name
+    -webkit-border-radius: 5px 5px 0px 0px
+    -moz-border-radius: 5px 5px 0px 0px
+    font-size: 14pt
+    font-weight: bold
+    padding: 2mm
+    margin-bottom: 5px
+    color: $gold
+    a
+      color: $gold
+    .points
+      font-size: 9pt
+      font-weight: normal
+      color: white
+  .nominees
+    margin-left: 5mm
+    .nominee
+      margin-left: 10px
+      padding: 3px
+      display: inline-block
+      .film
+        font-size: 12pt
+        font-weight: bold
+    .nominee_name
+      font-size: 10pt
+    .pick
+      display: inline-block
+    .winning_nominee
+      padding: 1mm
+      color: $gold
+      a
+        color: white
+    .correct_nominee
+      background: green
+    .wrong_nominee
+      background: red
+
+form
+  .nominees
+    .nominee, .pick
+      &:hover
+        background: #CCC
+
+#new_category
+  margin-bottom: 1cm
+
+table
+  border-collapse: collapse
+  margin: auto
+  tbody
+    th, td
+      background: #EEE
+      border: 1px solid lightgray
+  th
+    padding: 2mm
+  td
+    padding: 1mm
+  caption
+    font-size: 20pt
+    font-weight: bold
+    text-align: center
+
+#standings
+  margin-bottom: 1cm
+  th.name
+    background: #EEE
+    font-weight: bold
+  td
+    text-align: right
+  tr.self
+    th, td
+      background: $gold
+
+#players_picks
+  margin: 0
+  margin-top: 1cm
+  td
+    padding: 2mm

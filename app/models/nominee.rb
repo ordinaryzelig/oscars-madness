@@ -11,7 +11,7 @@ class Nominee < ActiveRecord::Base
   before_validation :find_category, :if => :category_name
   validates_presence_of :film_id
 
-  default_scope :order => :created_at
+  default_scope { order(:created_at) }
 
   def declare_winner
     update_attributes! :is_winner => true

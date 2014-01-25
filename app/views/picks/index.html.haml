@@ -4,6 +4,6 @@
 
 %div
   - @categories.each do |category|
-    = render :partial => 'categories/category', :locals => {:category => category, :entry => @entry}
+    = render 'categories/category', :category => category, :entry => @entry
 
 - show_category_nav

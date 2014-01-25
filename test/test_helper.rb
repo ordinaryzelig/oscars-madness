@@ -1,61 +1,28 @@
-ENV["RAILS_ENV"] = "test"
-require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
-require 'test_help'
-require File.expand_path(File.dirname(__FILE__) + "/blueprints")
+ENV["RAILS_ENV"] ||= "test"
+require File.expand_path('../../config/environment', __FILE__)
+require 'rails/test_help'
+
+require 'minitest/pride'
+
+require_relative 'fabrication'
 
 class ActiveSupport::TestCase
-  # Transactional fixtures accelerate your tests by wrapping each test method
-  # in a transaction that's rolled back on completion.  This ensures that the
-  # test database remains unchanged so your fixtures don't have to be reloaded
-  # between every test method.  Fewer database queries means faster tests.
-  #
-  # Read Mike Clark's excellent walkthrough at
-  #   http://clarkware.com/cgi/blosxom/2005/10/24#Rails10FastTesting
-  #
-  # Every Active Record database supports transactions except MyISAM tables
-  # in MySQL.  Turn off transactional fixtures in this case; however, if you
-  # don't care one way or the other, switching from MyISAM to InnoDB tables
-  # is recommended.
-  #
-  # The only drawback to using transactional fixtures is when you actually
-  # need to test transactions.  Since your test is bracketed by a transaction,
-  # any transactions started in your code will be automatically rolled back.
-  self.use_transactional_fixtures = true
+  ActiveRecord::Migration.check_pending!
 
-  # Instantiated fixtures are slow, but give you @david where otherwise you
-  # would need people(:david).  If you don't want to migrate your existing
-  # test cases which use the @david style and don't mind the speed hit (each
-  # instantiated fixtures translates to a database query per test method),
-  # then set this back to true.
-  self.use_instantiated_fixtures  = false
+  def announce_nominations(year = Date.today.year)
+    Fabricate(:admin_config, :admin_password => 'fdsa'.digest, :picks_editable => true)
 
-  # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
-  #
-  # Note: You'll currently still have to declare fixtures explicitly in integration tests
-  # -- they do not yet inherit this setting
+    categories = ['best actor', 'best actress', 'best director'].map do
+      Fabricate(:category, :year => year)
+    end
+    categories << Fabricate(:best_picture)
 
-  # Add more helper methods to be used by all tests here...
+    films = 3.times.map { |idx| Fabricate(:film, name: "Karate Kid #{idx + 1}") }
 
-  def setup
-    Sham.reset
+    categories.each do |cat|
+      films.each do |film|
+        Fabricate(:nominee, :film => film, category: cat)
+      end
+    end
   end
-
-  def login_as_admin
-    @request.session[:admin_logged_in] = true
-    @request.session.delete(:player_id)
-    fake_login
-  end
-
-  def login_as(player)
-    @request.session[:player_id] = player.id
-    @request.session.delete(:admin_logged_in)
-    fake_login
-  end
-
-  private
-
-  def fake_login
-    @request.env['HTTP_AUTHORIZATION'] = 'Basic ' + Base64::encode64("user:password")
-  end
-
 end

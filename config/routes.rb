@@ -1,34 +1,36 @@
-ActionController::Routing::Routes.draw do |map|
-
+OscarsMadness::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   # contest_year is prepended to paths.
-  map.filter :contest_year, :file => "#{RAILS_ROOT}/lib/routing_filter_for_contest_year"
+  #map.filter :contest_year, :file => "#{RAILS_ROOT}/lib/routing_filter_for_contest_year"
 
-  map.root :controller => 'home', :action => 'index'
-  map.about 'about', :controller => 'home', :action => 'about'
+  root :controller => 'home', :action => 'index'
+  get 'about', :controller => 'home', :action => 'about'
 
   # sessions.
-  map.login 'login', :controller => :sessions, :action => :new
-  map.session 'create_session', :controller => :sessions, :action => :create, :conditions => {:method => :post}
-  map.logout 'logout', :controller => :sessions, :action => :destroy
-  map.login_admin 'login_admin', :controller => :sessions, :action => :new_admin
-  map.session_admin 'create_session_admin', :controller => :sessions, :action => :create_admin, :conditions => {:method => :post}
+  get    'login'                => 'sessions#new', as: :login_form
+  post   'create_session'       => 'sessions#create', as: :login
+  get    'logout'               => 'sessions#destroy', as: :logout
+  get    'login_admin'          => 'sessions#new_admin', as: :login_admin_form
+  post   'create_session_admin' => 'sessions#create_admin', as: :login_admin
 
-  map.resources :players do |player|
-    # Can these be taken care of by the :shallow option?
-    player.edit_picks '/picks/edit', :controller => :picks, :action => :edit
-    player.update_picks '/picks/update', :controller => :picks, :action => :update, :conditions => {:method => :put}
-    player.resources :picks, :only => 'index'
-    player.resources :entries, :only => :create
+  resources :players do
+    resources :entries, only: [:create]
+    resources :picks, only: [:index], shallow: true do
+      collection do
+        get 'edit'
+        put 'update'
+      end
+    end
   end
 
-  map.resources :films
-  map.resources :categories
-  map.resources :nominees, :member => {:declare_winner => :put}
-  map.resources :entries, :only => :index
+  resources :films
+  resources :categories
+  resources :nominees, :member => {:declare_winner => :put}
+  resources :entries, :only => :index
 
-  map.connect '/auth/failure', :controller => 'sessions', :action => 'failure'
-  map.connect '/auth/:provider/callback', :controller => 'sessions', :action => 'create'
+  # Omniauth
+  get '/auth/failure'            => 'sessions#failure'
+  get '/auth/:provider/callback' => 'sessions#create'
 
-  map.toggle_picks_editable '/admin/toggle_picks_editable', :controller => 'admin', :action => 'toggle_picks_editable', :conditions => {:method => :put}
-
+  put '/admin/toggle_picks_editable' => 'admin#toggle_picks_editable', as: :toggle_picks_editable
 end

@@ -1,12 +1,9 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
+  # Prevent CSRF attacks by raising an exception.
+  # For APIs, you may want to use :null_session instead.
+  protect_from_forgery with: :exception
 
-  helper :all
   helper_method :logged_in_player, :logged_in_as_admin?, :admin_config, :logged_in?, :contest_year, :previous_contest_year?
-
-  filter_parameter_logging :password, :confirmation_password
 
   protected
 

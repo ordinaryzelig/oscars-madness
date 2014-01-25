@@ -1,1 +1,0 @@
-require 'routing_filter_for_contest_year'

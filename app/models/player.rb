@@ -1,13 +1,5 @@
 require "digest/sha1"
 
-class String
-
-  def digest
-    Digest::SHA1.hexdigest self
-  end
-
-end
-
 class Player < ActiveRecord::Base
 
   has_many :entries
@@ -20,9 +12,7 @@ class Player < ActiveRecord::Base
   before_save :hash_password, :if => :password_changed?
 
   def self.authenticate(name, password)
-    first :conditions => ["lower(name) = ? and password = ?", name.downcase, password.digest]
-  rescue
-    return nil
+    where("lower(name) = ? and password = ?", name.downcase, password.digest).first
   end
 
   def participated_in?(year)
@@ -34,8 +24,14 @@ class Player < ActiveRecord::Base
   end
 
   def self.find_or_create_by_omniauth(omniauth)
-    player = Player.find_or_initialize_by_provider_and_uid(omniauth['provider'], omniauth['uid'])
-    return player if player.id
+    scope = where(
+      provider: omniauth['provider'],
+      uid:      omniauth['uid'],
+    )
+    player = scope.first || scope.new
+
+    return player if player.persisted?
+
     player.name = omniauth['user_info']['name']
     player.save!
     player

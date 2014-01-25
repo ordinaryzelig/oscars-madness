@@ -7,7 +7,7 @@ class Entry < ActiveRecord::Base
 
   after_create :generate_picks
 
-  named_scope :for_year, proc { |year| {:conditions => {:year => year}} }
+  scope :for_year, ->(year) { where(:year => year) }
 
   def points
     picks.map(&:points).sum
@@ -34,7 +34,7 @@ class Entry < ActiveRecord::Base
   private
 
   def generate_picks
-    Category.for_year(year).all.each { |cat| picks.create!(:category => cat) }
+    Category.for_year(year).each { |cat| picks.create!(:category => cat) }
   end
 
 end
