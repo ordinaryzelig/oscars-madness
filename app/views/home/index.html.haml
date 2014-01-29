@@ -1,4 +1,14 @@
-= render 'standings'
+.ui.grid.vertically.very.relaxed
 
-.categories.ui.list
-  = render @categories[0..3]
+  .row
+    .column
+      -# Just using grid to center the table
+      .ui.grid
+        .one.wide.column
+        .fourteen.wide.column= render 'standings'
+        .one.wide.column
+
+  .row
+    .column
+      .categories.ui.list
+        = render @categories[0..3]
