@@ -1,15 +1,11 @@
-- input_tag_name ||= ''
-- player ||= nil
-- nominee_classes = [nominee_class ||= nil]
-- nominee_classes << 'winning_nominee' if nominee.is_winner
-- nominee_classes << 'rounded'
+= div_for nominee, class: "item" do
 
-.nominee{:class => nominee_classes}
-  - if show_declare_winners
-    %span.winner= link_to check_box_tag(nominee.id), declare_winner_nominee_path(nominee), :method => :put
-  - content_for dom_id(nominee) do
-    %span.film
-      = "#{nominee.film.name}:"
-    %span.nominee_name
-      = nominee.name
-  = label_tag input_tag_name + "_#{nominee.id}", yield(dom_id(nominee))
+  .ui{class: nominee.is_winner ? 'segment inverted green secondary' : ''}
+    .info.ui.header.big
+      = "#{nominee.film.name}"
+      .sub.header
+        = nominee.name
+
+    - if nominee.picks.any?
+      .player-picks.ui.list.horizontal
+        = render nominee.picks

@@ -1,0 +1,614 @@
+[
+  {
+    "category": "Best Picture",
+    "nominees": [
+      {
+        "nominee": "Charles Roven, Richard Suckle, Megan Ellison, and Jonathan Gordon, Producers",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Scott Rudin, Dana Brunetti and Michael De Luca, Producers",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "Robbie Brenner and Rachel Winter, Producers",
+        "film": "Dallas Buyers Club"
+      },
+      {
+        "nominee": "Alfonso Cuarón and David Heyman, Producers",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Megan Ellison, Spike Jonze and Vincent Landay, Producers",
+        "film": "Her"
+      },
+      {
+        "nominee": "Albert Berger and Ron Yerxa, Producers",
+        "film": "Nebraska"
+      },
+      {
+        "nominee": "Gabrielle Tana, Steve Coogan and Tracey Seaward, Producers",
+        "film": "Philomena"
+      },
+      {
+        "nominee": "Brad Pitt, Dede Gardner, Jeremy Kleiner, Steve McQueen and Anthony Katagas, Producers",
+        "film": "12 Years a Slave"
+      },
+      {
+        "nominee": "Nominees to be determined",
+        "film": "The Wolf of Wall Street"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Christian Bale",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Bruce Dern",
+        "film": "Nebraska"
+      },
+      {
+        "nominee": "Leonardo DiCaprio",
+        "film": "The Wolf of Wall Street"
+      },
+      {
+        "nominee": "Chiwetel Ejiofor",
+        "film": "12 Years a Slave"
+      },
+      {
+        "nominee": "Matthew McConaughey",
+        "film": "Dallas Buyers Club"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Amy Adams",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Cate Blanchett",
+        "film": "Blue Jasmine"
+      },
+      {
+        "nominee": "Sandra Bullock",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Judi Dench",
+        "film": "Philomena"
+      },
+      {
+        "nominee": "Meryl Streep",
+        "film": "August: Osage County"
+      }
+    ]
+  },
+  {
+    "category": "Actor in A Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Barkhad Abdi",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "Bradley Cooper",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Michael Fassbender",
+        "film": "12 Years a Slave"
+      },
+      {
+        "nominee": "Jonah Hill",
+        "film": "The Wolf of Wall Street"
+      },
+      {
+        "nominee": "Jared Leto",
+        "film": "Dallas Buyers Club"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Sally Hawkins",
+        "film": "Blue Jasmine"
+      },
+      {
+        "nominee": "Jennifer Lawrence",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Lupita Nyong'o",
+        "film": "12 Years a Slave"
+      },
+      {
+        "nominee": "Julia Roberts",
+        "film": "August: Osage County"
+      },
+      {
+        "nominee": "June Squibb",
+        "film": "Nebraska"
+      }
+    ]
+  },
+  {
+    "category": "Animated Feature Film",
+    "nominees": [
+      {
+        "nominee": "Chris Sanders, Kirk DeMicco and Kristine Belson",
+        "film": "The Croods"
+      },
+      {
+        "nominee": "Chris Renaud, Pierre Coffin and Chris Meledandri",
+        "film": "Despicable Me 2"
+      },
+      {
+        "nominee": "Benjamin Renner and Didier Brunner",
+        "film": "Ernest & Celestine"
+      },
+      {
+        "nominee": "Chris Buck, Jennifer Lee and Peter Del Vecho",
+        "film": "Frozen"
+      },
+      {
+        "nominee": "Hayao Miyazaki and Toshio Suzuki",
+        "film": "The Wind Rises"
+      }
+    ]
+  },
+  {
+    "category": "Cinematography",
+    "nominees": [
+      {
+        "nominee": "Philippe Le Sourd",
+        "film": "The Grandmaster"
+      },
+      {
+        "nominee": "Emmanuel Lubezki",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Bruno Delbonnel\n ",
+        "film": "Inside Llewyn Davis"
+      },
+      {
+        "nominee": "Phedon Papamichael",
+        "film": "Nebraska"
+      },
+      {
+        "nominee": "Roger A. Deakins",
+        "film": "Prisoners"
+      }
+    ]
+  },
+  {
+    "category": "Costume Design",
+    "nominees": [
+      {
+        "nominee": "Michael Wilkinson",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "William Chang Suk Ping",
+        "film": "The Grandmaster"
+      },
+      {
+        "nominee": "Catherine Martin",
+        "film": "The Great Gatsby"
+      },
+      {
+        "nominee": "Michael O'Connor",
+        "film": "The Invisible Woman"
+      },
+      {
+        "nominee": "Patricia Norris",
+        "film": "12 Years a Slave"
+      }
+    ]
+  },
+  {
+    "category": "Directing",
+    "nominees": [
+      {
+        "nominee": "David O. Russell",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Paul Greengrass",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "Alfonso Cuarón",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Alexander Payne",
+        "film": "Nebraska"
+      },
+      {
+        "nominee": "Steve McQueen",
+        "film": "12 Years a Slave"
+      },
+      {
+        "nominee": "Martin Scorsese",
+        "film": "The Wolf of Wall Street"
+      }
+    ]
+  },
+  {
+    "category": "Documentary Feature",
+    "nominees": [
+      {
+        "nominee": "Joshua Oppenheimer and Signe Byrge Sørensen",
+        "film": "The Act of Killing"
+      },
+      {
+        "nominee": "Zachary Heinzerling and Lydia Dean Pilcher",
+        "film": "Cutie and the Boxer"
+      },
+      {
+        "nominee": "Richard Rowley and Jeremy Scahill",
+        "film": "Dirty Wars"
+      },
+      {
+        "nominee": "Jehane Noujaim and Karim Amer",
+        "film": "The Square"
+      },
+      {
+        "nominee": "Nominees to be determined",
+        "film": "20 Feet from Stardom"
+      }
+    ]
+  },
+  {
+    "category": "Documentary Short Subject",
+    "nominees": [
+      {
+        "nominee": "Jeffrey Karoff",
+        "film": "CaveDigger"
+      },
+      {
+        "nominee": "Jason Cohen",
+        "film": "Facing Fear"
+      },
+      {
+        "nominee": "Sara Ishaq",
+        "film": "Karama Has No Walls"
+      },
+      {
+        "nominee": "Malcolm Clarke and Nicholas Reed",
+        "film": "The Lady in Number 6: Music Saved My Life"
+      },
+      {
+        "nominee": "Edgar Barens",
+        "film": "Prison Terminal: The Last Days of Private Jack Hall"
+      }
+    ]
+  },
+  {
+    "category": "Film Editing",
+    "nominees": [
+      {
+        "nominee": "Jay Cassidy, Crispin Struthers and Alan Baumgarten",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Christopher Rouse",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "John Mac McMurphy and Martin Pensa",
+        "film": "Dallas Buyers Club"
+      },
+      {
+        "nominee": "Alfonso Cuarón and Mark Sanger",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Joe Walker",
+        "film": "12 Years a Slave"
+      }
+    ]
+  },
+  {
+    "category": "Foreign Language Film",
+    "nominees": [
+      {
+        "nominee": "Belgium",
+        "film": "The Broken Circle Breakdown"
+      },
+      {
+        "nominee": "Italy",
+        "film": "The Great Beauty"
+      },
+      {
+        "nominee": "Denmark",
+        "film": "The Hunt"
+      },
+      {
+        "nominee": "Cambodia",
+        "film": "The Missing Picture"
+      },
+      {
+        "nominee": "Palestine",
+        "film": "Omar"
+      }
+    ]
+  },
+  {
+    "category": "Makeup and Hairstyling",
+    "nominees": [
+      {
+        "nominee": "Adruitha Lee and Robin Mathews",
+        "film": "Dallas Buyers Club"
+      },
+      {
+        "nominee": "Stephen Prouty",
+        "film": "Jackass Presents: Bad Grandpa"
+      },
+      {
+        "nominee": "Joel Harlow and Gloria Pasqua-Casny",
+        "film": "The Lone Ranger"
+      }
+    ]
+  },
+  {
+    "category": "Music Original Score",
+    "nominees": [
+      {
+        "nominee": "John Williams",
+        "film": "The Book Thief"
+      },
+      {
+        "nominee": "Steven Price",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "William Butler and Owen Pallett",
+        "film": "Her"
+      },
+      {
+        "nominee": "Alexandre Desplat",
+        "film": "Philomena"
+      },
+      {
+        "nominee": "Thomas Newman",
+        "film": "Saving Mr. Banks"
+      }
+    ]
+  },
+  {
+    "category": "Music Original Song",
+    "nominees": [
+      {
+        "nominee": "Music by Bruce Broughton; Lyric by Dennis Spiegel",
+        "film": "\"Alone Yet Not Alone\" from ALONE YET NOT ALONE"
+      },
+      {
+        "nominee": "Music and Lyric by Pharrell Williams",
+        "film": "\"Happy\" from DESPICABLE ME 2"
+      },
+      {
+        "nominee": "Music and Lyric by Kristen Anderson-Lopez and Robert Lopez",
+        "film": "\"Let It Go\" from FROZEN"
+      },
+      {
+        "nominee": "Music by Karen O; Lyric by Karen O and Spike Jonze",
+        "film": "\"The Moon Song\" from HER"
+      },
+      {
+        "nominee": "Music by Paul Hewson, Dave Evans, Adam Clayton and Larry Mullen; Lyric by Paul Hewson",
+        "film": "\"Ordinary Love\" from MANDELA: LONG WALK TO FREEDOM"
+      }
+    ]
+  },
+  {
+    "category": "Production Design",
+    "nominees": [
+      {
+        "nominee": "Judy Becker (Production Design); Heather Loeffler (Set Decoration)",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Andy Nicholson (Production Design); Rosie Goodwin and Joanne Woollard (Set Decoration)",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Catherine Martin (Production Design); Beverley Dunn (Set Decoration)",
+        "film": "The Great Gatsby"
+      },
+      {
+        "nominee": "K.K. Barrett (Production Design); Gene Serdena (Set Decoration)",
+        "film": "Her"
+      },
+      {
+        "nominee": "Adam Stockhausen (Production Design); Alice Baker (Set Decoration)",
+        "film": "12 Years a Slave"
+      }
+    ]
+  },
+  {
+    "category": "Short Film Animated",
+    "nominees": [
+      {
+        "nominee": "Daniel Sousa and Dan Golden",
+        "film": "Feral"
+      },
+      {
+        "nominee": "Lauren MacMullan and Dorothy McKim",
+        "film": "Get a Horse!"
+      },
+      {
+        "nominee": "Laurent Witz and Alexandre Espigares",
+        "film": "Mr. Hublot"
+      },
+      {
+        "nominee": "Shuhei Morita",
+        "film": "Possessions"
+      },
+      {
+        "nominee": "Max Lang and Jan Lachauer",
+        "film": "Room on the Broom"
+      }
+    ]
+  },
+  {
+    "category": "Short Film Live Action",
+    "nominees": [
+      {
+        "nominee": "Esteban Crespo",
+        "film": "Aquel No Era Yo (That Wasn't Me)"
+      },
+      {
+        "nominee": "Xavier Legrand and Alexandre Gavras",
+        "film": "Avant Que De Tout Perdre (Just Before Losing Everything)"
+      },
+      {
+        "nominee": "Anders Walter and Kim Magnusson",
+        "film": "Helium"
+      },
+      {
+        "nominee": "Selma Vilhunen and Kirsikka Saari",
+        "film": "Pitääkö Mun Kaikki Hoitaa? (Do I Have to Take Care of Everything?)"
+      },
+      {
+        "nominee": "Mark Gill and Baldwin Li",
+        "film": "The Voorman Problem"
+      }
+    ]
+  },
+  {
+    "category": "Sound Editing",
+    "nominees": [
+      {
+        "nominee": "Steve Boeddeker and Richard Hymns",
+        "film": "All Is Lost"
+      },
+      {
+        "nominee": "Oliver Tarney",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "Glenn Freemantle",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Brent Burge and Chris Ward",
+        "film": "The Hobbit: The Desolation of Smaug"
+      },
+      {
+        "nominee": "Wylie Stateman",
+        "film": "Lone Survivor"
+      }
+    ]
+  },
+  {
+    "category": "Sound Mixing",
+    "nominees": [
+      {
+        "nominee": "Chris Burdon, Mark Taylor, Mike Prestwood Smith and Chris Munro",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "Skip Lievsay, Niv Adiri, Christopher Benstead and Chris Munro",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Christopher Boyes, Michael Hedges, Michael Semanick and Tony Johnson",
+        "film": "The Hobbit: The Desolation of Smaug"
+      },
+      {
+        "nominee": "Skip Lievsay, Greg Orloff and Peter F. Kurland",
+        "film": "Inside Llewyn Davis"
+      },
+      {
+        "nominee": "Andy Koyama, Beau Borders and David Brownlow",
+        "film": "Lone Survivor"
+      }
+    ]
+  },
+  {
+    "category": "Visual Effects",
+    "nominees": [
+      {
+        "nominee": "Tim Webber, Chris Lawrence, Dave Shirk and Neil Corbould",
+        "film": "Gravity"
+      },
+      {
+        "nominee": "Joe Letteri, Eric Saindon, David Clayton and Eric Reynolds",
+        "film": "The Hobbit: The Desolation of Smaug"
+      },
+      {
+        "nominee": "Christopher Townsend, Guy Williams, Erik Nash and Dan Sudick",
+        "film": "Iron Man 3"
+      },
+      {
+        "nominee": "Tim Alexander, Gary Brozenich, Edson Williams and John Frazier",
+        "film": "The Lone Ranger"
+      },
+      {
+        "nominee": "Roger Guyett, Patrick Tubach, Ben Grossmann and Burt Dalton",
+        "film": "Star Trek Into Darkness"
+      }
+    ]
+  },
+  {
+    "category": "Writing Adapted Screenplay",
+    "nominees": [
+      {
+        "nominee": "Written by Richard Linklater, Julie Delpy, Ethan Hawke",
+        "film": "Before Midnight"
+      },
+      {
+        "nominee": "Screenplay by Billy Ray",
+        "film": "Captain Phillips"
+      },
+      {
+        "nominee": "Screenplay by Steve Coogan and Jeff Pope",
+        "film": "Philomena"
+      },
+      {
+        "nominee": "Screenplay by John Ridley",
+        "film": "12 Years a Slave"
+      },
+      {
+        "nominee": "Screenplay by Terence Winter",
+        "film": "The Wolf of Wall Street"
+      }
+    ]
+  },
+  {
+    "category": "Writing Original Screenplay",
+    "nominees": [
+      {
+        "nominee": "Written by Eric Warren Singer and David O. Russell",
+        "film": "American Hustle"
+      },
+      {
+        "nominee": "Written by Woody Allen",
+        "film": "Blue Jasmine"
+      },
+      {
+        "nominee": "Written by Craig Borten & Melisa Wallack",
+        "film": "Dallas Buyers Club"
+      },
+      {
+        "nominee": "Written by Spike Jonze",
+        "film": "Her"
+      },
+      {
+        "nominee": "Written by Bob Nelson",
+        "film": "Nebraska"
+      }
+    ]
+  }
+]

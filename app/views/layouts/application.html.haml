@@ -8,40 +8,40 @@
 
   %body.rounded
 
-    #banner
-      #logo
-        = link_to 'Oscars Madness', root_path
-      #hello
-        - if logged_in_player
-          Hi,
-          %span.name= logged_in_player.name
-          %br
-        = render 'shared/login_logout_links'
+    -##banner
+      -##logo
+        -#= link_to 'Oscars Madness', root_path
+      -##hello
+        -#- if logged_in_player
+          -#Hi,
+          -#%span.name= logged_in_player.name
+          -#%br
+        -#= render 'shared/login_logout_links'
 
-    %nav#top_menu.glossy_black
-      -if logged_in?
-        = render 'shared/player_navigation'
-      = link_to 'About', about_path
+    -#%nav#top_menu.glossy_black
+      -#-if logged_in?
+        -#= render 'shared/player_navigation'
+      -#= link_to 'About', about_path
 
-    #flash
-      - [:error, :notice, :warn].each do |type|
-        - content_tag :div, :id => "flash_#{type}" do
-          = flash[type]
+    -##flash
+      -#- [:error, :notice, :warn].each do |type|
+        -#- content_tag :div, :id => "flash_#{type}" do
+          -#= flash[type]
 
     #main
       = yield
 
-    - if show_category_nav?
-      %nav#category_nav.rounded
-        #tab
-          .text Categories
-        %ul
-          %li= link_to 'Top', '#top'
-          - Category.for_year(contest_year).by_name.each do |category|
-            %li= link_to category.name, "##{dom_id(category)}"
+    -#- if show_category_nav?
+      -#%nav#category_nav.rounded
+        -##tab
+          -#.text Categories
+        -#%ul
+          -#%li= link_to 'Top', '#top'
+          -#- Category.for_year(contest_year).by_name.each do |category|
+            -#%li= link_to category.name, "##{dom_id(category)}"
 
-    #footer
-      #contest_year_select
-        :plain
-          #{label_tag :contest_year, 'See other contests'}
-          #{select_tag :contest_year, options_for_select(Contest.years.map { |year| [year, root_path(:contest_year => year)] }, root_path(:contest_year => contest_year)), :onchange => 'window.location = this.value'}
+    -##footer
+      -##contest_year_select
+        -#:plain
+          -##{label_tag :contest_year, 'See other contests'}
+          -##{select_tag :contest_year, options_for_select(Contest.years.map { |year| [year, root_path(:contest_year => year)] }, root_path(:contest_year => contest_year)), :onchange => 'window.location = this.value'}

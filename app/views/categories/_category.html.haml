@@ -1,20 +1,7 @@
-- editable ||= false
-- entry ||= nil
-- show_declare_winners ||= nil
-= div_for category, :class => 'rounded box_shadowed' do
-  .category_name.glossy_black
-    = link_to_unless admin_config.picks_editable, category.name, category
-    %span.points
-      = "(#{pluralize(category.points, 'point')})"
-  .nominees
-    - category.nominees.each do |nominee|
-      - if nominee.is_winner
-        - nominee_class = 'correct_nominee'
-      - if entry
-        - pick = entry ? entry.picks.for_category(category).first : nil
-        - input_tag_name = "picks[#{pick.id}][nominee_id]" if pick
-        = render :partial => 'pick', :locals => {:pick => pick, :nominee => nominee, :editable => editable, :input_tag_name => input_tag_name}
-        - if nominee.is_winner
-          - nominee_class = pick.nominee == nominee ? 'correct_nominee' : 'wrong_nominee'
-      = render :partial => 'nominees/nominee', :locals => {:nominee => nominee, :entry => entry, :input_tag_name => input_tag_name, :show_declare_winners => show_declare_winners && !category.has_winner?, :nominee_class => nominee_class}
-      %br
+= div_for category, class: 'ui item segment' do
+  .info
+    .name.ui.header.large.floated.left= category.name.upcase
+    .points.ui.header.floated.right.tiny
+      = "#{pluralize(category.points, 'point')}"
+  .nominees.ui.list.divided
+    = render category.nominees

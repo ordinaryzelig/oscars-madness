@@ -1,7 +1,4 @@
-- editable ||= false
-.pick
-  - if editable
-    = radio_button_tag input_tag_name, nominee.id, pick.nominee_id == nominee.id
-  - else
-    - if pick.nominee_id == nominee.id
-      &rarr;
+= div_for pick, class: 'item' do
+  .profile-image
+    %img.ui.image{src: '/'}
+  .player-name= pick.entry.player.name

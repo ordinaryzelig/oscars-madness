@@ -1,0 +1,15 @@
+#standings
+  %table.box_shadowed
+    %caption
+      Standings
+    %thead
+      %tr#header.glossy_black
+        %th
+          Player
+        %th
+          Correct
+        %th
+          Points
+    %tbody
+      - @entries.each do |entry|
+        = render :partial => 'players/standing', :locals => {:entry => entry}
