@@ -1,15 +1,13 @@
-#standings
-  %table.box_shadowed
-    %caption
-      Standings
-    %thead
-      %tr#header.glossy_black
-        %th
-          Player
-        %th
-          Correct
-        %th
-          Points
-    %tbody
-      - @entries.each do |entry|
-        = render :partial => 'players/standing', :locals => {:entry => entry}
+%table#standings.ui.table.basic.collapsing.compact.large.segment
+  %caption
+    Standings
+  %tbody
+    - @entries.each do |entry|
+      %tr
+        %th.player.four.wide{:class => logged_in_player == entry.player ? 'error' : nil}
+          .name= entry.player.name
+          .avatar= avatar(entry.player)
+        %td.points
+          .progress.ui.progress{class: standing_progress_color(entry, @entries)}
+            .bar{style: "width: #{progress_percentage(entry, @categories)}%"}
+            = entry.points

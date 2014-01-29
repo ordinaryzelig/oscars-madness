@@ -1,4 +1,4 @@
 = div_for pick, class: 'item' do
   .profile-image
-    %img.ui.image{src: '/'}
+    = avatar(pick.entry.player)
   .player-name= pick.entry.player.name
