@@ -10,8 +10,10 @@ body {
   }
 }
 
+@bannerOffset: 100px;
+
 #main {
-  padding-top: 100px;
+  padding-top: @bannerOffset;
 }
 
 #standings {
@@ -24,6 +26,14 @@ body {
       font-weight: bold;
     }
   }
+}
+
+// Anchor for category to offset banner
+a.category-anchor {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -@bannerOffset;
 }
 
 .pick {

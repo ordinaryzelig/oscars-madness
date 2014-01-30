@@ -9,7 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree ./semantic
+ *= require_tree ../../../vendor/assets/stylesheets/semantic/.
  *= require      mine
  *= require_tree .
  */

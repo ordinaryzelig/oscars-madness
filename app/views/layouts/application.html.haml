@@ -2,21 +2,24 @@
 
 %html{html_attrs}
   %head
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
     %title= 'Oscars Madness'
 
   %body
 
-    #banner.ui.menu.inverted.fixed
-      #logo.item
+    #banner.ui.menu.tiered.inverted.fixed
+      #logo.menu.item
         %span Oscars Madness
+      %a#categories-toggle.item.button Categories
       -##hello
         -#- if logged_in_player
           -#Hi,
           -#%span.name= logged_in_player.name
           -#%br
         -#= render 'shared/login_logout_links'
+
+    = render 'category_nav'
 
     #main.ui.page.grid
 
