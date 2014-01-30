@@ -4,21 +4,21 @@
   %head
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    %title= 'oscars madness'
+    %title= 'Oscars Madness'
 
   %body
 
-    .ui.page.grid
+    #banner.ui.menu.inverted.fixed
+      #logo.item
+        %span Oscars Madness
+      -##hello
+        -#- if logged_in_player
+          -#Hi,
+          -#%span.name= logged_in_player.name
+          -#%br
+        -#= render 'shared/login_logout_links'
 
-      -##banner
-        -##logo
-          -#= link_to 'Oscars Madness', root_path
-        -##hello
-          -#- if logged_in_player
-            -#Hi,
-            -#%span.name= logged_in_player.name
-            -#%br
-          -#= render 'shared/login_logout_links'
+    #main.ui.page.grid
 
       -#%nav#top_menu.glossy_black
         -#-if logged_in?
@@ -30,7 +30,7 @@
           -#- content_tag :div, :id => "flash_#{type}" do
             -#= flash[type]
 
-      #main.column
+      .column
         = yield
 
       -#- if show_category_nav?
