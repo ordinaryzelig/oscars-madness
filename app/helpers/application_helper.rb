@@ -14,7 +14,7 @@ module ApplicationHelper
   end
 
   def avatar(player)
-    image_tag '/', class: 'ui image'
+    image_tag player.facebook_image_url, class: 'ui image avatar'
   end
 
   def progress_percentage(entry, categories)
