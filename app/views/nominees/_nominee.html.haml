@@ -1,11 +1,16 @@
-= div_for nominee, class: "item" do
+= div_for nominee, class: "row" do
 
-  .ui{class: nominee.is_winner ? 'segment inverted green secondary' : ''}
-    .info.ui.header.big
-      = "#{nominee.film.name}"
-      .sub.header
-        = nominee.name
+  .ui.grid
+    .row.equal.height
+      .column.six.wide
+        - if nominee.is_winner
+          .ui.label.ribbon.green winner
+        .info.ui.header.big
+          = "#{nominee.film.name}"
+          .sub.header
+            = nominee.name
 
-    - if nominee.picks.any?
-      .player-picks.ui.list.horizontal
-        = render nominee.picks
+      .column.ten.wide.aligned.right.middle
+        - if nominee.picks.any?
+          .ui.labels
+            = render nominee.picks, is_winner: nominee.is_winner

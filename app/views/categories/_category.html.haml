@@ -4,5 +4,5 @@
   %span.name= category.name.upcase
   %span.points.ui.label.large.horizontal.red= pluralize(category.points, 'point')
 = div_for category, class: 'ui segment attached' do
-  .nominees.ui.list.divided
+  .nominees.ui.grid.vertically.divided
     = render category.nominees

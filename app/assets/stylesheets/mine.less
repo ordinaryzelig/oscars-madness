@@ -16,19 +16,17 @@ body {
   padding-top: @bannerOffset;
 }
 
-img.avatar {
-  height: 30px;
-  width: 30px;
-}
-
 #standings {
   .player {
-    text-align: right;
-    div {
-      display: inline-block;
-    }
     .name {
+      text-align: right;
       font-weight: bold;
+    }
+    .avatar {
+      img {
+        height: 30px;
+        width: 30px;
+      }
     }
   }
   tr {
@@ -51,11 +49,10 @@ a.category-anchor {
   }
 }
 
-.pick {
-  width: 3em;
-  height: 3em;
-
-  .player-name {
-    font-size: .7em;
+.nominee {
+  .pick.label {
+    // Spacing if labels span multiple rows
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
   }
 }

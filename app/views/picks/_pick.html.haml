@@ -1,4 +1,3 @@
-= div_for pick, class: 'item' do
-  .avatar
-    = avatar(pick.entry.player)
-  .player-name= pick.entry.player.name
+= content_tag_for :span, pick, class: "ui label image #{'green' if is_winner}" do
+  %img{src: pick.entry.player.facebook_image_url}
+  = pick.entry.player.name

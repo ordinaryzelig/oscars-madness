@@ -13,9 +13,8 @@ module ApplicationHelper
     @use_category_nav
   end
 
-  def avatar(player)
-    image_tag player.facebook_image_url, class: 'ui image avatar'
-  end
+  ########################
+  # Standings progress bar
 
   def progress_percentage(entry, categories)
     ((entry.points.to_f / possible_points(categories)) * 100).round
