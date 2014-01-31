@@ -1,9 +1,8 @@
 %a.category-anchor{id: "#{dom_id(category)}"} asdf
 
-= div_for category, class: 'ui item segment' do
-  .info
-    .name.ui.header.large.floated.left= category.name.upcase
-    .points.ui.header.floated.right.tiny
-      = "#{pluralize(category.points, 'point')}"
+.category-info.ui.header.attached.top.black.inverted.large
+  %span.name= category.name.upcase
+  %span.points.ui.label.large.horizontal.red= pluralize(category.points, 'point')
+= div_for category, class: 'ui segment attached' do
   .nominees.ui.list.divided
     = render category.nominees
