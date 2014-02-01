@@ -1,8 +1,12 @@
 %a.category-anchor{id: "#{dom_id(category)}"} asdf
 
-.category-info.ui.header.attached.top.black.inverted.large
-  %span.name= category.name.upcase
-  %span.points.ui.label.large.horizontal.red= pluralize(category.points, 'point')
+.category-info.ui.segment.attached.top.black.inverted
+  .ui.grid.middle.aligned
+    .row
+      .column.thirteen.wide
+        .name.ui.header.large= category.name.upcase
+      .column.three.wide
+        .points.ui.label.large.horizontal.red= pluralize(category.points, 'point')
 = div_for category, class: 'ui segment attached' do
   .nominees.ui.grid.vertically.divided
     = render category.nominees
