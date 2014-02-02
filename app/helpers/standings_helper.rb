@@ -1,5 +1,7 @@
 module StandingsHelper
 
+  MAX_PROGRESS_PERCENTAGE = 95
+
   # Show progress points if any of following true:
   #   editing turned off
   #   showing previous year
@@ -10,7 +12,7 @@ module StandingsHelper
   def progress_percentage(entry, categories)
     possible_points = possible_points(categories)
     return 0 if possible_points == 0
-    ((entry.points.to_f / possible_points) * 100).round
+    actual = ((entry.points.to_f / possible_points) * MAX_PROGRESS_PERCENTAGE).round
   end
 
   def standing_progress_color(entry, entries)
