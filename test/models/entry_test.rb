@@ -3,6 +3,7 @@ require_relative '../test_helper'
 class EntryTest < ActiveSupport::TestCase
 
   def setup
+    super
     announce_nominations
   end
 

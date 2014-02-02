@@ -4,6 +4,7 @@ require 'rails/test_help'
 
 require 'minitest/pride'
 
+require_relative 'database_cleaner'
 require_relative 'fabrication'
 
 class ActiveSupport::TestCase

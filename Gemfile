@@ -25,5 +25,7 @@ group :development do
 end
 
 group :test do
+  gem 'minitest'
   gem 'fabrication'
+  gem 'database_cleaner'
 end

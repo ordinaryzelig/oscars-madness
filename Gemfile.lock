@@ -37,6 +37,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     commonjs (0.2.7)
+    database_cleaner (1.2.0)
     erubis (2.7.0)
     execjs (2.0.2)
     fabrication (2.9.6)
@@ -176,10 +177,12 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   coffee-rails (~> 4.0.0)
+  database_cleaner
   fabrication
   haml-rails
   jquery-rails
   less-rails
+  minitest
   omniauth
   omniauth-facebook
   pg
