@@ -1,9 +1,0 @@
-#points
-  = @entry.points
-  total points
-
-%div
-  - @categories.each do |category|
-    = render 'categories/category', :category => category, :entry => @entry
-
-- show_category_nav

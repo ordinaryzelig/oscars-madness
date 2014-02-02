@@ -5,10 +5,11 @@
       -# Just using grid to center the table
       .ui.grid
         .one.wide.column
-        .fourteen.wide.column= render 'standings'
+        .fourteen.wide.column
+          = render 'standings'
         .one.wide.column
 
   .row
     .column
       .categories
-        = render @categories
+        = render categories

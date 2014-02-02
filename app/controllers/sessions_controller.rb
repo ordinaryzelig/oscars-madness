@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
         player.entries.create! :year => Date.today.year unless player.participating_this_year?
       end
       session[:player_id] = player.id
-      redirect_to edit_player_picks_path(player)
+      redirect_to edit_picks_path
     else
       flash.now[:error] = "login failed"
       render :new

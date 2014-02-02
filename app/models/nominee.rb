@@ -20,6 +20,14 @@ class Nominee < ActiveRecord::Base
     end
   end
 
+  def major_name
+    film.name
+  end
+
+  def minor_name
+    name
+  end
+
   private
 
   def find_film

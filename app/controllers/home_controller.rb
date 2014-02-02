@@ -1,14 +1,21 @@
 class HomeController < ApplicationController
 
-  before_filter :load_contest_year
+  helper_method :entries, :categories
 
   def index
-    @entries = Entry.for_year(contest_year).all(:include => :picks).sort
-    @categories = Category.for_year(contest_year).all(:include => {:nominees => :film})
   end
 
   def about
+  end
 
+private
+
+  def entries
+    @entries ||= Entry.for_year(contest_year).all(:include => :picks).sort
+  end
+
+  def categories
+    @categories ||= Category.for_year(contest_year).all(:include => {:nominees => :film})
   end
 
 end

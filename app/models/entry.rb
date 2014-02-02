@@ -15,7 +15,8 @@ class Entry < ActiveRecord::Base
 
   def picks_attributes=(atts)
     atts.each do |pick_id, att|
-      picks.detect { |pick| pick.id == pick_id.to_i }.update_attributes! :nominee_id => att[:nominee_id]
+      pick = picks.detect { |pick| pick.id == pick_id.to_i }
+      pick.update_attributes! :nominee_id => att[:nominee_id]
     end
   end
 
@@ -28,6 +29,12 @@ class Entry < ActiveRecord::Base
       end
     else
       another_entry.points <=> points
+    end
+  end
+
+  def pick_for_category(category)
+    picks.detect do |pick|
+      pick.category_id == category.id
     end
   end
 

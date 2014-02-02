@@ -9,16 +9,10 @@ OscarsMadness::Application.routes.draw do
   post   'create_session'       => 'sessions#create', as: :login
   get    'logout'               => 'sessions#destroy', as: :logout
 
-  resources :players do
-    resources :picks, only: [:index] do
-      collection do
-        get 'edit'
-        put 'update', as: :update
-      end
-    end
-  end
-
   resources :categories, only: [:show]
+
+  get 'picks/edit' => 'picks#edit', as: :edit_picks
+  put 'picks/update' => 'picks#update', as: :update_picks
 
   # Omniauth
   get '/auth/failure'            => 'sessions#failure'

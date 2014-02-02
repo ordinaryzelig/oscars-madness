@@ -18,18 +18,10 @@ body {
 
 #standings {
   .player {
-    .name {
-      text-align: right;
-      font-weight: bold;
-    }
-    .avatar {
-      img {
-        height: 30px;
-        width: 30px;
-      }
-    }
+    text-align: right;
+    font-weight: bold;
   }
-  tr {
+  tr, thead {
     border-style: none;
   }
 }
@@ -49,10 +41,8 @@ a.category-anchor {
   }
 }
 
-.nominee {
-  .pick.label {
-    // Spacing if labels span multiple rows
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-  }
+.labels .player.label {
+  // Spacing if labels span multiple rows
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
