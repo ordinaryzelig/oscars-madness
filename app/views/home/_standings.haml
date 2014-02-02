@@ -9,8 +9,8 @@
     - entries.each do |entry|
       %tr
         %th.player.four.wide
-          = player_label(entry.player, logged_in_player == entry.player ? 'blue' : '')
-        %td.points
+          = player_label(entry.player, logged_in_player == entry.player ? 'blue' : 'black')
+        %td
           .progress.ui{class: standing_progress_color(entry, entries)}
             .bar{style: "width: #{progress_percentage(entry, categories)}%"}
-            = entry.points if show_progress_points?(contest_year)
+            %span.points= entry.points if show_progress_points?(contest_year)
