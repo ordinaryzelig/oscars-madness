@@ -3,6 +3,7 @@ body {
 }
 
 #banner {
+  // Giant logo
   #logo a {
     font-size: 5em;
     font-weight: bold;
@@ -10,17 +11,19 @@ body {
   }
 }
 
+// main content padding top/bottom
 @bannerOffset: 130px;
-
 #main {
   padding-top: @bannerOffset;
   padding-bottom: 20px;
 }
 
 #standings {
+  // Remove dividers from standings
   tr, thead {
     border-style: none;
   }
+  // Align player and bold
   .player {
     text-align: right;
     font-weight: bold;
@@ -40,8 +43,8 @@ a.category-anchor {
   font-weight: bold;
 }
 
+// Spacing for player labels that span multiple rows
 .labels .player.label {
-  // Spacing if labels span multiple rows
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
