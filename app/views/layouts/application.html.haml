@@ -16,9 +16,3 @@
 
       .row
         = yield
-
-      -##footer
-        -##contest_year_select
-          -#:plain
-            -##{label_tag :contest_year, 'See other contests'}
-            -##{select_tag :contest_year, options_for_select(Contest.years.map { |year| [year, root_path(:contest_year => year)] }, root_path(:contest_year => contest_year)), :onchange => 'window.location = this.value'}
