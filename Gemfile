@@ -15,7 +15,6 @@ gem 'haml-rails'
 gem 'rails_admin'
 
 gem 'less-rails'
-gem 'therubyracer' # less-rails dependency
 
 group :development, :test do
   gem "sqlite3"
