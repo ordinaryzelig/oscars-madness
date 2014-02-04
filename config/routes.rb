@@ -1,12 +1,12 @@
 OscarsMadness::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
-  root :controller => 'home', :action => 'index'
-  get 'about', :controller => 'home', :action => 'about'
+  root 'home#index'
+  get  'about' => 'home#about'
 
   # sessions.
-  get    'login'                => 'sessions#new', as: :login_form
-  post   'create_session'       => 'sessions#create', as: :login
+  get    'login'                => 'sessions#new', as: :login
+  post   'create_session'       => 'sessions#create'
   get    'logout'               => 'sessions#destroy', as: :logout
 
   resources :categories, only: [:show]

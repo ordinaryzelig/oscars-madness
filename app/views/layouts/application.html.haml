@@ -8,32 +8,11 @@
 
   %body
 
-    %a.category-anchor{href: '#top'}
-
-    #banner.ui.menu.tiered.inverted.fixed
-      #logo.menu.item
-        %span Oscars Madness
-      %a#categories-toggle.item.button Categories
-      -##hello
-        -#- if logged_in_player
-          -#Hi,
-          -#%span.name= logged_in_player.name
-          -#%br
-        -#= render 'shared/login_logout_links'
+    = render 'layouts/banner'
 
     = render 'layouts/category_nav'
 
     #main.ui.page.grid
-
-      -#%nav#top_menu.glossy_black
-        -#-if logged_in?
-          -#= render 'shared/player_navigation'
-        -#= link_to 'About', about_path
-
-      -##flash
-        -#- [:error, :notice, :warn].each do |type|
-          -#- content_tag :div, :id => "flash_#{type}" do
-            -#= flash[type]
 
       .row
         = yield

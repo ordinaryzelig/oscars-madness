@@ -1,0 +1,15 @@
+%a.category-anchor{href: '#top'}
+
+#banner.ui.menu.inverted.fixed
+  #logo.menu.item
+    %span Oscars Madness
+
+  #menu.ui.secondary.menu
+    %a#categories-toggle.item.ui.button.hover Categories
+    %a.item.ui.button.hover{href: about_path} About
+    .menu.right
+      - if logged_in_player
+        .item= player_label(logged_in_player, 'blue')
+        %a.item.ui.button.hover{href: logout_path} Logout
+      - else
+        %a.item.ui.button.hover{href: login_path} Login
