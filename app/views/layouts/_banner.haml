@@ -5,10 +5,13 @@
     %span Oscars Madness
 
   #menu.ui.secondary.menu
-    %a#categories-toggle.item.ui.button.hover Categories
+
+    %a#categories-toggle.item.ui.button Categories
+    %a.item.ui.button{href: edit_picks_path} Picks
+
     .menu.right
       - if logged_in_player
+        %a.item.ui.button{href: logout_path} Logout
         .item= player_label(logged_in_player, 'blue')
-        %a.item.ui.button.hover{href: logout_path} Logout
       - else
-        %a.item.ui.button.hover{href: login_path} Login
+        %a.item.ui.button{href: login_path} Login
