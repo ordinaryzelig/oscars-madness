@@ -6,16 +6,17 @@
       = if @edit_mode
         .column.one.wide.right.aligned
           = pick_radio_button(entry, nominee)
-        .column.five.wide
+        .column.fifteen.wide
           = pick_input_label(entry, nominee) do
             = names_header(nominee)
+
       - else
+
         .column.six.wide
           = winner_label(nominee) if nominee.is_winner
           = names_header(nominee)
 
-      -# Picks
-      - unless @edit_mode
+        -# Picks
         .column.ten.wide.aligned.right.middle.labels
           - picks_to_show(nominee.picks, contest_year).map do |pick|
             = player_label(pick.entry.player, nominee.is_winner ? 'green' : '')
