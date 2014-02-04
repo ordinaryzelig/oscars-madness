@@ -6,7 +6,7 @@ module StandingsHelper
   #   editing turned off
   #   showing previous year
   def show_progress_points?(contest_year)
-    !picks_editable? || previous_year?(contest_year)
+    !picks_editable? || previous_contest_year?(contest_year)
   end
 
   def progress_percentage(entry, categories)
@@ -27,10 +27,6 @@ module StandingsHelper
   end
 
 private
-
-  def previous_year?(contest_year)
-    Contest.years.last != contest_year
-  end
 
   def possible_points(categories)
     categories.select(&:has_winner?).map(&:points).reduce(0, :+)

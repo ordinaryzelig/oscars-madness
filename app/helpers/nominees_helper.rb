@@ -25,6 +25,25 @@ module NomineesHelper
     label_tag name, content
   end
 
+  def picks_to_show(all_picks, contest_year)
+    return all_picks if previous_contest_year?(contest_year)
+
+    # Current year and...
+    if picks_editable?
+      if logged_in_player
+        logged_in_player_pick = all_picks.detect do |pick|
+          pick.entry.player_id == logged_in_player.id
+        end
+        [logged_in_player_pick].compact
+      else
+        []
+      end
+    else
+      # Oscars have started
+      all_picks
+    end
+  end
+
 private
 
   def minor_sub_header(nominee)

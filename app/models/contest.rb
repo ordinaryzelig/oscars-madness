@@ -1,7 +1,7 @@
 class Contest
 
   def self.years
-    Category.order(:year).map(&:year).uniq
+    Category.unscoped.order(:year).pluck(:year).uniq
   end
 
   def self.this_year?

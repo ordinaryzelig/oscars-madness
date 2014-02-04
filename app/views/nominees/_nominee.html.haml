@@ -15,6 +15,7 @@
           = names_header(nominee)
 
       -# Picks
-      .column.ten.wide.aligned.right.middle.labels
-        - nominee.picks.map do |pick|
-          = player_label(pick.entry.player, nominee.is_winner ? 'green' : '')
+      - unless @edit_mode
+        .column.ten.wide.aligned.right.middle.labels
+          - picks_to_show(nominee.picks, contest_year).map do |pick|
+            = player_label(pick.entry.player, nominee.is_winner ? 'green' : '')
