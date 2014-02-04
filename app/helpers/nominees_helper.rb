@@ -44,6 +44,13 @@ module NomineesHelper
     end
   end
 
+  def pick_color(player, nominee)
+    case
+    when player == logged_in_player then 'blue'
+    when nominee.is_winner then 'green'
+    end
+  end
+
 private
 
   def minor_sub_header(nominee)

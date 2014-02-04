@@ -19,4 +19,4 @@
         -# Picks
         .column.ten.wide.aligned.right.middle.labels
           - picks_to_show(nominee.picks, contest_year).map do |pick|
-            = player_label(pick.entry.player, nominee.is_winner ? 'green' : '')
+            = player_label(pick.entry.player, pick_color(pick.entry.player, nominee))
