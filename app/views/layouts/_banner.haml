@@ -2,12 +2,13 @@
 
 #banner.ui.menu.inverted.fixed
   #logo.menu.item
-    %span Oscars Madness
+    %a{href: root_path} Oscars Madness
 
   #menu.ui.secondary.menu
 
     %a#categories-toggle.item.ui.button Categories
-    %a.item.ui.button{href: edit_picks_path} Picks
+    - if picks_editable?
+      %a.item.ui.button{href: edit_picks_path} Picks
 
     .menu.right
       - if logged_in_player
