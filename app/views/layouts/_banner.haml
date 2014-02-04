@@ -6,13 +6,15 @@
 
   #menu.ui.secondary.menu
 
-    %a#categories-toggle.item.ui.button Categories
+    %a#categories-toggle.item.ui
+      Categories
+
     - if picks_editable?
-      %a.item.ui.button{href: edit_picks_path} Picks
+      %a.item.ui{href: edit_picks_path} Picks
 
     .menu.right
       - if logged_in_player
-        %a.item.ui.button{href: logout_path} Logout
+        %a.item.ui{href: logout_path} Logout
         .item= player_label(logged_in_player, 'blue')
       - else
-        %a.item.ui.button{href: login_path} Login
+        %a.item.ui{href: login_path} Login
