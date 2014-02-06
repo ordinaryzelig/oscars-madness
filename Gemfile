@@ -14,14 +14,12 @@ gem 'awesome_print'
 gem 'haml-rails'
 gem 'rails_admin'
 
-gem 'less-rails'
-
 group :development, :test do
   gem "sqlite3"
 end
 
 group :development do
-  #gem 'nokogiri'
+  gem 'nokogiri'
 end
 
 group :test do
