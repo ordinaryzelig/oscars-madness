@@ -8,4 +8,8 @@ class Contest
     years.last == Date.today.year
   end
 
+  def Contest.latest?(year)
+    years.last == year
+  end
+
 end

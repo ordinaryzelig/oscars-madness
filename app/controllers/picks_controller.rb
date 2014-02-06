@@ -32,11 +32,12 @@ class PicksController < ApplicationController
   end
 
   def authenticate_rights_to_write
-    unless picks_editable?
+    if picks_editable? && Contest.latest?(contest_year)
+      true
+    else
       redirect_to root_path
-      return false
+      false
     end
-    true
   end
 
 end

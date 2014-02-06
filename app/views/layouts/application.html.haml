@@ -2,8 +2,14 @@
 
 %html{html_attrs}
   %head
+
+    = stylesheet_link_tag    "http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css", media: "all"
     = stylesheet_link_tag    "application", media: "all"
+
+    = javascript_include_tag "jquery"
+    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/javascript/semantic.min.js"
     = javascript_include_tag "application"
+
     %title= 'Oscars Madness'
 
   %body

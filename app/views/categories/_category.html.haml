@@ -3,9 +3,9 @@
 .category-info.ui.segment.attached.top.black.inverted
   .ui.grid.middle.aligned
     .row
-      .column.fourteen.wide
+      .column.thirteen.wide
         .name.ui.header.large= category.name.upcase
-      .column.two.wide
+      .column.three.wide.right.aligned
         .points.ui.label.large.horizontal.red= pluralize(category.points, 'point')
 = div_for category, class: 'ui segment attached' do
   .nominees.ui.grid.vertically.divided
