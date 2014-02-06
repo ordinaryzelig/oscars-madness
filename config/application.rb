@@ -24,8 +24,8 @@ module OscarsMadness
     config.middleware.use OmniAuth::Builder do
       provider(
         :facebook,
-        ENV.fetch('OSCARS_FACEBOOK_APP_ID'),
-        ENV.fetch('OSCARS_FACEBOOK_APP_SECRET'),
+        ENV['OSCARS_FACEBOOK_APP_ID'],
+        ENV['OSCARS_FACEBOOK_APP_SECRET'],
         :scope      => '', # just want basic authentication.
       )
     end
