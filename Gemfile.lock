@@ -169,7 +169,6 @@ DEPENDENCIES
   database_cleaner
   fabrication
   haml-rails
-  jquery-rails
   minitest
   nokogiri
   omniauth
