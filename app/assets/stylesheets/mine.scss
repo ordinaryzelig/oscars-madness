@@ -1,25 +1,55 @@
+$bannerOffset: 70px;
+
+// iPhone needs a bit extra padding on bottom to help prevent safari menu
+$page-bottom-padding: 50px;
+
 body {
   background-color: #eee;
   font-family: Arial, sans-serif;
 }
 
-#banner {
-  // Giant logo
-  #logo a {
-    font-size: 5em;
-    font-weight: bold;
-    color: white;
+#banner.ui.menu.inverted {
+  // Custom padding for banner to save space
+  padding: 5px;
+  .item {
+    padding: 3px;
+  }
+
+  // Extra padding for categories link
+  a.item {
+    padding: 8px;
+  }
+
+  // Remove highlighting for player label
+  #logged-in-player:hover,
+  #logged-in-player.active {
+    background-color: inherit !important;
+  }
+
+  // Inverted black dropdown menu
+  .dropdown .menu.inverted {
+    background-color: rgb(51, 51, 51);
+    .item {
+      color: white !important; 
+      border-top-color: white;
+    }
   }
 }
 
 // main content padding top/bottom
-$bannerOffset: 150px;
 #main {
   padding-top: $bannerOffset;
-  padding-bottom: 20px;
+  padding-bottom: $page-bottom-padding;
+}
+
+#category-nav {
+  padding-bottom: $page-bottom-padding;
 }
 
 #standings {
+  tbody, tr {
+    border-bottom: none;
+  }
   // Remove dividers from standings
   tr, thead {
     border-style: none;
@@ -29,6 +59,7 @@ $bannerOffset: 150px;
     text-align: right;
     font-weight: bold;
   }
+  // bold headers
   thead tr th {
     font-weight: bold;
   }
@@ -54,12 +85,9 @@ a.category-anchor {
   }
 }
 
-// Position floating save button
-form .floating-save.menu {
-  position: fixed;
-  top: $bannerOffset + 10px;
-  right: -75px;
-  z-index: 1;
+// Save button top margin
+#save {
+  margin-top: 30px;
 }
 
 // Spacing for player labels that span multiple rows

@@ -4,8 +4,9 @@
   You can change your picks as much as you want until the show starts.
 
 = form_tag update_picks_path, :method => :put do
-  .floating-save.ui.menu.vertical.secondary
-    .item
-      = submit_tag 'Save', class: 'ui button large green'
+
+  = save_button
 
   = render categories
+
+  = save_button

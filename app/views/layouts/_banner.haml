@@ -1,20 +1,21 @@
 %a.category-anchor{href: '#top'}
 
-#banner.ui.menu.inverted.fixed
-  #logo.menu.item
-    %a{href: root_path} Oscars Madness
+#banner.ui.menu.inverted.fixed.borderless.fitted
+  #logo.item
+    %a.header.ui{href: root_path} Oscars Madness
 
-  #menu.ui.secondary.menu
+  .menu.right
 
-    %a#categories-toggle.item.ui
+    %a#categories-toggle.item
       Categories
 
-    - if picks_editable?
-      %a.item.ui{href: edit_picks_path} Picks
+    - if logged_in_player
+      #logged-in-player.item.ui.dropdown
+        = player_label(logged_in_player, 'blue')
+        .menu.inverted
+          - if picks_editable?
+            %a.item{href: edit_picks_path} Picks
+          = link_to 'Logout', logout_path, class: 'item'
 
-    .menu.right
-      - if logged_in_player
-        %a.item.ui{href: logout_path} Logout
-        .item= player_label(logged_in_player, 'blue')
-      - else
-        %a.item.ui{href: login_path} Login
+    - else
+      %a.item.ui{href: login_path} Login
