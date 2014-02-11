@@ -6,7 +6,7 @@
       .column.eleven.wide
         .name.ui.header= category.name.upcase
       .column.five.wide.right.aligned
-        .points.ui.label.horizontal.red= pluralize(category.points, 'pt')
+        .points.ui.label.attached.top.right.red= pluralize(category.points, 'pt')
 = div_for category, class: 'ui segment attached' do
   .nominees.ui.grid.vertically.divided
     = render category.nominees
