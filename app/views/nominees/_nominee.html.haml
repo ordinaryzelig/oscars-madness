@@ -12,11 +12,11 @@
 
       - else
 
-        .column.six.wide
+        .column.eight.wide
           = winner_label(nominee) if nominee.is_winner
           = names_header(nominee)
 
         -# Picks
-        .column.ten.wide.aligned.right.middle.labels
+        .column.eight.wide.aligned.right.middle.labels
           - picks_to_show(nominee.picks, contest_year).map do |pick|
             = player_label(pick.entry.player, pick_color(pick.entry.player, nominee))
