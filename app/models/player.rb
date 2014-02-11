@@ -38,6 +38,10 @@ class Player < ActiveRecord::Base
     player
   end
 
+  def add_entry
+    entries.create! :year => Date.today.year
+  end
+
   private
 
   def hash_password

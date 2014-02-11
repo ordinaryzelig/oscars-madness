@@ -5,9 +5,9 @@ OscarsMadness::Application.routes.draw do
   get  'about' => 'home#about'
 
   # sessions.
-  get    'login'                => 'sessions#new', as: :login
-  post   'create_session'       => 'sessions#create'
-  get    'logout'               => 'sessions#destroy', as: :logout
+  get  'login'  => 'sessions#new', as: :login
+  post 'login'  => 'sessions#create'
+  get  'logout' => 'sessions#destroy', as: :logout
 
   resources :categories, only: [:show]
 

@@ -1,16 +1,28 @@
-%p
-  Login with facebook:<br />
-  = link_to image_tag('facebook.png'), '/auth/facebook'
+.ui.grid.relaxed.basic
+  .row
+    .column
+      .segment.ui.attached.top.inverted
+        Login with facebook
+      .segment.ui.attached
+        = link_to image_tag('facebook.png'), '/auth/facebook'
 
-%p
-  Don't want to use facebook? No problem. Just contact me and I'll make an account for you.<br />
-  If you already have such an account, login below.
+  .row
+    .column
+      .segment.ui.attached.top.inverted
+        Don't want to use facebook?
+      .segment.ui.attached
+        Contact me, I'll make an account for you, and then you can login below.
 
-- form_for Player.new, :url => login_path, :method => :post do |f|
-  = f.label :name
-  = f.text_field :name
-  %br
-  = f.label :password
-  = f.password_field :password
-  %br
-  = f.submit 'Login'
+        = form_for Player.new, :url => :login, :method => :post, id: 'login-form' do |f|
+          - if flash[:error]
+            .error.message.ui= flash[:error]
+          .form.ui
+            .two.fields
+              .field
+                = f.label :name
+                = f.text_field :name
+              .field
+                = f.label :password
+                = f.password_field :password
+              .field.inline
+                = f.submit 'Login', class: 'ui button submit blue'

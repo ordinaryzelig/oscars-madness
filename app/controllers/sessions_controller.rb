@@ -6,20 +6,18 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if request.env['omniauth.auth']
-      omniauth = request.env['omniauth.auth']
+    if omniauth
       player = Player.find_or_create_by_omniauth(omniauth)
     else
       player = Player.authenticate(params[:player][:name], params[:player][:password])
     end
+
     if player
-      if Contest.this_year?
-        player.entries.create! :year => Date.today.year unless player.participating_this_year?
-      end
       session[:player_id] = player.id
+      player.add_entry if add_entry?(player)
       redirect_to edit_picks_path
     else
-      flash.now[:error] = "login failed"
+      flash.now[:error] = "Login failed"
       render :new
     end
   end
@@ -38,6 +36,14 @@ class SessionsController < ApplicationController
   def logout
     cookies.delete OscarsMadness::Application.config.session_options.fetch(:key).to_sym
     reset_session
+  end
+
+  def omniauth
+    request.env['omniauth.auth']
+  end
+
+  def add_entry?(player)
+    Contest.this_year? && !player.participating_this_year?
   end
 
 end
