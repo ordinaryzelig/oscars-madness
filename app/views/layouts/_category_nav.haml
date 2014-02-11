@@ -1,6 +1,6 @@
 #category-nav.ui.sidebar.right.menu.inverted.vertical
   %a.item{href: "#top"} Standings
-  - Category.for_year(contest_year).by_name.each do |category|
+  - Category.unscoped.for_year(contest_year).by_name.each do |category|
     %a.item{href: "##{dom_id(category)}"}= category.name
   #contest_year_select.item
     :plain
