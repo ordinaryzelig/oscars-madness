@@ -10,7 +10,7 @@ module PlayersHelper
 
   def short_name(name)
     first, *middle, last = name.split(' ')
-    last_initial = initial = last[0] and initial << '.'
+    last_initial = initial = last[0] and initial << '.' if last
     first
     #[first, last_initial].compact.join(' ')
   end
