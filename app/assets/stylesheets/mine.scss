@@ -61,6 +61,12 @@ body {
     text-align: right;
     font-weight: bold;
   }
+  .progress.ui {
+    .points {
+      display: inline-block;
+      vertical-align: 25%;
+    }
+  }
   // bold headers
   thead tr th {
     font-weight: bold;
