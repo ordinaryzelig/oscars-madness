@@ -2,13 +2,6 @@ require_relative '../test_helper'
 
 class PlayerTest < ActiveSupport::TestCase
 
-  def test_hash_password
-    password = 'asdf'
-    player = Fabricate.build(:player, :password => password, :password_confirmation => password)
-    player.save!
-    assert_equal password.digest, player.reload.password
-  end
-
   def test_authenticate
     password = 'asdf'
     player = Fabricate(:player, :password => password)
@@ -20,14 +13,6 @@ class PlayerTest < ActiveSupport::TestCase
     password = 'asdf'
     player = Fabricate(:player, :name => name, :password => password)
     assert_equal player, Player.authenticate(name.upcase, password)
-  end
-
-  def test_unique_name_case_insensitive
-    name = 'asdf'
-    Fabricate(:player, :name => name)
-    another_player = Fabricate.build(:player, :name => name.upcase)
-    assert !another_player.valid?
-    assert another_player.update_attributes(:name => name.reverse)
   end
 
   test 'find by omniauth finds player and updates image' do
