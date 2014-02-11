@@ -17,6 +17,6 @@
           = names_header(nominee)
 
         -# Picks
-        .column.eight.wide.aligned.right.middle.labels
+        .column.eight.wide.aligned.right.labels
           - picks_to_show(nominee.picks, contest_year).map do |pick|
             = player_label(pick.entry.player, pick_color(pick.entry.player, nominee))
