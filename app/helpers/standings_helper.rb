@@ -26,6 +26,17 @@ module StandingsHelper
     end
   end
 
+  def standings_columns(type)
+    case type
+    when :player
+      mobile? ? 'seven' : 'four'
+    when :progress
+      mobile? ? 'eight' : 'eleven'
+    else
+      raise "unknown standings column: #{type}"
+    end
+  end
+
 private
 
   def possible_points(categories)

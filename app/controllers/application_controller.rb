@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
     :contest_year,
     :admin_config,
     :picks_editable?,
+    :mobile?,
   ]
 
   protected
@@ -37,6 +38,10 @@ class ApplicationController < ActionController::Base
 
   def picks_editable?
     admin_config.picks_editable
+  end
+
+  def mobile?
+    request.user_agent =~ /Mobile|webOS/
   end
 
 end

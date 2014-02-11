@@ -47,12 +47,14 @@ body {
 }
 
 #standings {
-  tbody, tr {
-    border-bottom: none;
-  }
-  // Remove dividers from standings
-  tr, thead {
-    border-style: none;
+  // Compact list
+  &> .item {
+    padding: 0px;
+    margin: 0px;
+    .column {
+      padding: 0px;
+      margin: 1px 0px 1px 0px;
+    }
   }
   // Align player and bold
   .player {

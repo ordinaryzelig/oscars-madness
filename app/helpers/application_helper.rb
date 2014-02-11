@@ -20,4 +20,8 @@ module ApplicationHelper
     select_tag :contest_year, select_options, options
   end
 
+  def logged_in_player?(player)
+    player == logged_in_player
+  end
+
 end
