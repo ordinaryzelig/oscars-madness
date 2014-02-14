@@ -24,11 +24,18 @@ class PicksController < ApplicationController
   private
 
   def entry
-    @entry ||= logged_in_player.entries.find_by_year(Contest.years.last, :include => :picks)
+    @entry ||=
+      logged_in_player
+        .entries
+        .includes(:picks)
+        .find_by_year(Contest.years.last)
   end
 
   def categories
-    @categories ||= Category.for_year(Contest.years.last).all(:include => {:nominees => :film})
+    @categories ||=
+      Category
+        .includes({:nominees => :film})
+        .for_year(Contest.years.last)
   end
 
   def authenticate_rights_to_write

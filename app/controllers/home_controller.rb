@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  helper_method :entries, :categories
+  helper_method :entries, :categories, :missing_picks
 
   def index
   end
@@ -11,11 +11,29 @@ class HomeController < ApplicationController
 private
 
   def entries
-    @entries ||= Entry.for_year(contest_year).all(:include => :picks).sort
+    @entries ||=
+      Entry
+        .for_year(contest_year)
+        .includes(:picks)
+        .sort
   end
 
   def categories
-    @categories ||= Category.for_year(contest_year).all(:include => {:nominees => :film})
+    @categories ||=
+      Category
+        .for_year(contest_year)
+        .includes({:nominees => :film})
+  end
+
+  def logged_in_player_entry
+    @logged_in_player_entry ||=
+      logged_in_player
+        .entries
+        .find_by_year(Contest.years.last)
+  end
+
+  def missing_picks
+    logged_in_player_entry.picks.missing
   end
 
 end

@@ -7,6 +7,7 @@ class Pick < ActiveRecord::Base
   scope :correct,      ->      { where(:correct => true) }
   scope :for_category, ->(cat) { where(:category_id => cat.id) }
   scope :picked,       ->      { where("nominee_id is not null") }
+  scope :missing,      ->      { where("nominee_id is null") }
 
   def points
     correct ? category.points : 0

@@ -1,0 +1,4 @@
+- if logged_in? && missing_picks.any?
+  .header.segment.ui.inverted.red
+    You are missing #{pluralize(missing_picks.size, 'pick')}.<br />
+    #{mobile? ? 'Tap' : 'Click'} on your name in the menu to finish your picks.
