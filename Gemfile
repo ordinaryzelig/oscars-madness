@@ -19,6 +19,7 @@ end
 
 group :development do
   gem 'nokogiri'
+  gem 'rack-mini-profiler'
 end
 
 group :test do

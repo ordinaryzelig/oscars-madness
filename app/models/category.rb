@@ -1,6 +1,6 @@
 class Category < ActiveRecord::Base
 
-  has_many :nominees, -> { order(:created_at) }
+  has_many :nominees, -> { order(:created_at) }, inverse_of: :category
   has_many :picks,    -> { order(:created_at) }
 
   validates_presence_of :name

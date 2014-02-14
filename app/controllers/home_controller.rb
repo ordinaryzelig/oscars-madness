@@ -22,7 +22,9 @@ private
     @categories ||=
       Category
         .for_year(contest_year)
-        .includes({:nominees => :film})
+        .includes(
+          :nominees => [:film, :picks],
+        )
   end
 
   def logged_in_player_entry
@@ -33,7 +35,7 @@ private
   end
 
   def missing_picks
-    logged_in_player_entry.picks.missing
+    @missing_picks ||= logged_in_player_entry.picks.missing
   end
 
 end
