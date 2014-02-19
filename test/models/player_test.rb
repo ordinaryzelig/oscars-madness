@@ -4,14 +4,14 @@ class PlayerTest < ActiveSupport::TestCase
 
   def test_authenticate
     password = 'asdf'
-    player = Fabricate(:player, :password => password)
+    player = Fabricate(:player, :password => password.digest)
     assert_equal player, Player.authenticate(player.name, password)
   end
 
   def test_authenticate_case_insensitive
     name = 'asdf'
     password = 'asdf'
-    player = Fabricate(:player, :name => name, :password => password)
+    player = Fabricate(:player, :name => name, :password => password.digest)
     assert_equal player, Player.authenticate(name.upcase, password)
   end
 
