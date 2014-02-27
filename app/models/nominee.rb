@@ -21,11 +21,11 @@ class Nominee < ActiveRecord::Base
   end
 
   def major_name
-    film.name
+    category.flipped ? name : film.name
   end
 
   def minor_name
-    name
+    category.flipped ? film.name : name
   end
 
   private
