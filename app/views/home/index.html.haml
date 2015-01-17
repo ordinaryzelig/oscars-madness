@@ -4,9 +4,10 @@
     .column
       = render 'layouts/missing_picks'
 
-  .row
-    .column
-      = render 'standings'
+  - if entries.any?
+    .row
+      .column
+        = render 'standings'
 
   .row
     .column
