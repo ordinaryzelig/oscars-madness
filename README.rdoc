@@ -2,10 +2,13 @@
 
 * `ruby script/parser.rb`
 * `ruby script/importer.rb`
+* `/admin` to flip categories
 
 ## Production
 
+* Push latest json
 * `ruby script/importer.rb`
+* `/admin` to flip categories
 
 ## Backup/Restore locally
 
