@@ -1,7 +1,6 @@
-require 'rubygems'
 require 'bundler/setup'
-require 'active_support' # have to manually require before some other stuff.
-Bundler.require :default, :development
+require 'nokogiri'
+require 'json'
 
 html = File.read("./nominations/#{Date.today.year}/source.html")
 doc = Nokogiri.HTML(html)
