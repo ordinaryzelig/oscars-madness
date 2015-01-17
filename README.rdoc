@@ -1,14 +1,16 @@
-## Parse, import nominees
+## Every year
 
 * `ruby script/parser.rb`
 * `ruby script/importer.rb`
-* `/admin` to flip categories
+* `/admin`
+  * flip categories
+  * AdminConfig#picks_editable
 
 ## Production
 
 * Push latest json
 * `ruby script/importer.rb`
-* `/admin` to flip categories
+* Follow "Every year" instructions (minus parsing)
 
 ## Backup/Restore locally
 
