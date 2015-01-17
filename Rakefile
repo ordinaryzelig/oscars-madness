@@ -7,8 +7,14 @@ OscarsMadness::Application.load_tasks
 
 namespace :db do
   task :reset do
-    last_dump = Dir[Rails.root + 'db/dumps/*.sql'].last
-    #sh "pg_restore --verbose --clean --no-acl --no-owner -d oscars_development #{last_dump}"
-    sh "psql oscars_development < #{last_dump}"
+    last_dump = Rails.root + 'tmp/backup.dump'
+    if File.exists?(last_dump)
+      # postgres
+      sh "pg_restore --verbose --clean --no-acl --no-owner -d oscars_development #{last_dump}"
+      # sqlite
+      #sh "psql oscars_development < #{last_dump}"
+    else
+      ap "No backup to restore in #{last_dump.inspect}", color: {string: 'red'}
+    end
   end
 end
