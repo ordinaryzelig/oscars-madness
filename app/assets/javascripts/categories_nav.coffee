@@ -4,18 +4,26 @@ $ ->
     .sidebar
       overlay: true
     # nothing in category nav should propogate to document.
-    .on 'click', (event) ->
+    # e.g. clicking on year select should not close sidebar.
+    .onClickOrTouch (event) ->
       event.stopPropagation()
 
   # Toggle menu.
-  toggleButton = $('#categories-toggle').click (event) ->
-    menu.sidebar('toggle')
-    event.stopPropagation() # so doesn't interfere with document click.
+  toggleButton = $('#categories-toggle').on 'click', (event) ->
+    menu.sidebar 'toggle'
+    event.stopPropagation()
 
   # Close sidebar on any click that does not originate from menu.
-  $(document).on 'click', ->
-    menu.sidebar('hide')
+  $(document).onClickOrTouch ->
+    menu.sidebar 'hide'
 
   # Close sidebar menu after link clicked.
-  menu.find('a').click (event) ->
-    menu.sidebar('toggle')
+  menu.find('a').on 'click', (event) ->
+    menu.sidebar 'hide'
+    event.stopPropagation()
+
+$.fn.onClickOrTouch = (func) ->
+  ele = $(@)
+  for eventType in ['click', 'touchstart']
+    ele.on eventType, func
+  ele
