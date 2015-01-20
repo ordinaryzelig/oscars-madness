@@ -4,7 +4,7 @@ $ ->
     .sidebar
       overlay: true
     # nothing in category nav should propogate to document.
-    # e.g. clicking on year select should not close sidebar.
+    # E.g. clicking on empty space at bottom of category-nav should not close sidebar.
     .onClickOrTouch (event) ->
       event.stopPropagation()
 
