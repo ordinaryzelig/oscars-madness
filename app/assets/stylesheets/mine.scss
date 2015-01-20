@@ -15,9 +15,9 @@ body {
     padding: 3px;
   }
 
-  // Extra padding for categories link
-  a.item {
-    padding: 8px;
+  // Extra padding for right menu
+  .right .item {
+    padding-right: 20px;
   }
 
   // Remove highlighting for player label
