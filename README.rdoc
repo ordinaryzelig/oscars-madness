@@ -5,6 +5,7 @@
 * `/admin`
   * flip categories
   * AdminConfig#picks_editable
+  * Edit points
 
 ## Production
 
