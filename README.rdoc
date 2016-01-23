@@ -18,3 +18,14 @@
 * `heroku pg:backups capture` (create current backup, but it's automated anyway)
 * `curl -o tmp/backup.dump `heroku pg:backups public-url`
 * `bin/rake db:reset`
+
+## ENV variables
+
+* OSCARS_FACEBOOK_APP_ID
+* OSCARS_FACEBOOK_APP_SECRET
+* OSCARS_USERNAME, OSCARS_PASSWORD (rails_admin)
+
+## Facebook
+
+* Setup test app.
+* Use app id and secret as OSCARS_FACEBOOK_APP_ID/OSCARS_FACEBOOK_APP_SECRET.
