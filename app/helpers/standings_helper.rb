@@ -19,8 +19,6 @@ module StandingsHelper
     case
     when top_scorer?(entry, entries)
       'successful'
-    when bottom_scorer?(entry, entries)
-      'failed'
     else
       ''
     end
@@ -45,10 +43,6 @@ private
 
   def top_scorer?(entry, entries)
     scores(entries).max == entry.points
-  end
-
-  def bottom_scorer?(entry, entries)
-    scores(entries).min == entry.points
   end
 
   def scores(entries)
