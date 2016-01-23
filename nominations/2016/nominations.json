@@ -1,0 +1,606 @@
+[
+  {
+    "category": "Actor in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Bryan Cranston",
+        "film": "Trumbo"
+      },
+      {
+        "nominee": "Eddie Redmayne",
+        "film": "The Danish Girl"
+      },
+      {
+        "nominee": "Leonardo DiCaprio",
+        "film": "The Revenant"
+      },
+      {
+        "nominee": "Matt Damon",
+        "film": "The Martian"
+      },
+      {
+        "nominee": "Michael Fassbender",
+        "film": "Steve Jobs"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Christian Bale",
+        "film": "The Big Short"
+      },
+      {
+        "nominee": "Mark Ruffalo",
+        "film": "Spotlight"
+      },
+      {
+        "nominee": "Mark Rylance",
+        "film": "Bridge of Spies"
+      },
+      {
+        "nominee": "Sylvester Stallone",
+        "film": "Creed"
+      },
+      {
+        "nominee": "Tom Hardy",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Brie Larson",
+        "film": "Room"
+      },
+      {
+        "nominee": "Cate Blanchett",
+        "film": "Carol"
+      },
+      {
+        "nominee": "Charlotte Rampling",
+        "film": "45 Years"
+      },
+      {
+        "nominee": "Jennifer Lawrence",
+        "film": "Joy"
+      },
+      {
+        "nominee": "Saoirse Ronan",
+        "film": "Brooklyn"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Alicia Vikander",
+        "film": "The Danish Girl"
+      },
+      {
+        "nominee": "Jennifer Jason Leigh",
+        "film": "The Hateful Eight"
+      },
+      {
+        "nominee": "Kate Winslet",
+        "film": "Steve Jobs"
+      },
+      {
+        "nominee": "Rachel McAdams",
+        "film": "Spotlight"
+      },
+      {
+        "nominee": "Rooney Mara",
+        "film": "Carol"
+      }
+    ]
+  },
+  {
+    "category": "Animated feature film",
+    "nominees": [
+      {
+        "nominee": "Charlie Kaufman, Duke Johnson and Rosa Tran",
+        "film": "Anomalisa"
+      },
+      {
+        "nominee": "AlÃª Abreu",
+        "film": "Boy and the World"
+      },
+      {
+        "nominee": "Pete Docter and Jonas Rivera",
+        "film": "Inside Out"
+      },
+      {
+        "nominee": "Mark Burton and Richard Starzak",
+        "film": "Shaun the Sheep Movie"
+      },
+      {
+        "nominee": "Hiromasa Yonebayashi and Yoshiaki Nishimura",
+        "film": "When Marnie Was There"
+      }
+    ]
+  },
+  {
+    "category": "Best Picture",
+    "nominees": [
+      {
+        "nominee": "Steven Spielberg, Marc Platt and Kristie Macosko Krieger, Producers",
+        "film": "Bridge of Spies"
+      },
+      {
+        "nominee": "Finola Dwyer and Amanda Posey, Producers",
+        "film": "Brooklyn"
+      },
+      {
+        "nominee": "Doug Mitchell and George Miller, Producers",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Ed Guiney, Producer",
+        "film": "Room"
+      },
+      {
+        "nominee": "Michael Sugar, Steve Golin, Nicole Rocklin and Blye Pagon Faust, Producers",
+        "film": "Spotlight"
+      },
+      {
+        "nominee": "Brad Pitt, Dede Gardner and Jeremy Kleiner, Producers",
+        "film": "The Big Short"
+      },
+      {
+        "nominee": "Simon Kinberg, Ridley Scott, Michael Schaefer and Mark Huffam, Producers",
+        "film": "The Martian"
+      },
+      {
+        "nominee": "Arnon Milchan, Steve Golin, Alejandro G. IÃ±Ã¡rritu, Mary Parent and Keith Redmon, Producers",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Cinematography",
+    "nominees": [
+      {
+        "nominee": "Ed Lachman",
+        "film": "Carol"
+      },
+      {
+        "nominee": "John Seale",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Roger Deakins",
+        "film": "Sicario"
+      },
+      {
+        "nominee": "Robert Richardson",
+        "film": "The Hateful Eight"
+      },
+      {
+        "nominee": "Emmanuel Lubezki",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Costume Design",
+    "nominees": [
+      {
+        "nominee": "Sandy Powell",
+        "film": "Carol"
+      },
+      {
+        "nominee": "Sandy Powell",
+        "film": "Cinderella"
+      },
+      {
+        "nominee": "Jenny Beavan",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Paco Delgado",
+        "film": "The Danish Girl"
+      },
+      {
+        "nominee": "Jacqueline West",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Directing",
+    "nominees": [
+      {
+        "nominee": "George Miller",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Lenny Abrahamson",
+        "film": "Room"
+      },
+      {
+        "nominee": "Tom McCarthy",
+        "film": "Spotlight"
+      },
+      {
+        "nominee": "Adam McKay",
+        "film": "The Big Short"
+      },
+      {
+        "nominee": "Alejandro G. IÃ±Ã¡rritu",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Documentary Feature",
+    "nominees": [
+      {
+        "nominee": "Asif Kapadia and James Gay-Rees",
+        "film": "Amy"
+      },
+      {
+        "nominee": "Matthew Heineman and Tom Yellin",
+        "film": "Cartel Land"
+      },
+      {
+        "nominee": "Joshua Oppenheimer and Signe Byrge SÃ¸rensen",
+        "film": "The Look of Silence"
+      },
+      {
+        "nominee": "Liz Garbus, Amy Hobby and Justin Wilkes",
+        "film": "What Happened, Miss Simone?"
+      },
+      {
+        "nominee": "Evgeny Afineevsky and Den Tolmor",
+        "film": "Winter on Fire: Ukraine's Fight for Freedom"
+      }
+    ]
+  },
+  {
+    "category": "Documentary Short",
+    "nominees": [
+      {
+        "nominee": "Sharmeen Obaid-Chinoy",
+        "film": "A Girl in the River: The Price of Forgiveness"
+      },
+      {
+        "nominee": "David Darg and Bryn Mooser",
+        "film": "Body Team 12"
+      },
+      {
+        "nominee": "Courtney Marsh and Jerry Franck",
+        "film": "Chau, beyond the Lines"
+      },
+      {
+        "nominee": "Adam Benzine",
+        "film": "Claude Lanzmann: Spectres of the Shoah"
+      },
+      {
+        "nominee": "Dee Hibbert-Jones and Nomi Talisman",
+        "film": "Last Day of Freedom"
+      }
+    ]
+  },
+  {
+    "category": "Film Editing",
+    "nominees": [
+      {
+        "nominee": "Margaret Sixel",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Tom McArdle",
+        "film": "Spotlight"
+      },
+      {
+        "nominee": "Maryann Brandon and Mary Jo Markey",
+        "film": "Star Wars: The Force Awakens"
+      },
+      {
+        "nominee": "Hank Corwin",
+        "film": "The Big Short"
+      },
+      {
+        "nominee": "Stephen Mirrione",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Foreign Language Film",
+    "nominees": [
+      {
+        "nominee": "Denmark; Directed by Tobias Lindholm",
+        "film": "A War"
+      },
+      {
+        "nominee": "Colombia; Directed by Ciro Guerra",
+        "film": "Embrace of the Serpent"
+      },
+      {
+        "nominee": "France; Directed by Deniz Gamze ErgÃ¼ven",
+        "film": "Mustang"
+      },
+      {
+        "nominee": "Hungary; Directed by LÃ¡szlÃ³ Nemes",
+        "film": "Son of Saul"
+      },
+      {
+        "nominee": "Jordan; Directed by Naji Abu Nowar",
+        "film": "Theeb"
+      }
+    ]
+  },
+  {
+    "category": "Makeup and Hairstyling",
+    "nominees": [
+      {
+        "nominee": "Lesley Vanderwalt, Elka Wardega and Damian Martin",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Love Larson and Eva von Bahr",
+        "film": "The 100-Year-Old Man Who Climbed Out the Window and Disappeared"
+      },
+      {
+        "nominee": "SiÃ¢n Grigg, Duncan Jarman and Robert Pandini",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Music - Original Score",
+    "nominees": [
+      {
+        "nominee": "Thomas Newman",
+        "film": "Bridge of Spies"
+      },
+      {
+        "nominee": "Carter Burwell",
+        "film": "Carol"
+      },
+      {
+        "nominee": "JÃ³hann JÃ³hannsson",
+        "film": "Sicario"
+      },
+      {
+        "nominee": "John Williams",
+        "film": "Star Wars: The Force Awakens"
+      },
+      {
+        "nominee": "Ennio Morricone",
+        "film": "The Hateful Eight"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Song)",
+    "nominees": [
+      {
+        "nominee": "Music and Lyric by Abel Tesfaye, Ahmad Balshe, Jason Daheala Quenneville and Stephan Moccio",
+        "film": "\"Earned It\" from Fifty Shades of Grey"
+      },
+      {
+        "nominee": "Music by J. Ralph; Lyric by Antony Hegarty",
+        "film": "\"Manta Ray\" from Racing Extinction"
+      },
+      {
+        "nominee": "Music and Lyric by David Lang",
+        "film": "\"Simple Song #3\" from Youth"
+      },
+      {
+        "nominee": "Music and Lyric by Diane Warren and Lady Gaga",
+        "film": "\"Til It Happens To You\" from The Hunting Ground"
+      },
+      {
+        "nominee": "Music and Lyric by Jimmy Napes and Sam Smith",
+        "film": "\"Writing's On The Wall\" from Spectre"
+      }
+    ]
+  },
+  {
+    "category": "Production Design",
+    "nominees": [
+      {
+        "nominee": "Adam Stockhausen (Production Design); Rena DeAngelo and Bernhard Henrich (Set Decoration)",
+        "film": "Bridge of Spies"
+      },
+      {
+        "nominee": "Colin Gibson (Production Design); Lisa Thompson (Set Decoration)",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Eve Stewart (Production Design); Michael Standish (Set Decoration)",
+        "film": "The Danish Girl"
+      },
+      {
+        "nominee": "Arthur Max (Production Design); Celia Bobak (Set Decoration)",
+        "film": "The Martian"
+      },
+      {
+        "nominee": "Jack Fisk (Production Design); Hamish Purdy (Set Decoration)",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Animated)",
+    "nominees": [
+      {
+        "nominee": "Gabriel Osorio and Pato Escala",
+        "film": "Bear Story"
+      },
+      {
+        "nominee": "Richard Williams and Imogen Sutton",
+        "film": "Prologue"
+      },
+      {
+        "nominee": "Sanjay Patel and Nicole Grindle",
+        "film": "Sanjay's Super Team"
+      },
+      {
+        "nominee": "Konstantin Bronzit",
+        "film": "We Can't Live without Cosmos"
+      },
+      {
+        "nominee": "Don Hertzfeldt",
+        "film": "World of Tomorrow"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Live Action)",
+    "nominees": [
+      {
+        "nominee": "Basil Khalil and Eric Dupont",
+        "film": "Ave Maria"
+      },
+      {
+        "nominee": "Henry Hughes",
+        "film": "Day One"
+      },
+      {
+        "nominee": "Patrick Vollrath",
+        "film": "Everything Will Be Okay (Alles Wird Gut)"
+      },
+      {
+        "nominee": "Jamie Donoughue",
+        "film": "Shok"
+      },
+      {
+        "nominee": "Benjamin Cleary and Serena Armitage",
+        "film": "Stutterer"
+      }
+    ]
+  },
+  {
+    "category": "Sound Editing",
+    "nominees": [
+      {
+        "nominee": "Mark Mangini and David White",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Alan Robert Murray",
+        "film": "Sicario"
+      },
+      {
+        "nominee": "Matthew Wood and David Acord",
+        "film": "Star Wars: The Force Awakens"
+      },
+      {
+        "nominee": "Oliver Tarney",
+        "film": "The Martian"
+      },
+      {
+        "nominee": "Martin Hernandez and Lon Bender",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Sound Mixing",
+    "nominees": [
+      {
+        "nominee": "Andy Nelson, Gary Rydstrom and Drew Kunin",
+        "film": "Bridge of Spies"
+      },
+      {
+        "nominee": "Chris Jenkins, Gregg Rudloff and Ben Osmo",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Andy Nelson, Christopher Scarabosio and Stuart Wilson",
+        "film": "Star Wars: The Force Awakens"
+      },
+      {
+        "nominee": "Paul Massey, Mark Taylor and Mac Ruth",
+        "film": "The Martian"
+      },
+      {
+        "nominee": "Jon Taylor, Frank A. MontaÃ±o, Randy Thom and Chris Duesterdiek",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Visual Effects",
+    "nominees": [
+      {
+        "nominee": "Andrew Whitehurst, Paul Norris, Mark Ardington and Sara Bennett",
+        "film": "Ex Machina"
+      },
+      {
+        "nominee": "Andrew Jackson, Tom Wood, Dan Oliver and Andy Williams",
+        "film": "Mad Max: Fury Road"
+      },
+      {
+        "nominee": "Roger Guyett, Patrick Tubach, Neal Scanlan and Chris Corbould",
+        "film": "Star Wars: The Force Awakens"
+      },
+      {
+        "nominee": "Richard Stammers, Anders Langlands, Chris Lawrence and Steven Warner",
+        "film": "The Martian"
+      },
+      {
+        "nominee": "Rich McBride, Matthew Shumway, Jason Smith and Cameron Waldbauer",
+        "film": "The Revenant"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Adapted Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Screenplay by Nick Hornby",
+        "film": "Brooklyn"
+      },
+      {
+        "nominee": "Screenplay by Phyllis Nagy",
+        "film": "Carol"
+      },
+      {
+        "nominee": "Screenplay by Emma Donoghue",
+        "film": "Room"
+      },
+      {
+        "nominee": "Screenplay by Charles Randolph and Adam McKay",
+        "film": "The Big Short"
+      },
+      {
+        "nominee": "Screenplay by Drew Goddard",
+        "film": "The Martian"
+      }
+    ]
+  },
+  {
+    "category": "Writing - Original Screenplay",
+    "nominees": [
+      {
+        "nominee": "Written by Matt Charman and Ethan Coen & Joel Coen",
+        "film": "Bridge of Spies"
+      },
+      {
+        "nominee": "Written by Alex Garland",
+        "film": "Ex Machina"
+      },
+      {
+        "nominee": "Screenplay by Pete Docter, Meg LeFauve, Josh Cooley; Original story by Pete Docter, Ronnie del Carmen",
+        "film": "Inside Out"
+      },
+      {
+        "nominee": "Written by Josh Singer & Tom McCarthy",
+        "film": "Spotlight"
+      },
+      {
+        "nominee": "Screenplay by Jonathan Herman and Andrea Berloff; Story by S. Leigh Savidge & Alan Wenkus and Andrea Berloff",
+        "film": "Straight Outta Compton"
+      }
+    ]
+  }
+]

@@ -1,66 +1,35 @@
 require 'bundler/setup'
-require 'nokogiri'
 require 'json'
+require 'ap'
 
-html = File.read("./nominations/#{Date.today.year}/source.html")
-doc = Nokogiri.HTML(html)
+json = File.read("./nominations/#{Date.today.year}/source.json")
+parsed = JSON.parse(json)
 
-def log(*obj)
-  puts obj.first if $DEBUG
-end
+category_swaps = %w[
+  actor-in-a-leading-role
+  actor-in-a-supporting-role
+  actress-in-a-leading-role
+  actress-in-a-supporting-role
+]
 
-def parse_category(listing)
-  # category
-  category =
-    listing.
-    at_css('.nomCatTitleWrapper').
-    text.
-    strip.
-    gsub(/\s+/, ' ')
-  log "**#{category.upcase}**"
+categories =
+  parsed.dig('data', 'sections', 'nominees').map do |nom_key, noms_hash|
+    category = {}
+    category['category'] = noms_hash.fetch('category_name')
+    category['nominees'] = []
 
-  # nominees
-  nominees = listing.css('.nomineesList li').map do |nom_node|
-    title    = nom_node.at_css('.title').text
-    subtitle = nom_node.at_css('.subtitle').text
-    if category =~ /act/i && category !~ /action/i
-      nominee = title
-      film = subtitle
-    else
-      film = title
-      nominee = subtitle
+    noms_hash['result'].each do |nom_hash|
+      nominee, film = [
+        nom_hash.dig(*%[nominee_description]),
+        nom_hash.dig(*%[post_title]),
+      ].tap { |h| h.reverse! if category_swaps.include?(nom_key) }
+      category['nominees'] << {
+        'nominee' => nominee,
+        'film'    => film,
+      }
     end
-    log nominee
-    log film
-    log
-
-    {
-      :nominee => nominee,
-      :film    => film,
-    }
+    category
   end
-
-  {
-    :category => category,
-    :nominees => nominees,
-  }
-end
-
-listings = []
-
-single_listings = doc.css('.single-cat')
-listings.push(*single_listings)
-
-multiple_listings =
-  doc.css('.nomineeRowContainer').
-  reject { |node| node.attr('class').include?('single-cat') }
-multiple_listings.each do |multi_listing|
-  listings.push(*multi_listing.css('.contentArea'))
-end
-
-categories = listings.map do |listing|
-  parse_category(listing)
-end
 
 json = JSON.pretty_generate(categories)
 File.open("./nominations/#{Date.today.year}/nominations.json", 'w') { |f| f.write json }

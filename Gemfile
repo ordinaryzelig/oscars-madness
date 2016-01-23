@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.3.0'
 
 gem 'rails', '4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -18,7 +18,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'nokogiri'
   gem 'rack-mini-profiler'
 end
 
