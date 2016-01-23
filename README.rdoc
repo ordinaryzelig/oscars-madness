@@ -15,7 +15,6 @@
 
 ## Backup/Restore locally
 
-* `heroku pgbackups:capture` (create current backup, but it's automated anyway)
-* `heroku pgbackups:url` (latest backup)
-* Download from URL, put copy in tmp/backup.dump
+* `heroku pg:backups capture` (create current backup, but it's automated anyway)
+* `curl -o tmp/backup.dump `heroku pg:backups public-url`
 * `bin/rake db:reset`
