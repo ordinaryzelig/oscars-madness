@@ -28,5 +28,19 @@ RailsAdmin.config do |config|
     delete
     history_show
     show_in_app
+
+    member :declare_winner do
+      only ['Nominee']
+      controller do
+        proc do
+          @object.declare_winner
+          redirect_to :back
+        end
+      end
+    end
+  end
+
+  config.model 'Nominee' do
+    object_label_method { :name_and_film }
   end
 end

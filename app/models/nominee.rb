@@ -28,6 +28,10 @@ class Nominee < ActiveRecord::Base
     category.flipped ? film.name : name
   end
 
+  def name_and_film
+    "#{name} (#{film.name})"
+  end
+
   private
 
   def find_film
