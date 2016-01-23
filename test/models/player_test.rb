@@ -41,7 +41,7 @@ class PlayerTest < ActiveSupport::TestCase
     }
     player = Player.find_or_create_by_omniauth(omniauth)
     assert_equal omniauth['provider'], player.provider
-    assert_equal omniauth['uid'], player.uid
+    assert_equal omniauth['uid'], player.uid.to_i
     assert_equal omniauth['info']['name'], player.name
     assert_equal omniauth['info']['image'], player.facebook_image_url
   end
