@@ -1,5 +1,6 @@
 ## Every year
 
+* Go to [http://oscar.go.com/nominees](http://oscar.go.com/nominees) and copy xhr response from nominees request.
 * `ruby script/parser.rb`
 * `ruby script/importer.rb`
 * `/admin`
