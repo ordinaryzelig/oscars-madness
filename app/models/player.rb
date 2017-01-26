@@ -25,15 +25,9 @@ class Player < ActiveRecord::Base
 
     info = omniauth.fetch('info')
 
-    if player.persisted?
-      player.facebook_image_url ||= info.fetch('image')
-      player.save! if player.changed?
-      return player
-    end
-
     player.name               = info.fetch('name')
     player.facebook_image_url = info.fetch('image')
-    player.save!
+    player.save! if player.changed?
 
     player
   end
