@@ -24,9 +24,10 @@ module OscarsMadness
     config.middleware.use OmniAuth::Builder do
       provider(
         :facebook,
-        ENV['OSCARS_FACEBOOK_APP_ID'],
-        ENV['OSCARS_FACEBOOK_APP_SECRET'],
+        Rails.env.production? ? ENV['OSCARS_FACEBOOK_APP_ID'] : '1146881118711200',
+        Rails.env.production? ? ENV['OSCARS_FACEBOOK_APP_SECRET'] : '7c082733f2191cdd4ee8fe9d6474c7f8',
         :scope      => '', # just want basic authentication.
+        :secure_image_url => true, # https.
       )
     end
 
