@@ -1,0 +1,610 @@
+[
+  {
+    "category": "Best Picture",
+    "nominees": [
+      {
+        "nominee": "Shawn Levy, Dan Levine, Aaron Ryder and David Linde",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Scott Rudin, Denzel Washington and Todd Black",
+        "film": "Fences"
+      },
+      {
+        "nominee": "Bill Mechanic and David Permut",
+        "film": "Hacksaw Ridge"
+      },
+      {
+        "nominee": "Carla Hacken and Julie Yorn",
+        "film": "Hell or High Water"
+      },
+      {
+        "nominee": "Donna Gigliotti, Peter Chernin, Jenno Topping, Pharrell Williams and Theodore Melfi",
+        "film": "Hidden Figures"
+      },
+      {
+        "nominee": "Fred Berger and Jordan Horowitz.",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Emile Sherman, Iain Canning and Angie Fielder",
+        "film": "Lion"
+      },
+      {
+        "nominee": "Matt Damon, Kimberly Steward, Chris Moore, Lauren Beck and Kevin J. Walsh",
+        "film": "Manchester by the Sea"
+      },
+      {
+        "nominee": "Adele Romanski, Dede Gardner and Jeremy Kleiner",
+        "film": "Moonlight"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Casey Affleck",
+        "film": "Manchester by the Sea"
+      },
+      {
+        "nominee": "Andrew Garfield",
+        "film": "Hacksaw Ridge"
+      },
+      {
+        "nominee": "Ryan Gosling",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Viggo Mortensen",
+        "film": "Captain Fantastic"
+      },
+      {
+        "nominee": "Denzel Washington",
+        "film": "Fences"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Isabelle Huppert",
+        "film": "Elle"
+      },
+      {
+        "nominee": "Ruth Negga",
+        "film": "Loving"
+      },
+      {
+        "nominee": "Natalie Portman",
+        "film": "Jackie"
+      },
+      {
+        "nominee": "Emma Stone",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Meryl Streep",
+        "film": "Florence Foster Jenkins"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Mahershala Ali",
+        "film": "Moonlight"
+      },
+      {
+        "nominee": "Jeff Bridges",
+        "film": "Hell or High Water"
+      },
+      {
+        "nominee": "Lucas Hedges",
+        "film": "Manchester by the Sea"
+      },
+      {
+        "nominee": "Dev Patel",
+        "film": "Lion"
+      },
+      {
+        "nominee": "Michael Shannon",
+        "film": "Nocturnal Animals"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Viola Davis",
+        "film": "Fences"
+      },
+      {
+        "nominee": "Naomie Harris",
+        "film": "Moonlight"
+      },
+      {
+        "nominee": "Nicole Kidman",
+        "film": "Lion"
+      },
+      {
+        "nominee": "Octavia Spencer",
+        "film": "Hidden Figures"
+      },
+      {
+        "nominee": "Michelle Williams",
+        "film": "Manchester by the Sea"
+      }
+    ]
+  },
+  {
+    "category": "Animated Feature Film",
+    "nominees": [
+      {
+        "nominee": "Travis Knight and Arianne Sutner",
+        "film": "Kubo and the Two Strings"
+      },
+      {
+        "nominee": "John Musker, Ron Clements and Osnat Shurer",
+        "film": "Moana"
+      },
+      {
+        "nominee": "Claude Barras and Max Karli",
+        "film": "My Life as a Zucchini"
+      },
+      {
+        "nominee": "Michael Dudok de Wit and Toshio Suzuki",
+        "film": "The Red Turtle"
+      },
+      {
+        "nominee": "Byron Howard, Rich Moore and Clark Spencer",
+        "film": "Zootopia"
+      }
+    ]
+  },
+  {
+    "category": "Cinematography",
+    "nominees": [
+      {
+        "nominee": "Bradford Young",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Linus Sandgren",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Greig Fraser",
+        "film": "Lion"
+      },
+      {
+        "nominee": "James Laxton",
+        "film": "Moonlight"
+      },
+      {
+        "nominee": "Rodrigo Prieto",
+        "film": "Silence"
+      }
+    ]
+  },
+  {
+    "category": "Costume Design",
+    "nominees": [
+      {
+        "nominee": "Joanna Johnston",
+        "film": "Allied"
+      },
+      {
+        "nominee": "Colleen Atwood",
+        "film": "Fantastic Beasts and Where to Find Them"
+      },
+      {
+        "nominee": "Consolata Boyle",
+        "film": "Florence Foster Jenkins"
+      },
+      {
+        "nominee": "Madeline Fontaine",
+        "film": "Jackie"
+      },
+      {
+        "nominee": "Mary Zophres",
+        "film": "La La Land"
+      }
+    ]
+  },
+  {
+    "category": "Directing",
+    "nominees": [
+      {
+        "nominee": "Denis Villeneuve",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Mel Gibson",
+        "film": "Hacksaw Ridge"
+      },
+      {
+        "nominee": "Damien Chazelle",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Kenneth Lonergan",
+        "film": "Manchester by the Sea"
+      },
+      {
+        "nominee": "Barry Jenkins",
+        "film": "Moonlight"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Feature)",
+    "nominees": [
+      {
+        "nominee": "Gianfranco Rosi and Donatella Palermo",
+        "film": "Fire at Sea"
+      },
+      {
+        "nominee": "Raoul Peck, Rémi Grellety and Hébert Peck",
+        "film": "I Am Not Your Negro"
+      },
+      {
+        "nominee": "Roger Ross Williams and Julie Goldman",
+        "film": "Life, Animated"
+      },
+      {
+        "nominee": "Ezra Edelman and Caroline Waterlow",
+        "film": "O.J.: Made in America"
+      },
+      {
+        "nominee": "Ava DuVernay, Spencer Averick and Howard Barish",
+        "film": "13th"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Short Subject)",
+    "nominees": [
+      {
+        "nominee": "Dan Krauss",
+        "film": "Extremis"
+      },
+      {
+        "nominee": "Daphne Matziaraki",
+        "film": "4.1 Miles"
+      },
+      {
+        "nominee": "Kahane Cooperman and Raphaela Neihausen ",
+        "film": "Joe's Violin"
+      },
+      {
+        "nominee": "Marcel Mettelsiefen and Stephen Ellis",
+        "film": "Watani: My Homeland"
+      },
+      {
+        "nominee": "Orlando von Einsiedel and Joanna Natasegara",
+        "film": "The White Helmets"
+      }
+    ]
+  },
+  {
+    "category": "Film Editing",
+    "nominees": [
+      {
+        "nominee": "Joe Walker",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "John Gilbert",
+        "film": "Hacksaw Ridge"
+      },
+      {
+        "nominee": "Jake Roberts",
+        "film": "Hell or High Water"
+      },
+      {
+        "nominee": "Tom Cross",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Nat Sanders and Joi McMillon",
+        "film": "Moonlight"
+      }
+    ]
+  },
+  {
+    "category": "Foreign Language Film",
+    "nominees": [
+      {
+        "nominee": "Denmark; Directed by Martin Zandvliet",
+        "film": "Land of Mine"
+      },
+      {
+        "nominee": "Sweden; Directed by Hannes Holm",
+        "film": "A Man Called Ove"
+      },
+      {
+        "nominee": "Iran; Directed by Asghar Farhadi",
+        "film": "The Salesman"
+      },
+      {
+        "nominee": "Australia; Directed by Bentley Dean and Martin Butler",
+        "film": "Tanna"
+      },
+      {
+        "nominee": "Germany; Directed by Maren Ade",
+        "film": "Toni Erdmann"
+      }
+    ]
+  },
+  {
+    "category": "Makeup and Hairstyling",
+    "nominees": [
+      {
+        "nominee": "Eva von Bahr and Love Larson",
+        "film": "A Man Called Ove"
+      },
+      {
+        "nominee": "Joel Harlow and Richard Alonzo",
+        "film": "Star Trek Beyond"
+      },
+      {
+        "nominee": "Alessandro Bertolazzi, Giorgio Gregorini and Christopher Nelson",
+        "film": "Suicide Squad"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Score)",
+    "nominees": [
+      {
+        "nominee": "Mica Levi",
+        "film": "Jackie"
+      },
+      {
+        "nominee": "Justin Hurwitz",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Dustin O'Halloran and Hauschka",
+        "film": "Lion"
+      },
+      {
+        "nominee": "Nicholas Britell",
+        "film": "Moonlight"
+      },
+      {
+        "nominee": "Thomas Newman",
+        "film": "Passengers"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Song)",
+    "nominees": [
+      {
+        "nominee": "Music by Justin Hurwitz; Lyric by Benj Pasek and Justin Paul",
+        "film": "\"Audition (The Fools Who Dream)\" from La La Land"
+      },
+      {
+        "nominee": "Music and Lyric by Justin Timberlake, Max Martin and Karl Johan Schuster",
+        "film": "\"Can't Stop The Feeling\" from Trolls"
+      },
+      {
+        "nominee": "Music by Justin Hurwitz; Lyric by Benj Pasek and Justin Paul",
+        "film": "\"City Of Stars\" from La La Land"
+      },
+      {
+        "nominee": "Music and Lyric by J. Ralph and Sting",
+        "film": "\"The Empty Chair\" from Jim: The James Foley Story"
+      },
+      {
+        "nominee": "Music and Lyric by Lin-Manuel Miranda",
+        "film": "\"How Far I'll Go\" from Moana"
+      }
+    ]
+  },
+  {
+    "category": "Production Design",
+    "nominees": [
+      {
+        "nominee": "Patrice Vermette (Production Design); Paul Hotte (Set Decoration)\r\n",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Stuart Craig (Production Design); Anna Pinnock (Set Decoration)\r\n",
+        "film": "Fantastic Beasts and Where to Find Them"
+      },
+      {
+        "nominee": "Jess Gonchor (Production Design); Nancy Haigh (Set Decoration)\r\n",
+        "film": "Hail, Caesar!"
+      },
+      {
+        "nominee": "David Wasco (Production Design); Sandy Reynolds-Wasco (Set Decoration)\r\n",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Guy Hendrix Dyas (Production Design); Gene Serdena (Set Decoration)\r\n",
+        "film": "Passengers"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Animated)",
+    "nominees": [
+      {
+        "nominee": "Theodore Ushev",
+        "film": "Blind Vaysha"
+      },
+      {
+        "nominee": "Andrew Coats and Lou Hamou-Lhadj",
+        "film": "Borrowed Time"
+      },
+      {
+        "nominee": "Robert Valley and Cara Speller",
+        "film": "Pear Cider and Cigarettes"
+      },
+      {
+        "nominee": "Patrick Osborne",
+        "film": "Pearl"
+      },
+      {
+        "nominee": "Alan Barillaro and Marc Sondheimer",
+        "film": "Piper"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Live Action)",
+    "nominees": [
+      {
+        "nominee": "Sélim Azzazi",
+        "film": "Ennemis Intérieurs"
+      },
+      {
+        "nominee": "Timo von Gunten and Giacun Caduff",
+        "film": "La Femme et le TGV"
+      },
+      {
+        "nominee": "Aske Bang and Kim Magnusson",
+        "film": "Silent Nights"
+      },
+      {
+        "nominee": "Kristof Deák and Anna Udvardy",
+        "film": "Sing"
+      },
+      {
+        "nominee": "Juanjo Giménez",
+        "film": "Timecode"
+      }
+    ]
+  },
+  {
+    "category": "Sound Editing",
+    "nominees": [
+      {
+        "nominee": "Sylvain Bellemare",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Wylie Stateman and Renée Tondelli",
+        "film": "Deepwater Horizon"
+      },
+      {
+        "nominee": "Robert Mackenzie and Andy Wright",
+        "film": "Hacksaw Ridge"
+      },
+      {
+        "nominee": "Ai-Ling Lee and Mildred Iatrou Morgan",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Alan Robert Murray and Bub Asman",
+        "film": "Sully"
+      }
+    ]
+  },
+  {
+    "category": "Sound Mixing",
+    "nominees": [
+      {
+        "nominee": "Bernard Gariépy Strobl and Claude La Haye",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Kevin O'Connell, Andy Wright, Robert Mackenzie and Peter Grace",
+        "film": "Hacksaw Ridge"
+      },
+      {
+        "nominee": "Andy Nelson, Ai-Ling Lee and Steve A. Morrow",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "David Parker, Christopher Scarabosio and Stuart Wilson",
+        "film": "Rogue One: A Star Wars Story"
+      },
+      {
+        "nominee": "Greg P. Russell, Gary Summers, Jeffrey J. Haboush and Mac Ruth",
+        "film": "13 Hours: The Secret Soldiers of Benghazi"
+      }
+    ]
+  },
+  {
+    "category": "Visual Effects",
+    "nominees": [
+      {
+        "nominee": "Craig Hammack, Jason Snell, Jason Billington and Burt Dalton",
+        "film": "Deepwater Horizon"
+      },
+      {
+        "nominee": "Stephane Ceretti, Richard Bluff, Vincent Cirelli and Paul Corbould",
+        "film": "Doctor Strange"
+      },
+      {
+        "nominee": "Robert Legato, Adam Valdez, Andrew R. Jones and Dan Lemmon",
+        "film": "The Jungle Book"
+      },
+      {
+        "nominee": "Steve Emerson, Oliver Jones, Brian McLean and Brad Schiff",
+        "film": "Kubo and the Two Strings"
+      },
+      {
+        "nominee": "John Knoll, Mohen Leo, Hal Hickel and Neil Corbould",
+        "film": "Rogue One: A Star Wars Story"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Adapted Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Screenplay by Eric Heisserer",
+        "film": "Arrival"
+      },
+      {
+        "nominee": "Screenplay by August Wilson\r\n",
+        "film": "Fences"
+      },
+      {
+        "nominee": "Screenplay by Allison Schroeder and Theodore Melfi\r\n",
+        "film": "Hidden Figures"
+      },
+      {
+        "nominee": "Screenplay by Luke Davies\r\n",
+        "film": "Lion"
+      },
+      {
+        "nominee": "Screenplay by Barry Jenkins; Story by Tarell Alvin McCraney\r\n",
+        "film": "Moonlight"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Original Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Written by Taylor Sheridan\r\n",
+        "film": "Hell or High Water"
+      },
+      {
+        "nominee": "Written by Damien Chazelle\r\n",
+        "film": "La La Land"
+      },
+      {
+        "nominee": "Written by Yorgos Lanthimos, Efthimis Filippou\r\n",
+        "film": "The Lobster"
+      },
+      {
+        "nominee": "Written by Kenneth Lonergan",
+        "film": "Manchester by the Sea"
+      },
+      {
+        "nominee": "Written by Mike Mills\r\n",
+        "film": "20th Century Women"
+      }
+    ]
+  }
+]
