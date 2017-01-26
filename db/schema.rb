@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 20140227024919) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "admin_configs", force: true do |t|
+  create_table "admin_configs", force: :cascade do |t|
     t.string   "admin_password"
     t.boolean  "picks_editable"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "categories", force: true do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "name",       null: false
     t.integer  "points",     null: false
     t.datetime "created_at"
@@ -32,20 +32,20 @@ ActiveRecord::Schema.define(version: 20140227024919) do
     t.boolean  "flipped"
   end
 
-  create_table "entries", force: true do |t|
+  create_table "entries", force: :cascade do |t|
     t.integer  "player_id",  null: false
     t.integer  "year",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "films", force: true do |t|
+  create_table "films", force: :cascade do |t|
     t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "nominees", force: true do |t|
+  create_table "nominees", force: :cascade do |t|
     t.string   "name",        null: false
     t.integer  "film_id",     null: false
     t.integer  "category_id", null: false
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20140227024919) do
     t.datetime "updated_at"
   end
 
-  create_table "picks", force: true do |t|
+  create_table "picks", force: :cascade do |t|
     t.integer  "category_id", null: false
     t.integer  "nominee_id"
     t.boolean  "correct"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140227024919) do
     t.integer  "entry_id"
   end
 
-  create_table "players", force: true do |t|
+  create_table "players", force: :cascade do |t|
     t.string   "name",               null: false
     t.string   "password"
     t.datetime "created_at"
