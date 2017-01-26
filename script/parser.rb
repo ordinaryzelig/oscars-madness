@@ -19,10 +19,11 @@ categories =
     category['nominees'] = []
 
     noms_hash['result'].each do |nom_hash|
+      flip = category_swaps.include?(nom_key)
       nominee, film = [
         nom_hash.dig(*%[nominee_description]),
         nom_hash.dig(*%[post_title]),
-      ].tap { |h| h.reverse! if category_swaps.include?(nom_key) }
+      ].tap { |h| h.reverse! if flip }
       category['nominees'] << {
         'nominee' => nominee,
         'film'    => film,

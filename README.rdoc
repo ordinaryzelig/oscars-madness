@@ -4,9 +4,7 @@
 * `ruby script/parser.rb`
 * `ruby script/importer.rb`
 * `/admin`
-  * flip categories
   * AdminConfig#picks_editable
-  * Edit points
 
 ## Production
 
