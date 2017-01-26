@@ -12,6 +12,7 @@ gem 'omniauth-facebook'
 gem 'awesome_print'
 gem 'haml-rails'
 gem 'rails_admin'
+gem 'rollbar'
 
 group :development, :test do
   gem "sqlite3"
