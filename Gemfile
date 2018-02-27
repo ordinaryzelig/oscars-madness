@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.4.0'
 
-gem 'rails', '4.2.5'
+gem 'rails', '5.1.5'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'turbolinks'
