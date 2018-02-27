@@ -22,6 +22,7 @@ class PlayerTest < ActiveSupport::TestCase
       'uid'      => 123,
       'info' => {
         'image' => 'gravatar.com',
+        'name'  => 'updated name',
       },
     }
     found_player = Player.find_or_create_by_omniauth(omniauth)
