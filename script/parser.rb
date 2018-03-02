@@ -1,6 +1,5 @@
 require 'bundler/setup'
-require 'json'
-require 'ap'
+Bundler.require
 
 json = File.read("./nominations/#{Date.today.year}/source.json")
 parsed = JSON.parse(json)
@@ -33,4 +32,6 @@ categories =
   end
 
 json = JSON.pretty_generate(categories)
-File.open("./nominations/#{Date.today.year}/nominations.json", 'w') { |f| f.write json }
+filename = "./nominations/#{Date.today.year}/nominations.json"
+ap filename
+ap File.open(filename, 'w') { |f| f.write json }

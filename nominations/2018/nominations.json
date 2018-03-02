@@ -1,0 +1,610 @@
+[
+  {
+    "category": "Best Picture",
+    "nominees": [
+      {
+        "nominee": "Peter Spears, Luca Guadagnino, Emilie Georges and Marco Morabito",
+        "film": "Call Me by Your Name"
+      },
+      {
+        "nominee": "Tim Bevan, Eric Fellner, Lisa Bruce, Anthony McCarten and Douglas Urbanski",
+        "film": "Darkest Hour"
+      },
+      {
+        "nominee": "Emma Thomas and Christopher Nolan",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Sean McKittrick, Jason Blum, Edward H. Hamm Jr. and Jordan Peele",
+        "film": "Get Out"
+      },
+      {
+        "nominee": "Scott Rudin, Eli Bush and Evelyn O'Neill",
+        "film": "Lady Bird"
+      },
+      {
+        "nominee": "JoAnne Sellar, Paul Thomas Anderson, Megan Ellison and Daniel Lupi",
+        "film": "Phantom Thread"
+      },
+      {
+        "nominee": "Amy Pascal, Steven Spielberg and Kristie Macosko Krieger",
+        "film": "The Post"
+      },
+      {
+        "nominee": "Guillermo del Toro and J. Miles Dale",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Graham Broadbent, Pete Czernin and Martin McDonagh",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Timothée Chalamet",
+        "film": "Call Me by Your Name"
+      },
+      {
+        "nominee": "Daniel Day-Lewis",
+        "film": "Phantom Thread"
+      },
+      {
+        "nominee": "Daniel Kaluuya",
+        "film": "Get Out"
+      },
+      {
+        "nominee": "Gary Oldman",
+        "film": "Darkest Hour"
+      },
+      {
+        "nominee": "Denzel Washington",
+        "film": "Roman J. Israel, Esq."
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Sally Hawkins",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Frances McDormand",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      },
+      {
+        "nominee": "Margot Robbie",
+        "film": "I, Tonya"
+      },
+      {
+        "nominee": "Saoirse Ronan",
+        "film": "Lady Bird"
+      },
+      {
+        "nominee": "Meryl Streep",
+        "film": "The Post"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Willem Dafoe",
+        "film": "The Florida Project"
+      },
+      {
+        "nominee": "Woody Harrelson",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      },
+      {
+        "nominee": "Richard Jenkins",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Christopher Plummer",
+        "film": "All the Money in the World"
+      },
+      {
+        "nominee": "Sam Rockwell",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Mary J. Blige",
+        "film": "Mudbound"
+      },
+      {
+        "nominee": "Allison Janney",
+        "film": "I, Tonya"
+      },
+      {
+        "nominee": "Lesley Manville",
+        "film": "Phantom Thread"
+      },
+      {
+        "nominee": "Laurie Metcalf",
+        "film": "Lady Bird"
+      },
+      {
+        "nominee": "Octavia Spencer",
+        "film": "The Shape of Water"
+      }
+    ]
+  },
+  {
+    "category": "Animated Feature Film",
+    "nominees": [
+      {
+        "nominee": "Tom McGrath and Ramsey Naito",
+        "film": "The Boss Baby"
+      },
+      {
+        "nominee": "Nora Twomey and Anthony Leo",
+        "film": "The Breadwinner"
+      },
+      {
+        "nominee": "Lee Unkrich and Darla K. Anderson",
+        "film": "Coco"
+      },
+      {
+        "nominee": "Carlos Saldanha and Lori Forte",
+        "film": "Ferdinand"
+      },
+      {
+        "nominee": "Dorota Kobiela, Hugh Welchman and Ivan Mactaggart",
+        "film": "Loving Vincent"
+      }
+    ]
+  },
+  {
+    "category": "Cinematography",
+    "nominees": [
+      {
+        "nominee": "Roger A. Deakins",
+        "film": "Blade Runner 2049"
+      },
+      {
+        "nominee": "Bruno Delbonnel",
+        "film": "Darkest Hour"
+      },
+      {
+        "nominee": "Hoyte van Hoytema",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Rachel Morrison",
+        "film": "Mudbound"
+      },
+      {
+        "nominee": "Dan Laustsen",
+        "film": "The Shape of Water"
+      }
+    ]
+  },
+  {
+    "category": "Costume Design",
+    "nominees": [
+      {
+        "nominee": "Jacqueline Durran",
+        "film": "Beauty and the Beast"
+      },
+      {
+        "nominee": "Jacqueline Durran",
+        "film": "Darkest Hour"
+      },
+      {
+        "nominee": "Mark Bridges",
+        "film": "Phantom Thread"
+      },
+      {
+        "nominee": "Luis Sequeira",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Consolata Boyle",
+        "film": "Victoria & Abdul"
+      }
+    ]
+  },
+  {
+    "category": "Directing",
+    "nominees": [
+      {
+        "nominee": "Christopher Nolan",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Jordan Peele",
+        "film": "Get Out"
+      },
+      {
+        "nominee": "Greta Gerwig",
+        "film": "Lady Bird"
+      },
+      {
+        "nominee": "Paul Thomas Anderson",
+        "film": "Phantom Thread"
+      },
+      {
+        "nominee": "Guillermo del Toro",
+        "film": "The Shape of Water"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Feature)",
+    "nominees": [
+      {
+        "nominee": "Steve James, Mark Mitten and Julie Goldman",
+        "film": "Abacus: Small Enough to Jail"
+      },
+      {
+        "nominee": "Agnès Varda, JR and Rosalie Varda",
+        "film": "Faces Places"
+      },
+      {
+        "nominee": "Bryan Fogel and Dan Cogan",
+        "film": "Icarus"
+      },
+      {
+        "nominee": "Feras Fayyad, Kareem Abeed and Søren Steen Jespersen",
+        "film": "Last Men in Aleppo"
+      },
+      {
+        "nominee": "Yance Ford and Joslyn Barnes",
+        "film": "Strong Island"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Short Subject)",
+    "nominees": [
+      {
+        "nominee": "Laura Checkoway and Thomas Lee Wright",
+        "film": "Edith+Eddie"
+      },
+      {
+        "nominee": "Frank Stiefel",
+        "film": "Heaven Is a Traffic Jam on the 405"
+      },
+      {
+        "nominee": "Elaine McMillion Sheldon and Kerrin Sheldon",
+        "film": "Heroin(e)"
+      },
+      {
+        "nominee": "Thomas Lennon",
+        "film": "Knife Skills"
+      },
+      {
+        "nominee": "Kate Davis and David Heilbroner",
+        "film": "Traffic Stop"
+      }
+    ]
+  },
+  {
+    "category": "Film Editing",
+    "nominees": [
+      {
+        "nominee": "Paul Machliss and Jonathan Amos",
+        "film": "Baby Driver"
+      },
+      {
+        "nominee": "Lee Smith",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Tatiana S. Riegel",
+        "film": "I, Tonya"
+      },
+      {
+        "nominee": "Sidney Wolinsky",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Jon Gregory",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      }
+    ]
+  },
+  {
+    "category": "Foreign Language Film",
+    "nominees": [
+      {
+        "nominee": "Chile; Directed by Sebastián Lelio",
+        "film": "A Fantastic Woman"
+      },
+      {
+        "nominee": "Lebanon; Directed by Ziad Doueiri",
+        "film": "The Insult"
+      },
+      {
+        "nominee": "Russia; Directed by Andrey Zvyagintsev",
+        "film": "Loveless"
+      },
+      {
+        "nominee": "Hungary; Directed by Ildikó Enyedi",
+        "film": "On Body and Soul"
+      },
+      {
+        "nominee": "Sweden; Directed by Ruben Östlund",
+        "film": "The Square"
+      }
+    ]
+  },
+  {
+    "category": "Makeup and Hairstyling",
+    "nominees": [
+      {
+        "nominee": "Kazuhiro Tsuji, David Malinowski and Lucy Sibbick",
+        "film": "Darkest Hour"
+      },
+      {
+        "nominee": "Daniel Phillips and Lou Sheppard",
+        "film": "Victoria & Abdul"
+      },
+      {
+        "nominee": "Arjen Tuiten",
+        "film": "Wonder"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Score)",
+    "nominees": [
+      {
+        "nominee": "Hans Zimmer",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Jonny Greenwood",
+        "film": "Phantom Thread"
+      },
+      {
+        "nominee": "Alexandre Desplat",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "John Williams",
+        "film": "Star Wars: The Last Jedi"
+      },
+      {
+        "nominee": "Carter Burwell",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Song)",
+    "nominees": [
+      {
+        "nominee": "Music and Lyric by Mary J. Blige, Raphael Saadiq and Taura Stinson",
+        "film": "\"Mighty River\" from Mudbound"
+      },
+      {
+        "nominee": "Music and Lyric by Sufjan Stevens",
+        "film": "\"Mystery Of Love\" from Call Me by Your Name"
+      },
+      {
+        "nominee": "Music and Lyric by Kristen Anderson-Lopez and Robert Lopez",
+        "film": "\"Remember Me\" from Coco"
+      },
+      {
+        "nominee": "Music by Diane Warren; Lyric by Lonnie R. Lynn and Diane Warren",
+        "film": "\"Stand Up For Something\" from Marshall"
+      },
+      {
+        "nominee": "Music and Lyric by Benj Pasek and Justin Paul",
+        "film": "\"This Is Me\" from The Greatest Showman"
+      }
+    ]
+  },
+  {
+    "category": "Production Design",
+    "nominees": [
+      {
+        "nominee": "Sarah Greenwood (Production Design); Katie Spencer (Set Decoration)",
+        "film": "Beauty and the Beast"
+      },
+      {
+        "nominee": "Dennis Gassner (Production Design); Alessandra Querzola (Set Decoration)",
+        "film": "Blade Runner 2049"
+      },
+      {
+        "nominee": "Sarah Greenwood (Production Design); Katie Spencer (Set Decoration)",
+        "film": "Darkest Hour"
+      },
+      {
+        "nominee": "Nathan Crowley (Production Design); Gary Fettis (Set Decoration)",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Paul Denham Austerberry (Production Design); Shane Vieau and Jeffrey A. Melvin (Set Decoration)",
+        "film": "The Shape of Water"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Animated)",
+    "nominees": [
+      {
+        "nominee": "Glen Keane and Kobe Bryant",
+        "film": "Dear Basketball"
+      },
+      {
+        "nominee": "Victor Caire and Gabriel Grapperon",
+        "film": "Garden Party"
+      },
+      {
+        "nominee": "Dave Mullins and Dana Murray",
+        "film": "Lou"
+      },
+      {
+        "nominee": "Max Porter and Ru Kuwahata",
+        "film": "Negative Space"
+      },
+      {
+        "nominee": "Jakob Schuh and Jan Lachauer",
+        "film": "Revolting Rhymes"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Live Action)",
+    "nominees": [
+      {
+        "nominee": "Reed Van Dyk",
+        "film": "DeKalb Elementary"
+      },
+      {
+        "nominee": "Derin Seale and Josh Lawson",
+        "film": "The Eleven O'Clock"
+      },
+      {
+        "nominee": "Kevin Wilson, Jr.",
+        "film": "My Nephew Emmett"
+      },
+      {
+        "nominee": "Chris Overton and Rachel Shenton",
+        "film": "The Silent Child"
+      },
+      {
+        "nominee": "Katja Benrath and Tobias Rosen",
+        "film": "Watu Wote/All of Us"
+      }
+    ]
+  },
+  {
+    "category": "Sound Editing",
+    "nominees": [
+      {
+        "nominee": "Julian Slater",
+        "film": "Baby Driver"
+      },
+      {
+        "nominee": "Mark Mangini and Theo Green",
+        "film": "Blade Runner 2049"
+      },
+      {
+        "nominee": "Richard King and Alex Gibson",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Nathan Robitaille and Nelson Ferreira",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Matthew Wood and Ren Klyce",
+        "film": "Star Wars: The Last Jedi"
+      }
+    ]
+  },
+  {
+    "category": "Sound Mixing",
+    "nominees": [
+      {
+        "nominee": "Julian Slater, Tim Cavagin and Mary H. Ellis",
+        "film": "Baby Driver"
+      },
+      {
+        "nominee": "Ron Bartlett, Doug Hemphill and Mac Ruth",
+        "film": "Blade Runner 2049"
+      },
+      {
+        "nominee": "Gregg Landaker, Gary A. Rizzo and Mark Weingarten",
+        "film": "Dunkirk"
+      },
+      {
+        "nominee": "Christian Cooke, Brad Zoern and Glen Gauthier",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "David Parker, Michael Semanick, Ren Klyce and Stuart Wilson",
+        "film": "Star Wars: The Last Jedi"
+      }
+    ]
+  },
+  {
+    "category": "Visual Effects",
+    "nominees": [
+      {
+        "nominee": "John Nelson, Gerd Nefzer, Paul Lambert and Richard R. Hoover",
+        "film": "Blade Runner 2049"
+      },
+      {
+        "nominee": "Christopher Townsend, Guy Williams, Jonathan Fawkner and Dan Sudick",
+        "film": "Guardians of the Galaxy Vol. 2"
+      },
+      {
+        "nominee": "Stephen Rosenbaum, Jeff White, Scott Benza and Mike Meinardus",
+        "film": "Kong: Skull Island"
+      },
+      {
+        "nominee": "Ben Morris, Mike Mulholland, Neal Scanlan and Chris Corbould",
+        "film": "Star Wars: The Last Jedi"
+      },
+      {
+        "nominee": "Joe Letteri, Daniel Barrett, Dan Lemmon and Joel Whist",
+        "film": "War for the Planet of the Apes"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Adapted Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Screenplay by James Ivory",
+        "film": "Call Me by Your Name"
+      },
+      {
+        "nominee": "Screenplay by Scott Neustadter & Michael H. Weber",
+        "film": "The Disaster Artist"
+      },
+      {
+        "nominee": "Screenplay by Scott Frank & James Mangold and Michael Green; Story by James Mangold",
+        "film": "Logan"
+      },
+      {
+        "nominee": "Written for the screen by Aaron Sorkin",
+        "film": "Molly's Game"
+      },
+      {
+        "nominee": "Screenplay by Virgil Williams and Dee Rees",
+        "film": "Mudbound"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Original Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Written by Emily V. Gordon & Kumail Nanjiani",
+        "film": "The Big Sick"
+      },
+      {
+        "nominee": "Written by Jordan Peele",
+        "film": "Get Out"
+      },
+      {
+        "nominee": "Written by Greta Gerwig",
+        "film": "Lady Bird"
+      },
+      {
+        "nominee": "Screenplay by Guillermo del Toro & Vanessa Taylor; Story by Guillermo del Toro",
+        "film": "The Shape of Water"
+      },
+      {
+        "nominee": "Written by Martin McDonagh",
+        "film": "Three Billboards outside Ebbing, Missouri"
+      }
+    ]
+  }
+]

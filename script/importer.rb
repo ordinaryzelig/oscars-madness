@@ -77,6 +77,6 @@ require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 # Import.
 Film.transaction do
   json = File.read("./nominations/#{Date.today.year}/nominations.json")
-  OscarsMadness.import(json)
+  ap OscarsMadness.import(json)
   #raise ActiveRecord::Rollback
 end
