@@ -10,6 +10,7 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.parent_controller = "::ApplicationController"
   config.current_user_method &:logged_in_player
 
   config.included_models = %w[AdminConfig Category Entry Film Nominee Pick Player]

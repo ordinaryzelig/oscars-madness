@@ -1,13 +1,13 @@
 class PicksController < ApplicationController
 
-  before_filter :authenticate
+  before_action :authenticate
 
   # Load
-  before_filter :entry
-  before_filter :categories
+  before_action :entry
+  before_action :categories
 
   # More authentication
-  before_filter :authenticate_rights_to_write
+  before_action :authenticate_rights_to_write
 
   helper_method :entry, :categories
 

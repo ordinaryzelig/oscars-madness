@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-  before_filter :logout, :except => [:create]
+  before_action :logout, :except => [:create]
 
   def new
   end
