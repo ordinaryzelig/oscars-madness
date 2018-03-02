@@ -1,6 +1,6 @@
 module StandingsHelper
 
-  MAX_PROGRESS_PERCENTAGE = 90
+  MAX_PROGRESS_PERCENTAGE = 96
 
   # Show progress points if any of following true:
   #   editing turned off
