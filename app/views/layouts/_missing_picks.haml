@@ -1,4 +1,4 @@
-- if logged_in? && missing_picks.any?
+- if logged_in? && missing_picks.any? && picks_editable?
   .header.segment.ui.inverted.red
     %p You are missing #{pluralize(missing_picks.size, 'pick')}.
     %p
