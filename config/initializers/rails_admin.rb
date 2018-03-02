@@ -38,7 +38,7 @@ RailsAdmin.config do |config|
       controller do
         proc do
           @object.declare_winner
-          redirect_to :back
+          redirect_back(:fallback_location => rails_admin_url)
         end
       end
     end
