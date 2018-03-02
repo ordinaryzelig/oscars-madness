@@ -2,4 +2,4 @@
   .header.segment.ui.inverted.red
     %p You are missing #{pluralize(missing_picks.size, 'pick')}.
     %p
-      %a.ui.button.green{href: edit_picks_path} Finish your picks
+      = link_to 'Finish your picks', edit_picks_path, :class => %w[ui button green]
