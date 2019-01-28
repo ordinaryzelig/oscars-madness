@@ -14,4 +14,6 @@ OscarsMadness::Application.routes.draw do
   # Omniauth
   get '/auth/failure'            => 'sessions#failure'
   get '/auth/:provider/callback' => 'sessions#create'
+
+  get '/privacy' => 'home#privacy'
 end
