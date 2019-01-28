@@ -1,0 +1,606 @@
+[
+  {
+    "category": "Best Picture",
+    "nominees": [
+      {
+        "nominee": "Kevin Feige\r\n\r\n",
+        "film": "Black Panther"
+      },
+      {
+        "nominee": "Sean McKittrick, Jason Blum, Raymond Mansfield, Jordan Peele and Spike Lee\r\n\r\n",
+        "film": "BlacKkKlansman"
+      },
+      {
+        "nominee": "Graham King\r\n\r\n",
+        "film": "Bohemian Rhapsody"
+      },
+      {
+        "nominee": "Ceci Dempsey, Ed Guiney, Lee Magiday and Yorgos Lanthimos\r\n\r\n\r\n",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Jim Burke, Charles B. Wessler, Brian Currie, Peter Farrelly and Nick Vallelonga\r\n\r\n\r\n\r\n",
+        "film": "Green Book"
+      },
+      {
+        "nominee": "Gabriela Rodríguez and Alfonso Cuarón\r\n\r\n\r\n\r\n",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Bill Gerber, Bradley Cooper and Lynette Howell Taylor\r\n\r\n\r\n\r\n",
+        "film": "A Star Is Born"
+      },
+      {
+        "nominee": "Dede Gardner, Jeremy Kleiner, Adam McKay and Kevin Messick\r\n\r\n\r\n\r\n",
+        "film": "Vice"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Christian Bale",
+        "film": "Vice"
+      },
+      {
+        "nominee": "Bradley Cooper",
+        "film": "A Star Is Born"
+      },
+      {
+        "nominee": "Willem Dafoe",
+        "film": "At Eternity's Gate"
+      },
+      {
+        "nominee": "Rami Malek",
+        "film": "Bohemian Rhapsody"
+      },
+      {
+        "nominee": "Viggo Mortensen",
+        "film": "Green Book"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Yalitza Aparicio",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Glenn Close",
+        "film": "The Wife"
+      },
+      {
+        "nominee": "Olivia Colman",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Lady Gaga",
+        "film": "A Star Is Born"
+      },
+      {
+        "nominee": "Melissa McCarthy",
+        "film": "Can You Ever Forgive Me?"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Mahershala Ali",
+        "film": "Green Book"
+      },
+      {
+        "nominee": "Adam Driver",
+        "film": "BlacKkKlansman"
+      },
+      {
+        "nominee": "Sam Elliott",
+        "film": "A Star Is Born"
+      },
+      {
+        "nominee": "Richard E. Grant",
+        "film": "Can You Ever Forgive Me?"
+      },
+      {
+        "nominee": "Sam Rockwell",
+        "film": "Vice"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Amy Adams",
+        "film": "Vice"
+      },
+      {
+        "nominee": "Marina de Tavira",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Regina King",
+        "film": "If Beale Street Could Talk"
+      },
+      {
+        "nominee": "Emma Stone",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Rachel Weisz",
+        "film": "The Favourite"
+      }
+    ]
+  },
+  {
+    "category": "Animated Feature Film",
+    "nominees": [
+      {
+        "nominee": "Brad Bird, John Walker and Nicole Paradis Grindle",
+        "film": "Incredibles 2"
+      },
+      {
+        "nominee": "Wes Anderson, Scott Rudin, Steven Rales and Jeremy Dawson ",
+        "film": "Isle of Dogs"
+      },
+      {
+        "nominee": "Mamoru Hosoda and Yuichiro Saito",
+        "film": "Mirai"
+      },
+      {
+        "nominee": "Rich Moore, Phil Johnston and Clark Spencer",
+        "film": "Ralph Breaks the Internet"
+      },
+      {
+        "nominee": "Bob Persichetti, Peter Ramsey, Rodney Rothman, Phil Lord and Christopher Miller ",
+        "film": "Spider-Man: Into the Spider-Verse"
+      }
+    ]
+  },
+  {
+    "category": "Cinematography",
+    "nominees": [
+      {
+        "nominee": "Łukasz Żal",
+        "film": "Cold War"
+      },
+      {
+        "nominee": "Robbie Ryan",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Caleb Deschanel",
+        "film": "Never Look Away"
+      },
+      {
+        "nominee": "Alfonso Cuarón",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Matthew Libatique",
+        "film": "A Star Is Born"
+      }
+    ]
+  },
+  {
+    "category": "Costume Design",
+    "nominees": [
+      {
+        "nominee": "Mary Zophres",
+        "film": "The Ballad of Buster Scruggs"
+      },
+      {
+        "nominee": "Ruth Carter",
+        "film": "Black Panther"
+      },
+      {
+        "nominee": "Sandy Powell\r\n\r\n",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Sandy Powell\r\n",
+        "film": "Mary Poppins Returns"
+      },
+      {
+        "nominee": "Alexandra Byrne\r\n\r\n",
+        "film": "Mary Queen of Scots"
+      }
+    ]
+  },
+  {
+    "category": "Directing",
+    "nominees": [
+      {
+        "nominee": "Spike Lee",
+        "film": "BlacKkKlansman"
+      },
+      {
+        "nominee": "Paweł Pawlikowski",
+        "film": "Cold War"
+      },
+      {
+        "nominee": "Yorgos Lanthimos",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Alfonso Cuarón",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Adam McKay\r\n\r\n\r\n",
+        "film": "Vice"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Feature)",
+    "nominees": [
+      {
+        "nominee": "Elizabeth Chai Vasarhelyi, Jimmy Chin, Evan Hayes and Shannon Dill ",
+        "film": "Free Solo"
+      },
+      {
+        "nominee": "RaMell Ross, Joslyn Barnes and Su Kim ",
+        "film": "Hale County This Morning, This Evening"
+      },
+      {
+        "nominee": "Bing Liu and Diane Quon\r\n",
+        "film": "Minding the Gap"
+      },
+      {
+        "nominee": "Talal Derki, Ansgar Frerich, Eva Kemme and Tobias N. Siebert ",
+        "film": "Of Fathers and Sons"
+      },
+      {
+        "nominee": "Betsy West and Julie Cohen\r\n",
+        "film": "RBG"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Short Subject)",
+    "nominees": [
+      {
+        "nominee": "Ed Perkins and Jonathan Chinn\r\n",
+        "film": "Black Sheep"
+      },
+      {
+        "nominee": "Rob Epstein and Jeffrey Friedman\r\n",
+        "film": "End Game"
+      },
+      {
+        "nominee": "Skye Fitzgerald and Bryn Mooser\r\n",
+        "film": "Lifeboat"
+      },
+      {
+        "nominee": "Marshall Curry\r\n",
+        "film": "A Night at the Garden"
+      },
+      {
+        "nominee": "Rayka Zehtabchi and Melissa Berton \r\n",
+        "film": "Period. End of Sentence."
+      }
+    ]
+  },
+  {
+    "category": "Film Editing",
+    "nominees": [
+      {
+        "nominee": "Barry Alexander Brown",
+        "film": "BlacKkKlansman"
+      },
+      {
+        "nominee": "John Ottman",
+        "film": "Bohemian Rhapsody"
+      },
+      {
+        "nominee": "Yorgos Mavropsaridis",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Patrick J. Don Vito",
+        "film": "Green Book"
+      },
+      {
+        "nominee": "Hank Corwin\r\n\r\n",
+        "film": "Vice"
+      }
+    ]
+  },
+  {
+    "category": "Foreign Language Film",
+    "nominees": [
+      {
+        "nominee": "Lebanon; Nadine Labaki",
+        "film": "Capernaum"
+      },
+      {
+        "nominee": "Poland; Paweł Pawlikowski",
+        "film": "Cold War"
+      },
+      {
+        "nominee": "Germany; Florian Henckel von Donnersmarck",
+        "film": "Never Look Away"
+      },
+      {
+        "nominee": "Mexico; Alfonso Cuarón",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Japan; Hirokazu Kore-eda",
+        "film": "Shoplifters"
+      }
+    ]
+  },
+  {
+    "category": "Makeup and Hairstyling",
+    "nominees": [
+      {
+        "nominee": "Göran Lundström and Pamela Goldammer",
+        "film": "Border"
+      },
+      {
+        "nominee": "Jenny Shircore, Marc Pilcher and Jessica Brooks",
+        "film": "Mary Queen of Scots"
+      },
+      {
+        "nominee": "Greg Cannom, Kate Biscoe and Patricia DeHaney",
+        "film": "Vice"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Score)",
+    "nominees": [
+      {
+        "nominee": "Ludwig Goransson\r\n",
+        "film": "Black Panther"
+      },
+      {
+        "nominee": "Terence Blanchard\r\n",
+        "film": "BlacKkKlansman"
+      },
+      {
+        "nominee": "Nicholas Britell\r\n",
+        "film": "If Beale Street Could Talk"
+      },
+      {
+        "nominee": "Alexandre Desplat\r\n",
+        "film": "Isle of Dogs"
+      },
+      {
+        "nominee": "Marc Shaiman\r\n",
+        "film": "Mary Poppins Returns"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Song)",
+    "nominees": [
+      {
+        "nominee": "Music by Mark Spears, Kendrick Lamar Duckworth and Anthony Tiffith; Lyric by Kendrick Lamar Duckworth, Anthony Tiffith and Solana Rowe",
+        "film": "“All The Stars” from Black Panther"
+      },
+      {
+        "nominee": "Music and Lyric by Diane Warren",
+        "film": "“I’ll Fight” from RBG"
+      },
+      {
+        "nominee": "Music by Marc Shaiman; Lyric by Scott Wittman and Marc Shaiman",
+        "film": "\"The Place Where Lost Things Go\" From Mary Poppins Returns"
+      },
+      {
+        "nominee": "Music and Lyric by Lady Gaga, Mark Ronson, Anthony Rossomando and Andrew Wyatt",
+        "film": "“Shallow” from A Star Is Born"
+      },
+      {
+        "nominee": "Music and Lyric by David Rawlings and Gillian Welch",
+        "film": "\"When A Cowboy Trades His Spurs For Wings\" from The Ballad of Buster Scruggs"
+      }
+    ]
+  },
+  {
+    "category": "Production Design",
+    "nominees": [
+      {
+        "nominee": "Hannah Beachler (Production Design); Jay Hart (Set Decoration)",
+        "film": "Black Panther"
+      },
+      {
+        "nominee": "Fiona Crombie (Production Design); Alice Felton (Set Decoration)",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Nathan Crowley (Production Design); Kathy Lucas (Set Decoration)",
+        "film": "First Man"
+      },
+      {
+        "nominee": "John Myhre (Production Design); Gordon Sim (Set Decoration)",
+        "film": "Mary Poppins Returns"
+      },
+      {
+        "nominee": "Eugenio Caballero (Production Design); Bárbara Enríquez (Set Decoration)",
+        "film": "Roma"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Animated)",
+    "nominees": [
+      {
+        "nominee": "Alison Snowden and David Fine",
+        "film": "Animal Behaviour"
+      },
+      {
+        "nominee": "Domee Shi and Becky Neiman-Cobb",
+        "film": "Bao"
+      },
+      {
+        "nominee": "Louise Bagnall and Nuria González Blanco ",
+        "film": "Late Afternoon"
+      },
+      {
+        "nominee": "Andrew Chesworth and Bobby Pontillas",
+        "film": "One Small Step"
+      },
+      {
+        "nominee": "Trevor Jimenez",
+        "film": "Weekends"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Live Action)",
+    "nominees": [
+      {
+        "nominee": "Vincent Lambe and Darren Mahon ",
+        "film": "Detainment"
+      },
+      {
+        "nominee": "Jeremy Comte and Maria Gracia Turgeon ",
+        "film": "Fauve"
+      },
+      {
+        "nominee": "Marianne Farley and Marie-Hélène Panisset",
+        "film": "Marguerite"
+      },
+      {
+        "nominee": "Rodrigo Sorogoyen and María del Puy Alvarado ",
+        "film": "Mother"
+      },
+      {
+        "nominee": "Guy Nattiv and Jaime Ray Newman",
+        "film": "Skin"
+      }
+    ]
+  },
+  {
+    "category": "Sound Editing",
+    "nominees": [
+      {
+        "nominee": "Benjamin A. Burtt and Steve Boeddeker",
+        "film": "Black Panther"
+      },
+      {
+        "nominee": "John Warhurst and Nina Hartstone",
+        "film": "Bohemian Rhapsody"
+      },
+      {
+        "nominee": "Ai-Ling Lee and Mildred Iatrou Morgan",
+        "film": "First Man"
+      },
+      {
+        "nominee": "Ethan Van der Ryn and Erik Aadahl",
+        "film": "A Quiet Place"
+      },
+      {
+        "nominee": "Sergio Díaz and Skip Lievsay",
+        "film": "Roma"
+      }
+    ]
+  },
+  {
+    "category": "Sound Mixing",
+    "nominees": [
+      {
+        "nominee": "Steve Boeddeker, Brandon Proctor and Peter Devlin",
+        "film": "Black Panther"
+      },
+      {
+        "nominee": "Paul Massey, Tim Cavagin and John Casali",
+        "film": "Bohemian Rhapsody"
+      },
+      {
+        "nominee": "Jon Taylor, Frank A. Montaño, Ai-Ling Lee and Mary H. Ellis",
+        "film": "First Man"
+      },
+      {
+        "nominee": "Skip Lievsay, Craig Henighan and José Antonio García",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Tom Ozanich, Dean Zupancic, Jason Ruder and Steve Morrow",
+        "film": "A Star Is Born"
+      }
+    ]
+  },
+  {
+    "category": "Visual Effects",
+    "nominees": [
+      {
+        "nominee": "Dan DeLeeuw, Kelly Port, Russell Earl and Dan Sudick",
+        "film": "Avengers: Infinity War"
+      },
+      {
+        "nominee": "Christopher Lawrence, Michael Eames, Theo Jones and Chris Corbould",
+        "film": "Christopher Robin"
+      },
+      {
+        "nominee": "Paul Lambert, Ian Hunter, Tristan Myles and J.D. Schwalm",
+        "film": "First Man"
+      },
+      {
+        "nominee": "Roger Guyett, Grady Cofer, Matthew E. Butler and David Shirk",
+        "film": "Ready Player One"
+      },
+      {
+        "nominee": "Rob Bredow, Patrick Tubach, Neal Scanlan and Dominic Tuohy",
+        "film": "Solo: A Star Wars Story"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Adapted Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Written by Joel Coen & Ethan Coen\r\n\r\n\r\n",
+        "film": "The Ballad of Buster Scruggs"
+      },
+      {
+        "nominee": "Written by Charlie Wachtel & David Rabinowitz and Kevin Willmott & Spike Lee\r\n\r\n\r\n",
+        "film": "BlacKkKlansman"
+      },
+      {
+        "nominee": "Screenplay by Nicole Holofcener and Jeff Whitty\r\n\r\n\r\n",
+        "film": "Can You Ever Forgive Me?"
+      },
+      {
+        "nominee": "Written for the screen by Barry Jenkins\r\n\r\n\r\n",
+        "film": "If Beale Street Could Talk"
+      },
+      {
+        "nominee": "Screenplay by Eric Roth and Bradley Cooper & Will Fetters\r\n\r\n\r\n\r\n",
+        "film": "A Star Is Born"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Original Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Written by Deborah Davis and Tony McNamara\r\n",
+        "film": "The Favourite"
+      },
+      {
+        "nominee": "Written by Paul Schrader\r\n",
+        "film": "First Reformed"
+      },
+      {
+        "nominee": "Written by Nick Vallelonga, Brian Currie, Peter Farrelly\r\n",
+        "film": "Green Book"
+      },
+      {
+        "nominee": "Written by Alfonso Cuarón\r\n",
+        "film": "Roma"
+      },
+      {
+        "nominee": "Written by Adam McKay\r\n",
+        "film": "Vice"
+      }
+    ]
+  }
+]
