@@ -1,6 +1,4 @@
-module OscarsMadness
-
-  module_function
+class Importer
 
   CATEGORY_OPTIONS = {
     "Best Picture"                  => {:points => 5, :flip => false},
@@ -15,7 +13,7 @@ module OscarsMadness
     "Documentary (Feature)"         => {:points => 3, :flip => false},
     "Documentary (Short Subject)"   => {:points => 2, :flip => false},
     "Film Editing"                  => {:points => 2, :flip => false},
-    "Foreign Language Film"         => {:points => 3, :flip => false},
+    "International Feature Film"    => {:points => 3, :flip => false},
     "Makeup and Hairstyling"        => {:points => 1, :flip => false},
     "Music (Original Score)"        => {:points => 2, :flip => false},
     "Music (Original Song)"         => {:points => 1, :flip => false},
@@ -29,54 +27,47 @@ module OscarsMadness
     "Writing (Original Screenplay)" => {:points => 3, :flip => false},
   }
 
-  def import(json)
-    categories = JSON.parse(json)
-    categories.each do |category_json|
-      name = category_json.fetch('category')
-      options = CATEGORY_OPTIONS.fetch(name)
-      category = Category.new({
-        :name    => name,
-        :year    => Date.today.year,
-        :points  => options.fetch(:points),
-        :flipped => options.fetch(:flip),
-      })
-      category.save!
+  class << self
 
-      category_json.fetch('nominees').each do |nominee_json|
-        film_name = nominee_json.fetch('film')
-        film = films.fetch(film_name) do
-          # Create film and add to cache.
-          film = Film.new(:name => film_name)
-          film.save!
-          films[film.name] = film
-        end
-
-        nominee = Nominee.new({
-          :name => nominee_json.fetch('nominee'),
-          :film => film,
+    def call(json)
+      categories = JSON.parse(json)
+      categories.each do |category_json|
+        name = category_json.fetch('category')
+        options = CATEGORY_OPTIONS.fetch(name)
+        category = Category.new({
+          :name    => name,
+          :year    => Date.today.year,
+          :points  => options.fetch(:points),
+          :flipped => options.fetch(:flip),
         })
+        category.save!
 
-        category.nominees << nominee
+        category_json.fetch('nominees').each do |nominee_json|
+          film_name = nominee_json.fetch('film')
+          film = films.fetch(film_name) do
+            # Create film and add to cache.
+            film = Film.new(:name => film_name)
+            film.save!
+            films[film.name] = film
+          end
+
+          nominee = Nominee.new({
+            :name => nominee_json.fetch('nominee'),
+            :film => film,
+          })
+
+          category.nominees << nominee
+        end
       end
     end
-  end
 
-  # Preload films and cache.
-  def films
-    @films ||= Film.all.each_with_object({}) do |film, hash|
-      hash[film.name] = film
+    # Preload films and cache.
+    def films
+      @films ||= Film.all.each_with_object({}) do |film, hash|
+        hash[film.name] = film
+      end
     end
+
   end
 
-end
-
-# Load rails.
-ENV["RAILS_ENV"] ||= "development"
-require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
-
-# Import.
-Film.transaction do
-  json = File.read("./nominations/#{Date.today.year}/nominations.json")
-  ap OscarsMadness.import(json)
-  #raise ActiveRecord::Rollback
 end

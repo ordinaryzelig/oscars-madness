@@ -1,10 +1,11 @@
 ## Every year
 
-* Go to [http://oscar.go.com/nominees](http://oscar.go.com/nominees) and copy xhr response from nominees request.
-* `ruby script/parser.rb`
-* `ruby script/importer.rb`
-* `/admin`
-  * AdminConfig#picks_editable
+* Go to [http://oscar.go.com/nominees](http://oscar.go.com/nominees).
+* Save xhr response from nominees request as `nominations/year/source.json`.
+* `rails parse`.
+* `rails import`.
+* Go to `/admin`.
+  * AdminConfig#picks_editable.
 
 ## Production
 
