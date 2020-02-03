@@ -1,0 +1,618 @@
+[
+  {
+    "category": "Best Picture",
+    "nominees": [
+      {
+        "nominee": "Peter Chernin, Jenno Topping and James Mangold, Producers",
+        "film": "Ford v Ferrari"
+      },
+      {
+        "nominee": "Martin Scorsese, Robert De Niro, Jane Rosenthal and Emma Tillinger Koskoff, Producers",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Carthew Neal, Taika Waititi and Chelsea Winstanley, Producers",
+        "film": "Jojo Rabbit"
+      },
+      {
+        "nominee": "Todd Phillips, Bradley Cooper and Emma Tillinger Koskoff, Producers",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Amy Pascal, Producer",
+        "film": "Little Women"
+      },
+      {
+        "nominee": "Noah Baumbach and David Heyman, Producers",
+        "film": "Marriage Story"
+      },
+      {
+        "nominee": "Sam Mendes, Pippa Harris, Jayne-Ann Tenggren and Callum McDougall, Producers",
+        "film": "1917"
+      },
+      {
+        "nominee": "David Heyman, Shannon McIntosh and Quentin Tarantino, Producers",
+        "film": "Once upon a Time...in Hollywood"
+      },
+      {
+        "nominee": "Kwak Sin Ae and Bong Joon Ho, Producers",
+        "film": "Parasite"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Antonio Banderas",
+        "film": "Pain and Glory"
+      },
+      {
+        "nominee": "Leonardo DiCaprio",
+        "film": "Once upon a Time...in Hollywood"
+      },
+      {
+        "nominee": "Adam Driver",
+        "film": "Marriage Story"
+      },
+      {
+        "nominee": "Joaquin Phoenix",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Jonathan Pryce",
+        "film": "The Two Popes"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Leading Role",
+    "nominees": [
+      {
+        "nominee": "Cynthia Erivo",
+        "film": "Harriet"
+      },
+      {
+        "nominee": "Scarlett Johansson",
+        "film": "Marriage Story"
+      },
+      {
+        "nominee": "Saoirse Ronan",
+        "film": "Little Women"
+      },
+      {
+        "nominee": "Charlize Theron",
+        "film": "Bombshell"
+      },
+      {
+        "nominee": "Renée Zellweger",
+        "film": "Judy"
+      }
+    ]
+  },
+  {
+    "category": "Actor in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Tom Hanks",
+        "film": "A Beautiful Day in the Neighborhood "
+      },
+      {
+        "nominee": "Anthony Hopkins",
+        "film": "The Two Popes"
+      },
+      {
+        "nominee": "Al Pacino",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Joe Pesci",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Brad Pitt",
+        "film": "Once upon a Time... in Hollywood"
+      }
+    ]
+  },
+  {
+    "category": "Actress in a Supporting Role",
+    "nominees": [
+      {
+        "nominee": "Kathy Bates",
+        "film": "Richard Jewell"
+      },
+      {
+        "nominee": "Laura Dern",
+        "film": "Marriage Story"
+      },
+      {
+        "nominee": "Scarlett Johansson",
+        "film": "Jojo Rabbit"
+      },
+      {
+        "nominee": "Florence Pugh",
+        "film": "Little Women"
+      },
+      {
+        "nominee": "Margot Robbie",
+        "film": "Bombshell"
+      }
+    ]
+  },
+  {
+    "category": "Animated Feature Film",
+    "nominees": [
+      {
+        "nominee": "Dean DeBlois, Bradford Lewis and Bonnie Arnold",
+        "film": "How To Train Your Dragon: The Hidden World"
+      },
+      {
+        "nominee": "Jérémy Clapin and Marc du Pontavice",
+        "film": "I Lost My Body"
+      },
+      {
+        "nominee": "Sergio Pablos, Jinko Gotoh and Marisa Román",
+        "film": "Klaus"
+      },
+      {
+        "nominee": "Chris Butler, Arianne Sutner and Travis Knight",
+        "film": "Missing Link"
+      },
+      {
+        "nominee": "Josh Cooley, Mark Nielsen and Jonas Rivera",
+        "film": "Toy Story 4"
+      }
+    ]
+  },
+  {
+    "category": "Cinematography",
+    "nominees": [
+      {
+        "nominee": "Rodrigo Prieto",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Lawrence Sher",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Jarin Blaschke",
+        "film": "The Lighthouse"
+      },
+      {
+        "nominee": "Roger Deakins",
+        "film": "1917"
+      },
+      {
+        "nominee": "Robert Richardson",
+        "film": "Once upon a Time...in Hollywood"
+      }
+    ]
+  },
+  {
+    "category": "Costume Design",
+    "nominees": [
+      {
+        "nominee": "Sandy Powell and Christopher Peterson",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Mayes C. Rubeo",
+        "film": "Jojo Rabbit"
+      },
+      {
+        "nominee": "Mark Bridges",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Jacqueline Durran",
+        "film": "Little Women"
+      },
+      {
+        "nominee": "Arianne Phillips",
+        "film": "Once upon a Time...in Hollywood"
+      }
+    ]
+  },
+  {
+    "category": "Directing",
+    "nominees": [
+      {
+        "nominee": "Martin Scorsese",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Todd Phillips",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Sam Mendes",
+        "film": "1917"
+      },
+      {
+        "nominee": "Quentin Tarantino",
+        "film": "Once upon a Time...in Hollywood"
+      },
+      {
+        "nominee": "Bong Joon Ho",
+        "film": "Parasite"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Feature)",
+    "nominees": [
+      {
+        "nominee": "Steven Bognar, Julia Reichert and Jeff Reichert",
+        "film": "American Factory"
+      },
+      {
+        "nominee": "Feras Fayyad, Kirstine Barfod and Sigrid Dyekjær",
+        "film": "The Cave"
+      },
+      {
+        "nominee": "Petra Costa, Joanna Natasegara, Shane Boris and Tiago Pavan",
+        "film": "The Edge of Democracy"
+      },
+      {
+        "nominee": "Waad al-Kateab and Edward Watts",
+        "film": "For Sama"
+      },
+      {
+        "nominee": "Ljubo Stefanov, Tamara Kotevska and Atanas Georgiev",
+        "film": "Honeyland"
+      }
+    ]
+  },
+  {
+    "category": "Documentary (Short Subject)",
+    "nominees": [
+      {
+        "nominee": "Yi Seung-Jun and Gary Byung-Seok Kam",
+        "film": "In the Absence"
+      },
+      {
+        "nominee": "Carol Dysinger and Elena Andreicheva",
+        "film": "Learning to Skateboard in a Warzone (If You're a Girl)"
+      },
+      {
+        "nominee": "John Haptas and Kristine Samuelson",
+        "film": "Life Overtakes Me"
+      },
+      {
+        "nominee": "Smriti Mundhra and Sami Khan",
+        "film": "St. Louis Superman"
+      },
+      {
+        "nominee": "Laura Nix and Colette Sandstedt",
+        "film": "Walk Run Cha-Cha"
+      }
+    ]
+  },
+  {
+    "category": "Film Editing",
+    "nominees": [
+      {
+        "nominee": "Michael McCusker and Andrew Buckland",
+        "film": "Ford v Ferrari"
+      },
+      {
+        "nominee": "Thelma Schoonmaker",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Tom Eagles",
+        "film": "Jojo Rabbit"
+      },
+      {
+        "nominee": "Jeff Groth",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Yang Jinmo",
+        "film": "Parasite"
+      }
+    ]
+  },
+  {
+    "category": "International Feature Film",
+    "nominees": [
+      {
+        "nominee": "Poland",
+        "film": "Corpus Christi"
+      },
+      {
+        "nominee": "North Macedonia",
+        "film": "Honeyland"
+      },
+      {
+        "nominee": "France",
+        "film": "Les Misérables"
+      },
+      {
+        "nominee": "Spain",
+        "film": "Pain and Glory"
+      },
+      {
+        "nominee": "South Korea",
+        "film": "Parasite"
+      }
+    ]
+  },
+  {
+    "category": "Makeup and Hairstyling",
+    "nominees": [
+      {
+        "nominee": "Kazu Hiro, Anne Morgan and Vivian Baker",
+        "film": "Bombshell"
+      },
+      {
+        "nominee": "Nicki Ledermann and Kay Georgiou",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Jeremy Woodhead",
+        "film": "Judy"
+      },
+      {
+        "nominee": "Paul Gooch, Arjen Tuiten and David White",
+        "film": "Maleficent: Mistress of Evil"
+      },
+      {
+        "nominee": "Naomi Donne, Tristan Versluis and Rebecca Cole",
+        "film": "1917"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Score)",
+    "nominees": [
+      {
+        "nominee": "Hildur Guðnadóttir",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Alexandre Desplat",
+        "film": "Little Women"
+      },
+      {
+        "nominee": "Randy Newman",
+        "film": "Marriage Story"
+      },
+      {
+        "nominee": "Thomas Newman",
+        "film": "1917"
+      },
+      {
+        "nominee": "John Williams",
+        "film": "Star Wars: The Rise of Skywalker"
+      }
+    ]
+  },
+  {
+    "category": "Music (Original Song)",
+    "nominees": [
+      {
+        "nominee": "Music and Lyric by Randy Newman",
+        "film": "“I Can’t Let You Throw Yourself Away” from Toy Story 4"
+      },
+      {
+        "nominee": "Music by Elton John, Lyric by Bernie Taupin",
+        "film": "“(I’m Gonna) Love Me Again” from Rocketman"
+      },
+      {
+        "nominee": "Music and Lyric by Diane Warren",
+        "film": "“I’m Standing With You” from Breakthrough"
+      },
+      {
+        "nominee": "Music and Lyric by Kristen Anderson-Lopez and Robert Lopez",
+        "film": "“Into The Unknown” from Frozen II"
+      },
+      {
+        "nominee": "Music and Lyric by Joshuah Brian Campbell and Cynthia Erivo",
+        "film": "“Stand Up” from Harriet"
+      }
+    ]
+  },
+  {
+    "category": "Production Design",
+    "nominees": [
+      {
+        "nominee": "Production Design: Bob Shaw; Set Decoration: Regina Graves",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Production Design: Ra Vincent, Set Decoration: Nora Sopková",
+        "film": "Jojo Rabbit"
+      },
+      {
+        "nominee": "Production Design: Dennis Gassner, Set Decoration: Lee Sandales",
+        "film": "1917"
+      },
+      {
+        "nominee": "Production Design: Barbara Ling, Set Decoration: Nancy Haigh",
+        "film": "Once upon a Time...in Hollywood"
+      },
+      {
+        "nominee": "Production Design: Lee Ha Jun, Set Decoration: Cho Won Woo",
+        "film": "Parasite"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Animated)",
+    "nominees": [
+      {
+        "nominee": "Daria Kashcheeva",
+        "film": "Dcera (Daughter)"
+      },
+      {
+        "nominee": "Matthew A. Cherry and Karen Rupert Toliver",
+        "film": "Hair Love"
+      },
+      {
+        "nominee": "Rosana Sullivan and Kathryn Hendrickson",
+        "film": "Kitbull"
+      },
+      {
+        "nominee": "Bruno Collet and Jean-François Le Corre",
+        "film": "Memorable"
+      },
+      {
+        "nominee": "Siqi Song",
+        "film": "Sister"
+      }
+    ]
+  },
+  {
+    "category": "Short Film (Live Action)",
+    "nominees": [
+      {
+        "nominee": "Meryam Joobeur and Maria Gracia Turgeon",
+        "film": "Brotherhood"
+      },
+      {
+        "nominee": "Yves Piat and Damien Megherbi",
+        "film": "Nefta Football Club"
+      },
+      {
+        "nominee": "Marshall Curry",
+        "film": "The Neighbors' Window"
+      },
+      {
+        "nominee": "Bryan Buckley and Matt Lefebvre",
+        "film": "Saria"
+      },
+      {
+        "nominee": "Delphine Girard",
+        "film": "A Sister"
+      }
+    ]
+  },
+  {
+    "category": "Sound Editing",
+    "nominees": [
+      {
+        "nominee": "Donald Sylvester",
+        "film": "Ford v Ferrari"
+      },
+      {
+        "nominee": "Alan Robert Murray",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Oliver Tarney and Rachael Tate",
+        "film": "1917"
+      },
+      {
+        "nominee": "Wylie Stateman",
+        "film": "Once upon a Time...in Hollywood"
+      },
+      {
+        "nominee": "Matthew Wood and David Acord",
+        "film": "Star Wars: The Rise of Skywalker"
+      }
+    ]
+  },
+  {
+    "category": "Sound Mixing",
+    "nominees": [
+      {
+        "nominee": "Gary Rydstrom, Tom Johnson and Mark Ulano",
+        "film": "Ad Astra"
+      },
+      {
+        "nominee": "Paul Massey, David Giammarco and Steven A. Morrow",
+        "film": "Ford v Ferrari"
+      },
+      {
+        "nominee": "Tom Ozanich, Dean Zupancic and Tod Maitland",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Mark Taylor and Stuart Wilson",
+        "film": "1917"
+      },
+      {
+        "nominee": "Michael Minkler, Christian P. Minkler and Mark Ulano",
+        "film": "Once upon a Time...in Hollywood"
+      }
+    ]
+  },
+  {
+    "category": "Visual Effects",
+    "nominees": [
+      {
+        "nominee": "Dan DeLeeuw, Russell Earl, Matt Aitken and Dan Sudick",
+        "film": "Avengers: Endgame"
+      },
+      {
+        "nominee": "Pablo Helman, Leandro Estebecorena, Nelson Sepulveda-Fauser and Stephane Grabli",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Robert Legato, Adam Valdez, Andrew R. Jones and Elliot Newman",
+        "film": "The Lion King"
+      },
+      {
+        "nominee": "Guillaume Rocheron, Greg Butler and Dominic Tuohy",
+        "film": "1917"
+      },
+      {
+        "nominee": "Roger Guyett, Neal Scanlan, Patrick Tubach and Dominic Tuohy",
+        "film": "Star Wars: The Rise of Skywalker"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Adapted Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Screenplay by Steven Zaillian",
+        "film": "The Irishman"
+      },
+      {
+        "nominee": "Screenplay by Taika Waititi",
+        "film": "Jojo Rabbit"
+      },
+      {
+        "nominee": "Written by Todd Phillips & Scott Silver",
+        "film": "Joker"
+      },
+      {
+        "nominee": "Written for the screen by Greta Gerwig",
+        "film": "Little Women"
+      },
+      {
+        "nominee": "Written by Anthony McCarten",
+        "film": "The Two Popes"
+      }
+    ]
+  },
+  {
+    "category": "Writing (Original Screenplay)",
+    "nominees": [
+      {
+        "nominee": "Written by Rian Johnson",
+        "film": "Knives Out"
+      },
+      {
+        "nominee": "Written by Noah Baumbach",
+        "film": "Marriage Story"
+      },
+      {
+        "nominee": "Written by Sam Mendes & Krysty Wilson-Cairns",
+        "film": "1917"
+      },
+      {
+        "nominee": "Written by Quentin Tarantino",
+        "film": "Once upon a Time...in Hollywood"
+      },
+      {
+        "nominee": "Screenplay by Bong Joon Ho, Han Jin Won\r\nStory by Bong Joon Ho",
+        "film": "Parasite"
+      }
+    ]
+  }
+]
