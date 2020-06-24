@@ -131,7 +131,7 @@ GEM
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
     pg (1.2.2)
-    rack (2.1.2)
+    rack (2.2.3)
     rack-mini-profiler (1.1.6)
       rack (>= 1.2.0)
     rack-pjax (1.1.0)
